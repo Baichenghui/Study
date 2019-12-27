@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '10.0'
+use_frameworks!
+ 
+target 'CornerDemo' do 
+	pod 'SDWebImage'
+#	pod 'YYWebImage'
+  pod 'YBTaskScheduler'
+end
+ 

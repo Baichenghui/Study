@@ -1,0 +1,22 @@
+PODS:
+  - SDWebImage (5.2.5):
+    - SDWebImage/Core (= 5.2.5)
+  - SDWebImage/Core (5.2.5)
+  - YBTaskScheduler (1.0.1)
+
+DEPENDENCIES:
+  - SDWebImage
+  - YBTaskScheduler
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
+    - YBTaskScheduler
+
+SPEC CHECKSUMS:
+  SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
+  YBTaskScheduler: cf08ebc7132a70212252bdacb8ff803a23b611ab
+
+PODFILE CHECKSUM: 183d5fba75261074559c7916c774b47ec99c0360
+
+COCOAPODS: 1.8.4

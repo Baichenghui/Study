@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-CornerDemo/Pods-CornerDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/YBTaskScheduler/YBTaskScheduler.framework

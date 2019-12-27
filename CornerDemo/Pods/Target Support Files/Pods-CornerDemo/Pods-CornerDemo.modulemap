@@ -1,0 +1,6 @@
+framework module Pods_CornerDemo {
+  umbrella header "Pods-CornerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

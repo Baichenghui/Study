@@ -1,0 +1,6 @@
+framework module YBTaskScheduler {
+  umbrella header "YBTaskScheduler-umbrella.h"
+
+  export *
+  module * { export * }
+}
