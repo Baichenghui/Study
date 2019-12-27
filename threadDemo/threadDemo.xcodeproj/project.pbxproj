@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5256D4723B3496A00C952FE /* ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F5256D4523B3496A00C952FE /* ThreadSafeMutableDictionary.m */; };
+		F5256D4A23B354E600C952FE /* ThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = F5256D4923B354E600C952FE /* ThreadSafeMutableArray.m */; };
+		F5256D4D23B3566F00C952FE /* ThreadSafeMutableArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5256D4C23B3566F00C952FE /* ThreadSafeMutableArrayController.m */; };
+		F5256D5023B3568300C952FE /* ThreadSafeMutableDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5256D4F23B3568300C952FE /* ThreadSafeMutableDictionaryController.m */; };
+		F53D2BD623A9BC9E00F7FDAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2BD523A9BC9E00F7FDAC /* AppDelegate.m */; };
+		F53D2BD923A9BC9E00F7FDAC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2BD823A9BC9E00F7FDAC /* SceneDelegate.m */; };
+		F53D2BDC23A9BC9E00F7FDAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2BDB23A9BC9E00F7FDAC /* ViewController.m */; };
+		F53D2BDF23A9BC9E00F7FDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53D2BDD23A9BC9E00F7FDAC /* Main.storyboard */; };
+		F53D2BE123A9BCA000F7FDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53D2BE023A9BCA000F7FDAC /* Assets.xcassets */; };
+		F53D2BE423A9BCA000F7FDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53D2BE223A9BCA000F7FDAC /* LaunchScreen.storyboard */; };
+		F53D2BE723A9BCA000F7FDAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2BE623A9BCA000F7FDAC /* main.m */; };
+		F53D2BF123A9BCA000F7FDAC /* threadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2BF023A9BCA000F7FDAC /* threadDemoTests.m */; };
+		F53D2BFC23A9BCA000F7FDAC /* threadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2BFB23A9BCA000F7FDAC /* threadDemoUITests.m */; };
+		F53D2C0C23A9CFF900F7FDAC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C0B23A9CFF900F7FDAC /* RootViewController.m */; };
+		F53D2C0F23A9D17100F7FDAC /* GCDSerialQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C0E23A9D17100F7FDAC /* GCDSerialQueueController.m */; };
+		F53D2C1223A9D17F00F7FDAC /* GCDConcurrentQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C1123A9D17F00F7FDAC /* GCDConcurrentQueueController.m */; };
+		F53D2C1523A9D18900F7FDAC /* GCDDispatchSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C1423A9D18900F7FDAC /* GCDDispatchSyncController.m */; };
+		F53D2C1823A9D19300F7FDAC /* GCDDispatchAsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C1723A9D19300F7FDAC /* GCDDispatchAsyncController.m */; };
+		F53D2C1B23A9D24500F7FDAC /* GCDDispatchGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C1A23A9D24500F7FDAC /* GCDDispatchGroupController.m */; };
+		F53D2C1E23A9D27900F7FDAC /* GCDDispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C1D23A9D27900F7FDAC /* GCDDispatchSemaphoreController.m */; };
+		F53D2C2123A9D36C00F7FDAC /* GCDDispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C2023A9D36C00F7FDAC /* GCDDispatchBarrierController.m */; };
+		F53D2C2423A9D37700F7FDAC /* GCDDispatchOnceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C2323A9D37700F7FDAC /* GCDDispatchOnceController.m */; };
+		F53D2C2723A9D38200F7FDAC /* GCDDispatchApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C2623A9D38200F7FDAC /* GCDDispatchApplyController.m */; };
+		F53D2C2A23A9D38C00F7FDAC /* GCDDispatchAfterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C2923A9D38C00F7FDAC /* GCDDispatchAfterController.m */; };
+		F53D2C2D23A9D49800F7FDAC /* GCDDispatchTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C2C23A9D49800F7FDAC /* GCDDispatchTimerController.m */; };
+		F53D2C3023AB212400F7FDAC /* SemaphoreMaxConcurrentCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C2F23AB212300F7FDAC /* SemaphoreMaxConcurrentCount.m */; };
+		F53D2C3323AC7EA700F7FDAC /* TDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D2C3223AC7EA700F7FDAC /* TDManager.m */; };
+		F5584D6C23B4A170007CA1BD /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5584D6B23B4A170007CA1BD /* NSArray+YYAdd.m */; };
+		FE342E80DF2C6D12DC185711 /* Pods_threadDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2782F33A5F0284D6FBFAC3 /* Pods_threadDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F53D2BED23A9BCA000F7FDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53D2BC923A9BC9D00F7FDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53D2BD023A9BC9D00F7FDAC;
+			remoteInfo = threadDemo;
+		};
+		F53D2BF823A9BCA000F7FDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53D2BC923A9BC9D00F7FDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53D2BD023A9BC9D00F7FDAC;
+			remoteInfo = threadDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CACD018FF4817C9A79A041 /* Pods-threadDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-threadDemo.debug.xcconfig"; path = "Target Support Files/Pods-threadDemo/Pods-threadDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3FD2D9CEBA6C4A1187A4FC0C /* Pods-threadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-threadDemo.release.xcconfig"; path = "Target Support Files/Pods-threadDemo/Pods-threadDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AC2782F33A5F0284D6FBFAC3 /* Pods_threadDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_threadDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5256D4523B3496A00C952FE /* ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
+		F5256D4623B3496A00C952FE /* ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
+		F5256D4823B354E600C952FE /* ThreadSafeMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafeMutableArray.h; sourceTree = "<group>"; };
+		F5256D4923B354E600C952FE /* ThreadSafeMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeMutableArray.m; sourceTree = "<group>"; };
+		F5256D4B23B3566F00C952FE /* ThreadSafeMutableArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafeMutableArrayController.h; sourceTree = "<group>"; };
+		F5256D4C23B3566F00C952FE /* ThreadSafeMutableArrayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeMutableArrayController.m; sourceTree = "<group>"; };
+		F5256D4E23B3568300C952FE /* ThreadSafeMutableDictionaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafeMutableDictionaryController.h; sourceTree = "<group>"; };
+		F5256D4F23B3568300C952FE /* ThreadSafeMutableDictionaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeMutableDictionaryController.m; sourceTree = "<group>"; };
+		F53D2BD123A9BC9E00F7FDAC /* threadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53D2BD423A9BC9E00F7FDAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F53D2BD523A9BC9E00F7FDAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F53D2BD723A9BC9E00F7FDAC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F53D2BD823A9BC9E00F7FDAC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F53D2BDA23A9BC9E00F7FDAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F53D2BDB23A9BC9E00F7FDAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F53D2BDE23A9BC9E00F7FDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F53D2BE023A9BCA000F7FDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F53D2BE323A9BCA000F7FDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F53D2BE523A9BCA000F7FDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53D2BE623A9BCA000F7FDAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F53D2BEC23A9BCA000F7FDAC /* threadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53D2BF023A9BCA000F7FDAC /* threadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threadDemoTests.m; sourceTree = "<group>"; };
+		F53D2BF223A9BCA000F7FDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53D2BF723A9BCA000F7FDAC /* threadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53D2BFB23A9BCA000F7FDAC /* threadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threadDemoUITests.m; sourceTree = "<group>"; };
+		F53D2BFD23A9BCA000F7FDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53D2C0A23A9CFF900F7FDAC /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F53D2C0B23A9CFF900F7FDAC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F53D2C0D23A9D17100F7FDAC /* GCDSerialQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSerialQueueController.h; sourceTree = "<group>"; };
+		F53D2C0E23A9D17100F7FDAC /* GCDSerialQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSerialQueueController.m; sourceTree = "<group>"; };
+		F53D2C1023A9D17F00F7FDAC /* GCDConcurrentQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDConcurrentQueueController.h; sourceTree = "<group>"; };
+		F53D2C1123A9D17F00F7FDAC /* GCDConcurrentQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDConcurrentQueueController.m; sourceTree = "<group>"; };
+		F53D2C1323A9D18900F7FDAC /* GCDDispatchSyncController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchSyncController.h; sourceTree = "<group>"; };
+		F53D2C1423A9D18900F7FDAC /* GCDDispatchSyncController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchSyncController.m; sourceTree = "<group>"; };
+		F53D2C1623A9D19300F7FDAC /* GCDDispatchAsyncController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchAsyncController.h; sourceTree = "<group>"; };
+		F53D2C1723A9D19300F7FDAC /* GCDDispatchAsyncController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchAsyncController.m; sourceTree = "<group>"; };
+		F53D2C1923A9D24500F7FDAC /* GCDDispatchGroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchGroupController.h; sourceTree = "<group>"; };
+		F53D2C1A23A9D24500F7FDAC /* GCDDispatchGroupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchGroupController.m; sourceTree = "<group>"; };
+		F53D2C1C23A9D27900F7FDAC /* GCDDispatchSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchSemaphoreController.h; sourceTree = "<group>"; };
+		F53D2C1D23A9D27900F7FDAC /* GCDDispatchSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchSemaphoreController.m; sourceTree = "<group>"; };
+		F53D2C1F23A9D36C00F7FDAC /* GCDDispatchBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchBarrierController.h; sourceTree = "<group>"; };
+		F53D2C2023A9D36C00F7FDAC /* GCDDispatchBarrierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchBarrierController.m; sourceTree = "<group>"; };
+		F53D2C2223A9D37700F7FDAC /* GCDDispatchOnceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchOnceController.h; sourceTree = "<group>"; };
+		F53D2C2323A9D37700F7FDAC /* GCDDispatchOnceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchOnceController.m; sourceTree = "<group>"; };
+		F53D2C2523A9D38200F7FDAC /* GCDDispatchApplyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchApplyController.h; sourceTree = "<group>"; };
+		F53D2C2623A9D38200F7FDAC /* GCDDispatchApplyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchApplyController.m; sourceTree = "<group>"; };
+		F53D2C2823A9D38C00F7FDAC /* GCDDispatchAfterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchAfterController.h; sourceTree = "<group>"; };
+		F53D2C2923A9D38C00F7FDAC /* GCDDispatchAfterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchAfterController.m; sourceTree = "<group>"; };
+		F53D2C2B23A9D49800F7FDAC /* GCDDispatchTimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDispatchTimerController.h; sourceTree = "<group>"; };
+		F53D2C2C23A9D49800F7FDAC /* GCDDispatchTimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDispatchTimerController.m; sourceTree = "<group>"; };
+		F53D2C2E23AB212300F7FDAC /* SemaphoreMaxConcurrentCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreMaxConcurrentCount.h; sourceTree = "<group>"; };
+		F53D2C2F23AB212300F7FDAC /* SemaphoreMaxConcurrentCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreMaxConcurrentCount.m; sourceTree = "<group>"; };
+		F53D2C3123AC7EA700F7FDAC /* TDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDManager.h; sourceTree = "<group>"; };
+		F53D2C3223AC7EA700F7FDAC /* TDManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDManager.m; sourceTree = "<group>"; };
+		F5584D6A23B4A170007CA1BD /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
+		F5584D6B23B4A170007CA1BD /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53D2BCE23A9BC9D00F7FDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE342E80DF2C6D12DC185711 /* Pods_threadDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D2BE923A9BCA000F7FDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D2BF423A9BCA000F7FDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0C126C476C6C81941CD11D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00CACD018FF4817C9A79A041 /* Pods-threadDemo.debug.xcconfig */,
+				3FD2D9CEBA6C4A1187A4FC0C /* Pods-threadDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F07E8F6EBCB0B4AC24384CAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC2782F33A5F0284D6FBFAC3 /* Pods_threadDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53D2BC823A9BC9D00F7FDAC = {
+			isa = PBXGroup;
+			children = (
+				F53D2BD323A9BC9E00F7FDAC /* threadDemo */,
+				F53D2BEF23A9BCA000F7FDAC /* threadDemoTests */,
+				F53D2BFA23A9BCA000F7FDAC /* threadDemoUITests */,
+				F53D2BD223A9BC9E00F7FDAC /* Products */,
+				EE0C126C476C6C81941CD11D /* Pods */,
+				F07E8F6EBCB0B4AC24384CAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F53D2BD223A9BC9E00F7FDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53D2BD123A9BC9E00F7FDAC /* threadDemo.app */,
+				F53D2BEC23A9BCA000F7FDAC /* threadDemoTests.xctest */,
+				F53D2BF723A9BCA000F7FDAC /* threadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53D2BD323A9BC9E00F7FDAC /* threadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F53D2C0923A9CFE700F7FDAC /* Controller */,
+				F53D2BD423A9BC9E00F7FDAC /* AppDelegate.h */,
+				F53D2BD523A9BC9E00F7FDAC /* AppDelegate.m */,
+				F53D2BD723A9BC9E00F7FDAC /* SceneDelegate.h */,
+				F53D2BD823A9BC9E00F7FDAC /* SceneDelegate.m */,
+				F53D2C3123AC7EA700F7FDAC /* TDManager.h */,
+				F53D2C3223AC7EA700F7FDAC /* TDManager.m */,
+				F53D2C2E23AB212300F7FDAC /* SemaphoreMaxConcurrentCount.h */,
+				F53D2C2F23AB212300F7FDAC /* SemaphoreMaxConcurrentCount.m */,
+				F5256D4623B3496A00C952FE /* ThreadSafeMutableDictionary.h */,
+				F5256D4523B3496A00C952FE /* ThreadSafeMutableDictionary.m */,
+				F5256D4823B354E600C952FE /* ThreadSafeMutableArray.h */,
+				F5256D4923B354E600C952FE /* ThreadSafeMutableArray.m */,
+				F5584D6A23B4A170007CA1BD /* NSArray+YYAdd.h */,
+				F5584D6B23B4A170007CA1BD /* NSArray+YYAdd.m */,
+				F53D2BDA23A9BC9E00F7FDAC /* ViewController.h */,
+				F53D2BDB23A9BC9E00F7FDAC /* ViewController.m */,
+				F53D2BDD23A9BC9E00F7FDAC /* Main.storyboard */,
+				F53D2BE023A9BCA000F7FDAC /* Assets.xcassets */,
+				F53D2BE223A9BCA000F7FDAC /* LaunchScreen.storyboard */,
+				F53D2BE523A9BCA000F7FDAC /* Info.plist */,
+				F53D2BE623A9BCA000F7FDAC /* main.m */,
+			);
+			path = threadDemo;
+			sourceTree = "<group>";
+		};
+		F53D2BEF23A9BCA000F7FDAC /* threadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F53D2BF023A9BCA000F7FDAC /* threadDemoTests.m */,
+				F53D2BF223A9BCA000F7FDAC /* Info.plist */,
+			);
+			path = threadDemoTests;
+			sourceTree = "<group>";
+		};
+		F53D2BFA23A9BCA000F7FDAC /* threadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F53D2BFB23A9BCA000F7FDAC /* threadDemoUITests.m */,
+				F53D2BFD23A9BCA000F7FDAC /* Info.plist */,
+			);
+			path = threadDemoUITests;
+			sourceTree = "<group>";
+		};
+		F53D2C0923A9CFE700F7FDAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F53D2C0A23A9CFF900F7FDAC /* RootViewController.h */,
+				F53D2C0B23A9CFF900F7FDAC /* RootViewController.m */,
+				F53D2C0D23A9D17100F7FDAC /* GCDSerialQueueController.h */,
+				F53D2C0E23A9D17100F7FDAC /* GCDSerialQueueController.m */,
+				F53D2C1023A9D17F00F7FDAC /* GCDConcurrentQueueController.h */,
+				F53D2C1123A9D17F00F7FDAC /* GCDConcurrentQueueController.m */,
+				F53D2C1323A9D18900F7FDAC /* GCDDispatchSyncController.h */,
+				F53D2C1423A9D18900F7FDAC /* GCDDispatchSyncController.m */,
+				F53D2C1623A9D19300F7FDAC /* GCDDispatchAsyncController.h */,
+				F53D2C1723A9D19300F7FDAC /* GCDDispatchAsyncController.m */,
+				F53D2C1923A9D24500F7FDAC /* GCDDispatchGroupController.h */,
+				F53D2C1A23A9D24500F7FDAC /* GCDDispatchGroupController.m */,
+				F53D2C1C23A9D27900F7FDAC /* GCDDispatchSemaphoreController.h */,
+				F53D2C1D23A9D27900F7FDAC /* GCDDispatchSemaphoreController.m */,
+				F53D2C1F23A9D36C00F7FDAC /* GCDDispatchBarrierController.h */,
+				F53D2C2023A9D36C00F7FDAC /* GCDDispatchBarrierController.m */,
+				F53D2C2223A9D37700F7FDAC /* GCDDispatchOnceController.h */,
+				F53D2C2323A9D37700F7FDAC /* GCDDispatchOnceController.m */,
+				F53D2C2523A9D38200F7FDAC /* GCDDispatchApplyController.h */,
+				F53D2C2623A9D38200F7FDAC /* GCDDispatchApplyController.m */,
+				F53D2C2823A9D38C00F7FDAC /* GCDDispatchAfterController.h */,
+				F53D2C2923A9D38C00F7FDAC /* GCDDispatchAfterController.m */,
+				F53D2C2B23A9D49800F7FDAC /* GCDDispatchTimerController.h */,
+				F53D2C2C23A9D49800F7FDAC /* GCDDispatchTimerController.m */,
+				F5256D4B23B3566F00C952FE /* ThreadSafeMutableArrayController.h */,
+				F5256D4C23B3566F00C952FE /* ThreadSafeMutableArrayController.m */,
+				F5256D4E23B3568300C952FE /* ThreadSafeMutableDictionaryController.h */,
+				F5256D4F23B3568300C952FE /* ThreadSafeMutableDictionaryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53D2BD023A9BC9D00F7FDAC /* threadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53D2C0023A9BCA000F7FDAC /* Build configuration list for PBXNativeTarget "threadDemo" */;
+			buildPhases = (
+				DDBABEEBA6A883AD00C2027A /* [CP] Check Pods Manifest.lock */,
+				F53D2BCD23A9BC9D00F7FDAC /* Sources */,
+				F53D2BCE23A9BC9D00F7FDAC /* Frameworks */,
+				F53D2BCF23A9BC9D00F7FDAC /* Resources */,
+				FBD53302ED4F6C571A6979FC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = threadDemo;
+			productName = threadDemo;
+			productReference = F53D2BD123A9BC9E00F7FDAC /* threadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F53D2BEB23A9BCA000F7FDAC /* threadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53D2C0323A9BCA000F7FDAC /* Build configuration list for PBXNativeTarget "threadDemoTests" */;
+			buildPhases = (
+				F53D2BE823A9BCA000F7FDAC /* Sources */,
+				F53D2BE923A9BCA000F7FDAC /* Frameworks */,
+				F53D2BEA23A9BCA000F7FDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53D2BEE23A9BCA000F7FDAC /* PBXTargetDependency */,
+			);
+			name = threadDemoTests;
+			productName = threadDemoTests;
+			productReference = F53D2BEC23A9BCA000F7FDAC /* threadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F53D2BF623A9BCA000F7FDAC /* threadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53D2C0623A9BCA000F7FDAC /* Build configuration list for PBXNativeTarget "threadDemoUITests" */;
+			buildPhases = (
+				F53D2BF323A9BCA000F7FDAC /* Sources */,
+				F53D2BF423A9BCA000F7FDAC /* Frameworks */,
+				F53D2BF523A9BCA000F7FDAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53D2BF923A9BCA000F7FDAC /* PBXTargetDependency */,
+			);
+			name = threadDemoUITests;
+			productName = threadDemoUITests;
+			productReference = F53D2BF723A9BCA000F7FDAC /* threadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F53D2BC923A9BC9D00F7FDAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = hh;
+				TargetAttributes = {
+					F53D2BD023A9BC9D00F7FDAC = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					F53D2BEB23A9BCA000F7FDAC = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F53D2BD023A9BC9D00F7FDAC;
+					};
+					F53D2BF623A9BCA000F7FDAC = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F53D2BD023A9BC9D00F7FDAC;
+					};
+				};
+			};
+			buildConfigurationList = F53D2BCC23A9BC9D00F7FDAC /* Build configuration list for PBXProject "threadDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F53D2BC823A9BC9D00F7FDAC;
+			productRefGroup = F53D2BD223A9BC9E00F7FDAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53D2BD023A9BC9D00F7FDAC /* threadDemo */,
+				F53D2BEB23A9BCA000F7FDAC /* threadDemoTests */,
+				F53D2BF623A9BCA000F7FDAC /* threadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53D2BCF23A9BC9D00F7FDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D2BE423A9BCA000F7FDAC /* LaunchScreen.storyboard in Resources */,
+				F53D2BE123A9BCA000F7FDAC /* Assets.xcassets in Resources */,
+				F53D2BDF23A9BC9E00F7FDAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D2BEA23A9BCA000F7FDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D2BF523A9BCA000F7FDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDBABEEBA6A883AD00C2027A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-threadDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD53302ED4F6C571A6979FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-threadDemo/Pods-threadDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-threadDemo/Pods-threadDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-threadDemo/Pods-threadDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53D2BCD23A9BC9D00F7FDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D2C1223A9D17F00F7FDAC /* GCDConcurrentQueueController.m in Sources */,
+				F53D2C0F23A9D17100F7FDAC /* GCDSerialQueueController.m in Sources */,
+				F53D2BDC23A9BC9E00F7FDAC /* ViewController.m in Sources */,
+				F53D2C2423A9D37700F7FDAC /* GCDDispatchOnceController.m in Sources */,
+				F53D2C1823A9D19300F7FDAC /* GCDDispatchAsyncController.m in Sources */,
+				F53D2BD623A9BC9E00F7FDAC /* AppDelegate.m in Sources */,
+				F53D2BE723A9BCA000F7FDAC /* main.m in Sources */,
+				F5256D5023B3568300C952FE /* ThreadSafeMutableDictionaryController.m in Sources */,
+				F53D2C2123A9D36C00F7FDAC /* GCDDispatchBarrierController.m in Sources */,
+				F53D2C2A23A9D38C00F7FDAC /* GCDDispatchAfterController.m in Sources */,
+				F53D2C1B23A9D24500F7FDAC /* GCDDispatchGroupController.m in Sources */,
+				F5256D4D23B3566F00C952FE /* ThreadSafeMutableArrayController.m in Sources */,
+				F53D2C2D23A9D49800F7FDAC /* GCDDispatchTimerController.m in Sources */,
+				F5584D6C23B4A170007CA1BD /* NSArray+YYAdd.m in Sources */,
+				F5256D4A23B354E600C952FE /* ThreadSafeMutableArray.m in Sources */,
+				F53D2C2723A9D38200F7FDAC /* GCDDispatchApplyController.m in Sources */,
+				F53D2C1523A9D18900F7FDAC /* GCDDispatchSyncController.m in Sources */,
+				F53D2C3323AC7EA700F7FDAC /* TDManager.m in Sources */,
+				F53D2BD923A9BC9E00F7FDAC /* SceneDelegate.m in Sources */,
+				F5256D4723B3496A00C952FE /* ThreadSafeMutableDictionary.m in Sources */,
+				F53D2C1E23A9D27900F7FDAC /* GCDDispatchSemaphoreController.m in Sources */,
+				F53D2C0C23A9CFF900F7FDAC /* RootViewController.m in Sources */,
+				F53D2C3023AB212400F7FDAC /* SemaphoreMaxConcurrentCount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D2BE823A9BCA000F7FDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D2BF123A9BCA000F7FDAC /* threadDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D2BF323A9BCA000F7FDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D2BFC23A9BCA000F7FDAC /* threadDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F53D2BEE23A9BCA000F7FDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53D2BD023A9BC9D00F7FDAC /* threadDemo */;
+			targetProxy = F53D2BED23A9BCA000F7FDAC /* PBXContainerItemProxy */;
+		};
+		F53D2BF923A9BCA000F7FDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53D2BD023A9BC9D00F7FDAC /* threadDemo */;
+			targetProxy = F53D2BF823A9BCA000F7FDAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F53D2BDD23A9BC9E00F7FDAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53D2BDE23A9BC9E00F7FDAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F53D2BE223A9BCA000F7FDAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53D2BE323A9BCA000F7FDAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53D2BFE23A9BCA000F7FDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F53D2BFF23A9BCA000F7FDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F53D2C0123A9BCA000F7FDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CACD018FF4817C9A79A041 /* Pods-threadDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = threadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.testcalendar.threadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F53D2C0223A9BCA000F7FDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FD2D9CEBA6C4A1187A4FC0C /* Pods-threadDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = threadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.testcalendar.threadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F53D2C0423A9BCA000F7FDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = threadDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.testcalendar.threadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/threadDemo.app/threadDemo";
+			};
+			name = Debug;
+		};
+		F53D2C0523A9BCA000F7FDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = threadDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.testcalendar.threadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/threadDemo.app/threadDemo";
+			};
+			name = Release;
+		};
+		F53D2C0723A9BCA000F7FDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = threadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.testcalendar.threadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = threadDemo;
+			};
+			name = Debug;
+		};
+		F53D2C0823A9BCA000F7FDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = threadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.testcalendar.threadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = threadDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53D2BCC23A9BC9D00F7FDAC /* Build configuration list for PBXProject "threadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D2BFE23A9BCA000F7FDAC /* Debug */,
+				F53D2BFF23A9BCA000F7FDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53D2C0023A9BCA000F7FDAC /* Build configuration list for PBXNativeTarget "threadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D2C0123A9BCA000F7FDAC /* Debug */,
+				F53D2C0223A9BCA000F7FDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53D2C0323A9BCA000F7FDAC /* Build configuration list for PBXNativeTarget "threadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D2C0423A9BCA000F7FDAC /* Debug */,
+				F53D2C0523A9BCA000F7FDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53D2C0623A9BCA000F7FDAC /* Build configuration list for PBXNativeTarget "threadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D2C0723A9BCA000F7FDAC /* Debug */,
+				F53D2C0823A9BCA000F7FDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F53D2BC923A9BC9D00F7FDAC /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - YYDispatchQueuePool (1.0)
+
+DEPENDENCIES:
+  - YYDispatchQueuePool
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - YYDispatchQueuePool
+
+SPEC CHECKSUMS:
+  YYDispatchQueuePool: 3dfb2274bcc74207688dde8ac6f7bdd46871dd7b
+
+PODFILE CHECKSUM: 18151dd285908d4be245848e5e56218f801d7f11
+
+COCOAPODS: 1.8.4
