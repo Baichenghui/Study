@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056178CD21F947379806DE4223484F51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */; };
+		14CFDC78CD70D0D1AB6FAA128DA0A391 /* Pods-YYAsyncLayerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68319B05A1C0EFE31D7B55B216F2EA /* Pods-YYAsyncLayerDemo-dummy.m */; };
+		2731A9F6C307605CFB5D86BD713CCAC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		2DCD2CC9B2E94598002D1A6E7680885F /* YYTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 382BC731922E7F0A2BD7C22E58E0BB91 /* YYTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FDE97070F292CEA4AC7E29E04D37929 /* YYAsyncLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F89F9A3D8B70028D0E451B102DAC45F /* YYAsyncLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		513B476FCE268C09BDB5819690A2ED81 /* YYSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0897A0B0C4333E21D9B10EF34A06F8D5 /* YYSentinel.m */; };
+		70BA49329CE9A463063BB689E34C51E5 /* YYSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CF1406CBDB6659AB882459C007A0E2 /* YYSentinel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FCADD3A2BDA45C4EFB87D19B934885E /* YYAsyncLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C77E4B92449AF334AE2334996AE1B21A /* YYAsyncLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9109212D1556F075EAF33BFCF2ACB5E /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 594EC30BFFFDDB00F2D905FE9284D8E4 /* YYTransaction.m */; };
+		B5E2DA12ED41218C49B40F88C5445C7E /* YYAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3F21FCDE547E94708502724229D6C9 /* YYAsyncLayer.m */; };
+		EAAEBE609FBDDF0DE44BE5E59CAF1F33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */; };
+		F034CC6F0655DC77F207A8B8278E381F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		F2AF5F08EB793A6B2F3291B3013F1681 /* YYAsyncLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 458D0EAFA85789057FF252E7C340CF8A /* YYAsyncLayer-dummy.m */; };
+		FF004980549A4588C75439072D7C29E7 /* Pods-YYAsyncLayerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 315DDB0865022F47076633AB90255961 /* Pods-YYAsyncLayerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00F7C271C1DB6C7943ADC33E433CF112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E5E0E5A46C33972E65E58B56C1DC0BE;
+			remoteInfo = YYAsyncLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0897A0B0C4333E21D9B10EF34A06F8D5 /* YYSentinel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSentinel.m; path = YYAsyncLayer/YYSentinel.m; sourceTree = "<group>"; };
+		1376E44833428DE435BC7AE86BA4B8F6 /* YYAsyncLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYAsyncLayer-prefix.pch"; sourceTree = "<group>"; };
+		1C4C72062E2A8E082FD88A1BFD3BA9E2 /* YYAsyncLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYAsyncLayer.modulemap; sourceTree = "<group>"; };
+		315DDB0865022F47076633AB90255961 /* Pods-YYAsyncLayerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YYAsyncLayerDemo-umbrella.h"; sourceTree = "<group>"; };
+		382BC731922E7F0A2BD7C22E58E0BB91 /* YYTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTransaction.h; path = YYAsyncLayer/YYTransaction.h; sourceTree = "<group>"; };
+		3A1CBAA1734945B71C8D3CA7DD54AD30 /* Pods-YYAsyncLayerDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YYAsyncLayerDemo-Info.plist"; sourceTree = "<group>"; };
+		3F68319B05A1C0EFE31D7B55B216F2EA /* Pods-YYAsyncLayerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YYAsyncLayerDemo-dummy.m"; sourceTree = "<group>"; };
+		42041CC3C9B66CEEA65A9890E62FF8B9 /* YYAsyncLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYAsyncLayer.framework; path = YYAsyncLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		430158648330B2E2DD1AB2B14E41325F /* Pods-YYAsyncLayerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YYAsyncLayerDemo.modulemap"; sourceTree = "<group>"; };
+		458D0EAFA85789057FF252E7C340CF8A /* YYAsyncLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYAsyncLayer-dummy.m"; sourceTree = "<group>"; };
+		49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		594EC30BFFFDDB00F2D905FE9284D8E4 /* YYTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTransaction.m; path = YYAsyncLayer/YYTransaction.m; sourceTree = "<group>"; };
+		5F89F9A3D8B70028D0E451B102DAC45F /* YYAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAsyncLayer.h; path = YYAsyncLayer/YYAsyncLayer.h; sourceTree = "<group>"; };
+		7001BD78774D23BC8E90181977DE3907 /* YYAsyncLayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYAsyncLayer.xcconfig; sourceTree = "<group>"; };
+		747CE8D3095FEB4B3F98A1093474FD49 /* Pods_YYAsyncLayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YYAsyncLayerDemo.framework; path = "Pods-YYAsyncLayerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CF1406CBDB6659AB882459C007A0E2 /* YYSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSentinel.h; path = YYAsyncLayer/YYSentinel.h; sourceTree = "<group>"; };
+		950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9CF81F28D810E29E61E2C6276F4CBB19 /* Pods-YYAsyncLayerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YYAsyncLayerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AADDFB14AEBE83E300D877247BD1D37F /* Pods-YYAsyncLayerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YYAsyncLayerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B96236A7D26E83A808FE8BA6C4EF7DC2 /* Pods-YYAsyncLayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YYAsyncLayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BEFBF5100FB5E35995A11DB7C63CF048 /* YYAsyncLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYAsyncLayer-Info.plist"; sourceTree = "<group>"; };
+		C77E4B92449AF334AE2334996AE1B21A /* YYAsyncLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYAsyncLayer-umbrella.h"; sourceTree = "<group>"; };
+		CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		DB3F21FCDE547E94708502724229D6C9 /* YYAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAsyncLayer.m; path = YYAsyncLayer/YYAsyncLayer.m; sourceTree = "<group>"; };
+		F3DDFC9BC57976769A12FF0C9E9F9E18 /* Pods-YYAsyncLayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YYAsyncLayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FB08541F3031663079244480D5C0C675 /* Pods-YYAsyncLayerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YYAsyncLayerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8781EB8AE54A7ED1ACD584B2CD3F1C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F034CC6F0655DC77F207A8B8278E381F /* Foundation.framework in Frameworks */,
+				056178CD21F947379806DE4223484F51 /* QuartzCore.framework in Frameworks */,
+				EAAEBE609FBDDF0DE44BE5E59CAF1F33 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A1E8C7CE68A30ED1E6023FE6113622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2731A9F6C307605CFB5D86BD713CCAC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18BABFF9523A33465B5A91496FF0C3D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36923B04C236405AB35FB1140391F727 /* YYAsyncLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5F89F9A3D8B70028D0E451B102DAC45F /* YYAsyncLayer.h */,
+				DB3F21FCDE547E94708502724229D6C9 /* YYAsyncLayer.m */,
+				76CF1406CBDB6659AB882459C007A0E2 /* YYSentinel.h */,
+				0897A0B0C4333E21D9B10EF34A06F8D5 /* YYSentinel.m */,
+				382BC731922E7F0A2BD7C22E58E0BB91 /* YYTransaction.h */,
+				594EC30BFFFDDB00F2D905FE9284D8E4 /* YYTransaction.m */,
+				F016CE98C36BB9D4865D180E837C38D9 /* Support Files */,
+			);
+			name = YYAsyncLayer;
+			path = YYAsyncLayer;
+			sourceTree = "<group>";
+		};
+		4A8A96BC1EE54B833007C6A190286CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747CE8D3095FEB4B3F98A1093474FD49 /* Pods_YYAsyncLayerDemo.framework */,
+				42041CC3C9B66CEEA65A9890E62FF8B9 /* YYAsyncLayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94155C5F98E7C942C7259E968067D065 /* Pods-YYAsyncLayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				430158648330B2E2DD1AB2B14E41325F /* Pods-YYAsyncLayerDemo.modulemap */,
+				AADDFB14AEBE83E300D877247BD1D37F /* Pods-YYAsyncLayerDemo-acknowledgements.markdown */,
+				FB08541F3031663079244480D5C0C675 /* Pods-YYAsyncLayerDemo-acknowledgements.plist */,
+				3F68319B05A1C0EFE31D7B55B216F2EA /* Pods-YYAsyncLayerDemo-dummy.m */,
+				9CF81F28D810E29E61E2C6276F4CBB19 /* Pods-YYAsyncLayerDemo-frameworks.sh */,
+				3A1CBAA1734945B71C8D3CA7DD54AD30 /* Pods-YYAsyncLayerDemo-Info.plist */,
+				315DDB0865022F47076633AB90255961 /* Pods-YYAsyncLayerDemo-umbrella.h */,
+				F3DDFC9BC57976769A12FF0C9E9F9E18 /* Pods-YYAsyncLayerDemo.debug.xcconfig */,
+				B96236A7D26E83A808FE8BA6C4EF7DC2 /* Pods-YYAsyncLayerDemo.release.xcconfig */,
+			);
+			name = "Pods-YYAsyncLayerDemo";
+			path = "Target Support Files/Pods-YYAsyncLayerDemo";
+			sourceTree = "<group>";
+		};
+		ABED7850B222640E68251B91CE73464A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36923B04C236405AB35FB1140391F727 /* YYAsyncLayer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5966B29C333BC4C0D4FB0D837871DAF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94155C5F98E7C942C7259E968067D065 /* Pods-YYAsyncLayerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C18BABFF9523A33465B5A91496FF0C3D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */,
+				CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */,
+				49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				ABED7850B222640E68251B91CE73464A /* Pods */,
+				4A8A96BC1EE54B833007C6A190286CFB /* Products */,
+				B5966B29C333BC4C0D4FB0D837871DAF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F016CE98C36BB9D4865D180E837C38D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C4C72062E2A8E082FD88A1BFD3BA9E2 /* YYAsyncLayer.modulemap */,
+				7001BD78774D23BC8E90181977DE3907 /* YYAsyncLayer.xcconfig */,
+				458D0EAFA85789057FF252E7C340CF8A /* YYAsyncLayer-dummy.m */,
+				BEFBF5100FB5E35995A11DB7C63CF048 /* YYAsyncLayer-Info.plist */,
+				1376E44833428DE435BC7AE86BA4B8F6 /* YYAsyncLayer-prefix.pch */,
+				C77E4B92449AF334AE2334996AE1B21A /* YYAsyncLayer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYAsyncLayer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4E14FB9437E4FC646C871AB274454B5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF004980549A4588C75439072D7C29E7 /* Pods-YYAsyncLayerDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79959C91E69A34834B2A96D684DD5C8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCADD3A2BDA45C4EFB87D19B934885E /* YYAsyncLayer-umbrella.h in Headers */,
+				3FDE97070F292CEA4AC7E29E04D37929 /* YYAsyncLayer.h in Headers */,
+				70BA49329CE9A463063BB689E34C51E5 /* YYSentinel.h in Headers */,
+				2DCD2CC9B2E94598002D1A6E7680885F /* YYTransaction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E5E0E5A46C33972E65E58B56C1DC0BE /* YYAsyncLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10D108695C7F5887B1838FF36B69D56D /* Build configuration list for PBXNativeTarget "YYAsyncLayer" */;
+			buildPhases = (
+				79959C91E69A34834B2A96D684DD5C8E /* Headers */,
+				8DA11A086D7CE7949EF008F13BF278A5 /* Sources */,
+				8781EB8AE54A7ED1ACD584B2CD3F1C51 /* Frameworks */,
+				32FC88F08215032DF26AE96234B8C184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYAsyncLayer;
+			productName = YYAsyncLayer;
+			productReference = 42041CC3C9B66CEEA65A9890E62FF8B9 /* YYAsyncLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE518553C29F0E8B9B24AD69FD3AD203 /* Pods-YYAsyncLayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77596B5034F9AD7A6E956D8B63EC8E7 /* Build configuration list for PBXNativeTarget "Pods-YYAsyncLayerDemo" */;
+			buildPhases = (
+				4E14FB9437E4FC646C871AB274454B5B /* Headers */,
+				A2C5D1C6E92B1EE9BC744417C362A1B4 /* Sources */,
+				D6A1E8C7CE68A30ED1E6023FE6113622 /* Frameworks */,
+				3160392B8BAEBD7EAD29280B22ECE670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				969508AE64F584A3C048752A6D44E48B /* PBXTargetDependency */,
+			);
+			name = "Pods-YYAsyncLayerDemo";
+			productName = "Pods-YYAsyncLayerDemo";
+			productReference = 747CE8D3095FEB4B3F98A1093474FD49 /* Pods_YYAsyncLayerDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4A8A96BC1EE54B833007C6A190286CFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE518553C29F0E8B9B24AD69FD3AD203 /* Pods-YYAsyncLayerDemo */,
+				3E5E0E5A46C33972E65E58B56C1DC0BE /* YYAsyncLayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3160392B8BAEBD7EAD29280B22ECE670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32FC88F08215032DF26AE96234B8C184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DA11A086D7CE7949EF008F13BF278A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2AF5F08EB793A6B2F3291B3013F1681 /* YYAsyncLayer-dummy.m in Sources */,
+				B5E2DA12ED41218C49B40F88C5445C7E /* YYAsyncLayer.m in Sources */,
+				513B476FCE268C09BDB5819690A2ED81 /* YYSentinel.m in Sources */,
+				A9109212D1556F075EAF33BFCF2ACB5E /* YYTransaction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C5D1C6E92B1EE9BC744417C362A1B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CFDC78CD70D0D1AB6FAA128DA0A391 /* Pods-YYAsyncLayerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		969508AE64F584A3C048752A6D44E48B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYAsyncLayer;
+			target = 3E5E0E5A46C33972E65E58B56C1DC0BE /* YYAsyncLayer */;
+			targetProxy = 00F7C271C1DB6C7943ADC33E433CF112 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0165977836F759CFEB81C6E8A9FD5B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96236A7D26E83A808FE8BA6C4EF7DC2 /* Pods-YYAsyncLayerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YYAsyncLayerDemo/Pods-YYAsyncLayerDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YYAsyncLayerDemo/Pods-YYAsyncLayerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		08E24EAAB9263B26FFF7FA7C679923C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DDFC9BC57976769A12FF0C9E9F9E18 /* Pods-YYAsyncLayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YYAsyncLayerDemo/Pods-YYAsyncLayerDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YYAsyncLayerDemo/Pods-YYAsyncLayerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		27ED76BAF0E479F31443586DD01FC1B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7001BD78774D23BC8E90181977DE3907 /* YYAsyncLayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYAsyncLayer/YYAsyncLayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYAsyncLayer/YYAsyncLayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYAsyncLayer/YYAsyncLayer.modulemap";
+				PRODUCT_MODULE_NAME = YYAsyncLayer;
+				PRODUCT_NAME = YYAsyncLayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F2995888115C9A623F2EC6FC0D68B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7001BD78774D23BC8E90181977DE3907 /* YYAsyncLayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYAsyncLayer/YYAsyncLayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYAsyncLayer/YYAsyncLayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYAsyncLayer/YYAsyncLayer.modulemap";
+				PRODUCT_MODULE_NAME = YYAsyncLayer;
+				PRODUCT_NAME = YYAsyncLayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10D108695C7F5887B1838FF36B69D56D /* Build configuration list for PBXNativeTarget "YYAsyncLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F2995888115C9A623F2EC6FC0D68B78 /* Debug */,
+				27ED76BAF0E479F31443586DD01FC1B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B77596B5034F9AD7A6E956D8B63EC8E7 /* Build configuration list for PBXNativeTarget "Pods-YYAsyncLayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E24EAAB9263B26FFF7FA7C679923C0 /* Debug */,
+				0165977836F759CFEB81C6E8A9FD5B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
