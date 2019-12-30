@@ -22,10 +22,9 @@
     
     self.title = @"CoreGraphics";
     _lists = @[
-        @{ @"对列":
-               @[@{@"GCDSerialQueue":@"Serial Dispatch Queue"},
-                @{@"GCDConcurrentQueue":@"Concurrent Dispatch Queue"} ]
-        }
+        @{ @"自定义视图":
+               @[@{@"CGDQuartzView":@"drawRect 中绘制自定义视图"} ]
+        } 
     ];
      
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];

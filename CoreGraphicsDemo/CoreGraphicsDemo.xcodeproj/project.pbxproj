@@ -17,6 +17,8 @@
 		F5584DAB23B5CFE5007CA1BD /* CoreGraphicsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5584DAA23B5CFE5007CA1BD /* CoreGraphicsDemoTests.m */; };
 		F5584DB623B5CFE5007CA1BD /* CoreGraphicsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5584DB523B5CFE5007CA1BD /* CoreGraphicsDemoUITests.m */; };
 		F5584DC623B5DB1F007CA1BD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5584DC523B5DB1F007CA1BD /* RootViewController.m */; };
+		F5584DCA23B5F711007CA1BD /* CGDQuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5584DC923B5F711007CA1BD /* CGDQuartzView.m */; };
+		F5584DCD23B5F7DA007CA1BD /* CGDQuartzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5584DCC23B5F7DA007CA1BD /* CGDQuartzViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		F5584DB723B5CFE5007CA1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5584DC423B5DB1F007CA1BD /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F5584DC523B5DB1F007CA1BD /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F5584DC823B5F711007CA1BD /* CGDQuartzView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDQuartzView.h; sourceTree = "<group>"; };
+		F5584DC923B5F711007CA1BD /* CGDQuartzView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDQuartzView.m; sourceTree = "<group>"; };
+		F5584DCB23B5F7DA007CA1BD /* CGDQuartzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDQuartzViewController.h; sourceTree = "<group>"; };
+		F5584DCC23B5F7DA007CA1BD /* CGDQuartzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDQuartzViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		F5584D8D23B5CFDF007CA1BD /* CoreGraphicsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5584DC723B5F6E6007CA1BD /* View */,
 				F5584DC323B5DAE3007CA1BD /* Controller */,
 				F5584D8E23B5CFDF007CA1BD /* AppDelegate.h */,
 				F5584D8F23B5CFDF007CA1BD /* AppDelegate.m */,
@@ -146,8 +153,19 @@
 			children = (
 				F5584DC423B5DB1F007CA1BD /* RootViewController.h */,
 				F5584DC523B5DB1F007CA1BD /* RootViewController.m */,
+				F5584DCB23B5F7DA007CA1BD /* CGDQuartzViewController.h */,
+				F5584DCC23B5F7DA007CA1BD /* CGDQuartzViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5584DC723B5F6E6007CA1BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5584DC823B5F711007CA1BD /* CGDQuartzView.h */,
+				F5584DC923B5F711007CA1BD /* CGDQuartzView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5584DCA23B5F711007CA1BD /* CGDQuartzView.m in Sources */,
 				F5584D9623B5CFDF007CA1BD /* ViewController.m in Sources */,
 				F5584D9023B5CFDF007CA1BD /* AppDelegate.m in Sources */,
+				F5584DCD23B5F7DA007CA1BD /* CGDQuartzViewController.m in Sources */,
 				F5584DA123B5CFE4007CA1BD /* main.m in Sources */,
 				F5584D9323B5CFDF007CA1BD /* SceneDelegate.m in Sources */,
 				F5584DC623B5DB1F007CA1BD /* RootViewController.m in Sources */,
