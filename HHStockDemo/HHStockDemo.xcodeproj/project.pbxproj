@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4B538326566FFBAFDD53E22 /* Pods_HHStockDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */; };
 		F503339F23C8610800D75941 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F503339E23C8610800D75941 /* AppDelegate.m */; };
 		F50333A223C8610800D75941 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333A123C8610800D75941 /* SceneDelegate.m */; };
 		F50333A523C8610800D75941 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333A423C8610800D75941 /* ViewController.m */; };
@@ -21,6 +22,15 @@
 		F50333F023C8654C00D75941 /* HHStock.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333EF23C8654C00D75941 /* HHStock.m */; };
 		F50333F423C865ED00D75941 /* HHLinePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333F323C865ED00D75941 /* HHLinePositionModel.m */; };
 		F50333F723C867C900D75941 /* HHVolumePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333F623C867C900D75941 /* HHVolumePositionModel.m */; };
+		F588977A23C86F970002F3DA /* dayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F588977923C86F970002F3DA /* dayData.plist */; };
+		F588977D23C86FD10002F3DA /* AppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F588977B23C86FD10002F3DA /* AppServer.m */; };
+		F588978023C870540002F3DA /* HDLineDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F588977F23C870540002F3DA /* HDLineDataModel.m */; };
+		F588978323C872A60002F3DA /* HHStockView_Kline.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978223C872A60002F3DA /* HHStockView_Kline.m */; };
+		F588978623C872E80002F3DA /* HHStockViewMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978523C872E70002F3DA /* HHStockViewMaskView.m */; };
+		F588978923C877AF0002F3DA /* HHKlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978823C877AF0002F3DA /* HHKlineView.m */; };
+		F588978C23C878280002F3DA /* HHKlineVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978B23C878280002F3DA /* HHKlineVolumeView.m */; };
+		F588978F23C8783E0002F3DA /* HHKlineMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978E23C8783E0002F3DA /* HHKlineMaskView.m */; };
+		F588979223C878570002F3DA /* HHStockScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588979123C878570002F3DA /* HHStockScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162116BDDCBFA53C73D9747D /* Pods-HHStockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHStockDemo.release.xcconfig"; path = "Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHStockDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BB16728A9435C45E17CD5D /* Pods-HHStockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHStockDemo.debug.xcconfig"; path = "Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F503339A23C8610800D75941 /* HHStockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHStockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F503339D23C8610800D75941 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F503339E23C8610800D75941 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,11 +79,28 @@
 		F50333E323C8637E00D75941 /* HHStockVariable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStockVariable.m; sourceTree = "<group>"; };
 		F50333EE23C8654C00D75941 /* HHStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStock.h; sourceTree = "<group>"; };
 		F50333EF23C8654C00D75941 /* HHStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStock.m; sourceTree = "<group>"; };
-		F50333F123C8658600D75941 /* HHLineDataModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHLineDataModelProtocol.h; sourceTree = "<group>"; };
+		F50333F123C8658600D75941 /* HHDataModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDataModelProtocol.h; sourceTree = "<group>"; };
 		F50333F223C865ED00D75941 /* HHLinePositionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHLinePositionModel.h; sourceTree = "<group>"; };
 		F50333F323C865ED00D75941 /* HHLinePositionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHLinePositionModel.m; sourceTree = "<group>"; };
 		F50333F523C867C900D75941 /* HHVolumePositionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHVolumePositionModel.h; sourceTree = "<group>"; };
 		F50333F623C867C900D75941 /* HHVolumePositionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHVolumePositionModel.m; sourceTree = "<group>"; };
+		F588977923C86F970002F3DA /* dayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dayData.plist; sourceTree = "<group>"; };
+		F588977B23C86FD10002F3DA /* AppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppServer.m; sourceTree = "<group>"; };
+		F588977C23C86FD10002F3DA /* AppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppServer.h; sourceTree = "<group>"; };
+		F588977E23C870540002F3DA /* HDLineDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDLineDataModel.h; sourceTree = "<group>"; };
+		F588977F23C870540002F3DA /* HDLineDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDLineDataModel.m; sourceTree = "<group>"; };
+		F588978123C872A60002F3DA /* HHStockView_Kline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStockView_Kline.h; sourceTree = "<group>"; };
+		F588978223C872A60002F3DA /* HHStockView_Kline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStockView_Kline.m; sourceTree = "<group>"; };
+		F588978423C872E70002F3DA /* HHStockViewMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStockViewMaskView.h; sourceTree = "<group>"; };
+		F588978523C872E70002F3DA /* HHStockViewMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStockViewMaskView.m; sourceTree = "<group>"; };
+		F588978723C877AF0002F3DA /* HHKlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHKlineView.h; sourceTree = "<group>"; };
+		F588978823C877AF0002F3DA /* HHKlineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKlineView.m; sourceTree = "<group>"; };
+		F588978A23C878280002F3DA /* HHKlineVolumeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHKlineVolumeView.h; sourceTree = "<group>"; };
+		F588978B23C878280002F3DA /* HHKlineVolumeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKlineVolumeView.m; sourceTree = "<group>"; };
+		F588978D23C8783E0002F3DA /* HHKlineMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHKlineMaskView.h; sourceTree = "<group>"; };
+		F588978E23C8783E0002F3DA /* HHKlineMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKlineMaskView.m; sourceTree = "<group>"; };
+		F588979023C878570002F3DA /* HHStockScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStockScrollView.h; sourceTree = "<group>"; };
+		F588979123C878570002F3DA /* HHStockScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStockScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B538326566FFBAFDD53E22 /* Pods_HHStockDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3778118FF8E350B1DFAF481F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EED457BD84EB7A6F488F80EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB16728A9435C45E17CD5D /* Pods-HHStockDemo.debug.xcconfig */,
+				162116BDDCBFA53C73D9747D /* Pods-HHStockDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F503339123C8610800D75941 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +153,8 @@
 				F50333B823C8610D00D75941 /* HHStockDemoTests */,
 				F50333C323C8610D00D75941 /* HHStockDemoUITests */,
 				F503339B23C8610800D75941 /* Products */,
+				EED457BD84EB7A6F488F80EA /* Pods */,
+				3778118FF8E350B1DFAF481F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +176,13 @@
 				F503339E23C8610800D75941 /* AppDelegate.m */,
 				F50333A023C8610800D75941 /* SceneDelegate.h */,
 				F50333A123C8610800D75941 /* SceneDelegate.m */,
+				F588977C23C86FD10002F3DA /* AppServer.h */,
+				F588977B23C86FD10002F3DA /* AppServer.m */,
+				F588977E23C870540002F3DA /* HDLineDataModel.h */,
+				F588977F23C870540002F3DA /* HDLineDataModel.m */,
 				F50333A323C8610800D75941 /* ViewController.h */,
 				F50333A423C8610800D75941 /* ViewController.m */,
+				F588977923C86F970002F3DA /* dayData.plist */,
 				F50333A623C8610800D75941 /* Main.storyboard */,
 				F50333A923C8610D00D75941 /* Assets.xcassets */,
 				F50333AB23C8610D00D75941 /* LaunchScreen.storyboard */,
@@ -227,6 +282,8 @@
 				F50333EC23C864B300D75941 /* ScrollView */,
 				F50333EB23C864A700D75941 /* MaskView */,
 				F50333EA23C8649C00D75941 /* LineView */,
+				F588978123C872A60002F3DA /* HHStockView_Kline.h */,
+				F588978223C872A60002F3DA /* HHStockView_Kline.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,7 +291,7 @@
 		F50333E723C8647B00D75941 /* DataProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				F50333F123C8658600D75941 /* HHLineDataModelProtocol.h */,
+				F50333F123C8658600D75941 /* HHDataModelProtocol.h */,
 			);
 			path = DataProtocol;
 			sourceTree = "<group>";
@@ -260,6 +317,9 @@
 		F50333EA23C8649C00D75941 /* LineView */ = {
 			isa = PBXGroup;
 			children = (
+				F50333F823C868E700D75941 /* KlineView */,
+				F50333FA23C8690400D75941 /* VolumeView */,
+				F50333F923C868F500D75941 /* MaskView */,
 			);
 			path = LineView;
 			sourceTree = "<group>";
@@ -267,6 +327,8 @@
 		F50333EB23C864A700D75941 /* MaskView */ = {
 			isa = PBXGroup;
 			children = (
+				F588978423C872E70002F3DA /* HHStockViewMaskView.h */,
+				F588978523C872E70002F3DA /* HHStockViewMaskView.m */,
 			);
 			path = MaskView;
 			sourceTree = "<group>";
@@ -274,8 +336,37 @@
 		F50333EC23C864B300D75941 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				F588979023C878570002F3DA /* HHStockScrollView.h */,
+				F588979123C878570002F3DA /* HHStockScrollView.m */,
 			);
 			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		F50333F823C868E700D75941 /* KlineView */ = {
+			isa = PBXGroup;
+			children = (
+				F588978723C877AF0002F3DA /* HHKlineView.h */,
+				F588978823C877AF0002F3DA /* HHKlineView.m */,
+			);
+			path = KlineView;
+			sourceTree = "<group>";
+		};
+		F50333F923C868F500D75941 /* MaskView */ = {
+			isa = PBXGroup;
+			children = (
+				F588978D23C8783E0002F3DA /* HHKlineMaskView.h */,
+				F588978E23C8783E0002F3DA /* HHKlineMaskView.m */,
+			);
+			path = MaskView;
+			sourceTree = "<group>";
+		};
+		F50333FA23C8690400D75941 /* VolumeView */ = {
+			isa = PBXGroup;
+			children = (
+				F588978A23C878280002F3DA /* HHKlineVolumeView.h */,
+				F588978B23C878280002F3DA /* HHKlineVolumeView.m */,
+			);
+			path = VolumeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +376,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F50333C923C8610D00D75941 /* Build configuration list for PBXNativeTarget "HHStockDemo" */;
 			buildPhases = (
+				0C135A6D6B0B69331DCF89F9 /* [CP] Check Pods Manifest.lock */,
 				F503339623C8610800D75941 /* Sources */,
 				F503339723C8610800D75941 /* Frameworks */,
 				F503339823C8610800D75941 /* Resources */,
+				A83DCFE6496051D67C97A0A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +477,7 @@
 				F50333AD23C8610D00D75941 /* LaunchScreen.storyboard in Resources */,
 				F50333AA23C8610D00D75941 /* Assets.xcassets in Resources */,
 				F50333A823C8610800D75941 /* Main.storyboard in Resources */,
+				F588977A23C86F970002F3DA /* dayData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,13 +497,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C135A6D6B0B69331DCF89F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHStockDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83DCFE6496051D67C97A0A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F503339623C8610800D75941 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F588977D23C86FD10002F3DA /* AppServer.m in Sources */,
+				F588978623C872E80002F3DA /* HHStockViewMaskView.m in Sources */,
 				F50333E423C8637E00D75941 /* HHStockVariable.m in Sources */,
 				F50333E123C8632100D75941 /* UIColor+HHStock.m in Sources */,
+				F588978323C872A60002F3DA /* HHStockView_Kline.m in Sources */,
+				F588978023C870540002F3DA /* HDLineDataModel.m in Sources */,
+				F588978F23C8783E0002F3DA /* HHKlineMaskView.m in Sources */,
+				F588978923C877AF0002F3DA /* HHKlineView.m in Sources */,
+				F588978C23C878280002F3DA /* HHKlineVolumeView.m in Sources */,
+				F588979223C878570002F3DA /* HHStockScrollView.m in Sources */,
 				F50333A523C8610800D75941 /* ViewController.m in Sources */,
 				F503339F23C8610800D75941 /* AppDelegate.m in Sources */,
 				F50333F023C8654C00D75941 /* HHStock.m in Sources */,
@@ -583,6 +727,7 @@
 		};
 		F50333CA23C8610D00D75941 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1BB16728A9435C45E17CD5D /* Pods-HHStockDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,6 +745,7 @@
 		};
 		F50333CB23C8610D00D75941 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162116BDDCBFA53C73D9747D /* Pods-HHStockDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

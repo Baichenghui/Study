@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '10.0'
+use_frameworks!
+ 
+target 'HHStockDemo' do 
+	pod 'Masonry' ,:inhibit_warnings => true
+end
+ 

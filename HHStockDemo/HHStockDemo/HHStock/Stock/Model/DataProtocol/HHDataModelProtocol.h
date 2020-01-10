@@ -7,14 +7,14 @@
 //
  
 //提供K线数据源
-@protocol HHLineDataModelProtocol <NSObject>
+@protocol HHDataModelProtocol <NSObject>
 
 @required
  
 /**
  前一个数据
  */
-@property (nonatomic, readonly) id<HHLineDataModelProtocol> preDataModel;
+@property (nonatomic, readonly) id<HHDataModelProtocol> preDataModel;
 /**
  *  开盘价
  */
