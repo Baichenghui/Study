@@ -22,10 +22,46 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.title = @"算法";
+    self.title = @"图解算法学习Demo";
     _lists = @[
         @{
-            @"设置视图阴影":@[@{@"ShadowForView":@"各视图设置阴影"}]
+            @"算法简介":@[@{@"BinarySearch":@"二分查找"}]
+        },
+        @{
+            @"选择排序":@[@{@"SelectionSort":@"选择排序"}]
+        },
+        @{
+            @"递归":@[@{@"Recursion":@"递归"}]
+        },
+        @{
+            @"快速排序":@[@{@"QuickSort":@"二分查找"}]
+        },
+        @{
+            @"散列表":@[@{@"HashTable":@"散列表"}]
+        },
+        @{
+            @"广度优先搜索":@[@{@"BreadthFirstSearch":@"广度优先搜索"}]
+        },
+        @{
+            @"狄克斯特拉算法":@[@{@"DixstraAlgorithm":@"狄克斯特拉算法"}]
+        },
+        @{
+            @"贪婪算法":@[@{@"GreedyAlgorithm":@"贪婪算法"}]
+        },
+        @{
+            @"K最近邻算法":@[@{@"KNearestNeighborAlgorithm":@"K最近邻算法"}]
+        },
+        @{
+            @"接下来如何做":@[@{@"Tree":@"树"}
+                        ,@{@"InvertedIndex":@"反向索引"}
+                        ,@{@"ParallelAlgorithm":@"并行算法"}
+                        ,@{@"FourierTransform":@"傅里叶变换"}
+                        ,@{@"MapReduce":@"MapReduce"}
+                        ,@{@"HyperogLog":@"HyperogLog"}
+                        ,@{@"ShaAlgorithm":@"SHA算法"}
+                        ,@{@"HashTableAlgorithm":@"k局部敏感的散列算法"}
+                        ,@{@"DiffeHellman":@"DiffeHellman密钥交换"}
+                        ,@{@"LinearProgramming":@"线性规划"}]
         }
     ];
      
@@ -76,10 +112,11 @@
     NSArray <NSDictionary *> *rows = values.firstObject;
      
     NSString *name = rows[indexPath.row].allKeys.firstObject;
+    NSString *title = rows[indexPath.row].allValues.firstObject;
     NSString *className = [name stringByAppendingString:@"Controller"];
     Class class = NSClassFromString(className);
     UIViewController *controller = [[class alloc] init];
-    controller.title = name;
+    controller.title = title;
     [self.navigationController pushViewController:controller animated:YES];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DiffeHellmanController.h
 //  AlgorithmDemo
 //
 //  Created by 白成慧&瑞瑞 on 2020/1/7.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface DiffeHellmanController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

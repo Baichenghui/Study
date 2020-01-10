@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9F470A5323C4B8AC007FBE12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A5223C4B8AC007FBE12 /* AppDelegate.m */; };
 		9F470A5623C4B8AC007FBE12 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A5523C4B8AC007FBE12 /* SceneDelegate.m */; };
-		9F470A5923C4B8AC007FBE12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A5823C4B8AC007FBE12 /* ViewController.m */; };
 		9F470A5C23C4B8AC007FBE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F470A5A23C4B8AC007FBE12 /* Main.storyboard */; };
 		9F470A5E23C4B8AE007FBE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F470A5D23C4B8AE007FBE12 /* Assets.xcassets */; };
 		9F470A6123C4B8AE007FBE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F470A5F23C4B8AE007FBE12 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,25 @@
 		9F470A6E23C4B8AE007FBE12 /* AlgorithmDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A6D23C4B8AE007FBE12 /* AlgorithmDemoTests.m */; };
 		9F470A7923C4B8AE007FBE12 /* AlgorithmDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A7823C4B8AE007FBE12 /* AlgorithmDemoUITests.m */; };
 		9F470A8823C4B920007FBE12 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A8723C4B920007FBE12 /* RootViewController.m */; };
+		9F470A8B23C4BAF2007FBE12 /* BinarySearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A8A23C4BAF2007FBE12 /* BinarySearchController.m */; };
+		9F470A8F23C4BDC5007FBE12 /* SelectionSortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A8E23C4BDC5007FBE12 /* SelectionSortController.m */; };
+		9F470A9223C4BE1A007FBE12 /* RecursionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A9123C4BE1A007FBE12 /* RecursionController.m */; };
+		9F470A9523C4BEAD007FBE12 /* QuickSortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A9423C4BEAD007FBE12 /* QuickSortController.m */; };
+		9F470A9823C4BFD4007FBE12 /* HashTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A9723C4BFD4007FBE12 /* HashTableController.m */; };
+		9F470A9B23C4BFFD007FBE12 /* BreadthFirstSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A9A23C4BFFD007FBE12 /* BreadthFirstSearchController.m */; };
+		9F470A9E23C4C017007FBE12 /* DixstraAlgorithmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470A9D23C4C017007FBE12 /* DixstraAlgorithmController.m */; };
+		9F470AA123C4C031007FBE12 /* GreedyAlgorithmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AA023C4C031007FBE12 /* GreedyAlgorithmController.m */; };
+		9F470AA423C4C055007FBE12 /* KNearestNeighborAlgorithmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AA323C4C055007FBE12 /* KNearestNeighborAlgorithmController.m */; };
+		9F470AA723C4C075007FBE12 /* TreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AA623C4C075007FBE12 /* TreeController.m */; };
+		9F470AAA23C4C0C5007FBE12 /* InvertedIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AA923C4C0C5007FBE12 /* InvertedIndexController.m */; };
+		9F470AAD23C4C260007FBE12 /* ParallelAlgorithmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AAC23C4C260007FBE12 /* ParallelAlgorithmController.m */; };
+		9F470AB023C4C26A007FBE12 /* FourierTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AAF23C4C26A007FBE12 /* FourierTransformController.m */; };
+		9F470AB323C4C274007FBE12 /* MapReduceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AB223C4C274007FBE12 /* MapReduceController.m */; };
+		9F470AB623C4C27D007FBE12 /* HyperogLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AB523C4C27D007FBE12 /* HyperogLogController.m */; };
+		9F470AB923C4C287007FBE12 /* ShaAlgorithmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AB823C4C287007FBE12 /* ShaAlgorithmController.m */; };
+		9F470ABC23C4C291007FBE12 /* HashTableAlgorithmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470ABB23C4C291007FBE12 /* HashTableAlgorithmController.m */; };
+		9F470ABF23C4C29B007FBE12 /* DiffeHellmanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470ABE23C4C29B007FBE12 /* DiffeHellmanController.m */; };
+		9F470AC223C4C2A5007FBE12 /* LinearProgrammingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AC123C4C2A5007FBE12 /* LinearProgrammingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +60,6 @@
 		9F470A5223C4B8AC007FBE12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9F470A5423C4B8AC007FBE12 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		9F470A5523C4B8AC007FBE12 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		9F470A5723C4B8AC007FBE12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F470A5823C4B8AC007FBE12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F470A5B23C4B8AC007FBE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F470A5D23C4B8AE007FBE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F470A6023C4B8AE007FBE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +73,44 @@
 		9F470A7A23C4B8AE007FBE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F470A8623C4B91F007FBE12 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		9F470A8723C4B920007FBE12 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9F470A8923C4BAF2007FBE12 /* BinarySearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearchController.h; sourceTree = "<group>"; };
+		9F470A8A23C4BAF2007FBE12 /* BinarySearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinarySearchController.m; sourceTree = "<group>"; };
+		9F470A8D23C4BDC5007FBE12 /* SelectionSortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionSortController.h; sourceTree = "<group>"; };
+		9F470A8E23C4BDC5007FBE12 /* SelectionSortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionSortController.m; sourceTree = "<group>"; };
+		9F470A9023C4BE1A007FBE12 /* RecursionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursionController.h; sourceTree = "<group>"; };
+		9F470A9123C4BE1A007FBE12 /* RecursionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursionController.m; sourceTree = "<group>"; };
+		9F470A9323C4BEAD007FBE12 /* QuickSortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSortController.h; sourceTree = "<group>"; };
+		9F470A9423C4BEAD007FBE12 /* QuickSortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortController.m; sourceTree = "<group>"; };
+		9F470A9623C4BFD4007FBE12 /* HashTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTableController.h; sourceTree = "<group>"; };
+		9F470A9723C4BFD4007FBE12 /* HashTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashTableController.m; sourceTree = "<group>"; };
+		9F470A9923C4BFFD007FBE12 /* BreadthFirstSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreadthFirstSearchController.h; sourceTree = "<group>"; };
+		9F470A9A23C4BFFD007FBE12 /* BreadthFirstSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreadthFirstSearchController.m; sourceTree = "<group>"; };
+		9F470A9C23C4C017007FBE12 /* DixstraAlgorithmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DixstraAlgorithmController.h; sourceTree = "<group>"; };
+		9F470A9D23C4C017007FBE12 /* DixstraAlgorithmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DixstraAlgorithmController.m; sourceTree = "<group>"; };
+		9F470A9F23C4C031007FBE12 /* GreedyAlgorithmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreedyAlgorithmController.h; sourceTree = "<group>"; };
+		9F470AA023C4C031007FBE12 /* GreedyAlgorithmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreedyAlgorithmController.m; sourceTree = "<group>"; };
+		9F470AA223C4C055007FBE12 /* KNearestNeighborAlgorithmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNearestNeighborAlgorithmController.h; sourceTree = "<group>"; };
+		9F470AA323C4C055007FBE12 /* KNearestNeighborAlgorithmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNearestNeighborAlgorithmController.m; sourceTree = "<group>"; };
+		9F470AA523C4C075007FBE12 /* TreeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeController.h; sourceTree = "<group>"; };
+		9F470AA623C4C075007FBE12 /* TreeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeController.m; sourceTree = "<group>"; };
+		9F470AA823C4C0C5007FBE12 /* InvertedIndexController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvertedIndexController.h; sourceTree = "<group>"; };
+		9F470AA923C4C0C5007FBE12 /* InvertedIndexController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvertedIndexController.m; sourceTree = "<group>"; };
+		9F470AAB23C4C260007FBE12 /* ParallelAlgorithmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParallelAlgorithmController.h; sourceTree = "<group>"; };
+		9F470AAC23C4C260007FBE12 /* ParallelAlgorithmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallelAlgorithmController.m; sourceTree = "<group>"; };
+		9F470AAE23C4C26A007FBE12 /* FourierTransformController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourierTransformController.h; sourceTree = "<group>"; };
+		9F470AAF23C4C26A007FBE12 /* FourierTransformController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourierTransformController.m; sourceTree = "<group>"; };
+		9F470AB123C4C274007FBE12 /* MapReduceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapReduceController.h; sourceTree = "<group>"; };
+		9F470AB223C4C274007FBE12 /* MapReduceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapReduceController.m; sourceTree = "<group>"; };
+		9F470AB423C4C27D007FBE12 /* HyperogLogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperogLogController.h; sourceTree = "<group>"; };
+		9F470AB523C4C27D007FBE12 /* HyperogLogController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperogLogController.m; sourceTree = "<group>"; };
+		9F470AB723C4C287007FBE12 /* ShaAlgorithmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaAlgorithmController.h; sourceTree = "<group>"; };
+		9F470AB823C4C287007FBE12 /* ShaAlgorithmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShaAlgorithmController.m; sourceTree = "<group>"; };
+		9F470ABA23C4C291007FBE12 /* HashTableAlgorithmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTableAlgorithmController.h; sourceTree = "<group>"; };
+		9F470ABB23C4C291007FBE12 /* HashTableAlgorithmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashTableAlgorithmController.m; sourceTree = "<group>"; };
+		9F470ABD23C4C29B007FBE12 /* DiffeHellmanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffeHellmanController.h; sourceTree = "<group>"; };
+		9F470ABE23C4C29B007FBE12 /* DiffeHellmanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffeHellmanController.m; sourceTree = "<group>"; };
+		9F470AC023C4C2A5007FBE12 /* LinearProgrammingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearProgrammingController.h; sourceTree = "<group>"; };
+		9F470AC123C4C2A5007FBE12 /* LinearProgrammingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearProgrammingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +161,11 @@
 		9F470A5023C4B8AC007FBE12 /* AlgorithmDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F470A8C23C4BAF6007FBE12 /* Controller */,
 				9F470A5123C4B8AC007FBE12 /* AppDelegate.h */,
 				9F470A5223C4B8AC007FBE12 /* AppDelegate.m */,
 				9F470A5423C4B8AC007FBE12 /* SceneDelegate.h */,
 				9F470A5523C4B8AC007FBE12 /* SceneDelegate.m */,
-				9F470A8623C4B91F007FBE12 /* RootViewController.h */,
-				9F470A8723C4B920007FBE12 /* RootViewController.m */,
-				9F470A5723C4B8AC007FBE12 /* ViewController.h */,
-				9F470A5823C4B8AC007FBE12 /* ViewController.m */,
 				9F470A5A23C4B8AC007FBE12 /* Main.storyboard */,
 				9F470A5D23C4B8AE007FBE12 /* Assets.xcassets */,
 				9F470A5F23C4B8AE007FBE12 /* LaunchScreen.storyboard */,
@@ -140,6 +191,53 @@
 				9F470A7A23C4B8AE007FBE12 /* Info.plist */,
 			);
 			path = AlgorithmDemoUITests;
+			sourceTree = "<group>";
+		};
+		9F470A8C23C4BAF6007FBE12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F470A8623C4B91F007FBE12 /* RootViewController.h */,
+				9F470A8723C4B920007FBE12 /* RootViewController.m */,
+				9F470A8923C4BAF2007FBE12 /* BinarySearchController.h */,
+				9F470A8A23C4BAF2007FBE12 /* BinarySearchController.m */,
+				9F470A8D23C4BDC5007FBE12 /* SelectionSortController.h */,
+				9F470A8E23C4BDC5007FBE12 /* SelectionSortController.m */,
+				9F470A9023C4BE1A007FBE12 /* RecursionController.h */,
+				9F470A9123C4BE1A007FBE12 /* RecursionController.m */,
+				9F470A9323C4BEAD007FBE12 /* QuickSortController.h */,
+				9F470A9423C4BEAD007FBE12 /* QuickSortController.m */,
+				9F470A9623C4BFD4007FBE12 /* HashTableController.h */,
+				9F470A9723C4BFD4007FBE12 /* HashTableController.m */,
+				9F470A9923C4BFFD007FBE12 /* BreadthFirstSearchController.h */,
+				9F470A9A23C4BFFD007FBE12 /* BreadthFirstSearchController.m */,
+				9F470A9C23C4C017007FBE12 /* DixstraAlgorithmController.h */,
+				9F470A9D23C4C017007FBE12 /* DixstraAlgorithmController.m */,
+				9F470A9F23C4C031007FBE12 /* GreedyAlgorithmController.h */,
+				9F470AA023C4C031007FBE12 /* GreedyAlgorithmController.m */,
+				9F470AA223C4C055007FBE12 /* KNearestNeighborAlgorithmController.h */,
+				9F470AA323C4C055007FBE12 /* KNearestNeighborAlgorithmController.m */,
+				9F470AA523C4C075007FBE12 /* TreeController.h */,
+				9F470AA623C4C075007FBE12 /* TreeController.m */,
+				9F470AA823C4C0C5007FBE12 /* InvertedIndexController.h */,
+				9F470AA923C4C0C5007FBE12 /* InvertedIndexController.m */,
+				9F470AAB23C4C260007FBE12 /* ParallelAlgorithmController.h */,
+				9F470AAC23C4C260007FBE12 /* ParallelAlgorithmController.m */,
+				9F470AAE23C4C26A007FBE12 /* FourierTransformController.h */,
+				9F470AAF23C4C26A007FBE12 /* FourierTransformController.m */,
+				9F470AB123C4C274007FBE12 /* MapReduceController.h */,
+				9F470AB223C4C274007FBE12 /* MapReduceController.m */,
+				9F470AB423C4C27D007FBE12 /* HyperogLogController.h */,
+				9F470AB523C4C27D007FBE12 /* HyperogLogController.m */,
+				9F470AB723C4C287007FBE12 /* ShaAlgorithmController.h */,
+				9F470AB823C4C287007FBE12 /* ShaAlgorithmController.m */,
+				9F470ABA23C4C291007FBE12 /* HashTableAlgorithmController.h */,
+				9F470ABB23C4C291007FBE12 /* HashTableAlgorithmController.m */,
+				9F470ABD23C4C29B007FBE12 /* DiffeHellmanController.h */,
+				9F470ABE23C4C29B007FBE12 /* DiffeHellmanController.m */,
+				9F470AC023C4C2A5007FBE12 /* LinearProgrammingController.h */,
+				9F470AC123C4C2A5007FBE12 /* LinearProgrammingController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +370,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F470A5923C4B8AC007FBE12 /* ViewController.m in Sources */,
+				9F470AB623C4C27D007FBE12 /* HyperogLogController.m in Sources */,
+				9F470AB323C4C274007FBE12 /* MapReduceController.m in Sources */,
+				9F470AAD23C4C260007FBE12 /* ParallelAlgorithmController.m in Sources */,
+				9F470AB023C4C26A007FBE12 /* FourierTransformController.m in Sources */,
 				9F470A5323C4B8AC007FBE12 /* AppDelegate.m in Sources */,
+				9F470AA723C4C075007FBE12 /* TreeController.m in Sources */,
+				9F470AC223C4C2A5007FBE12 /* LinearProgrammingController.m in Sources */,
+				9F470AA123C4C031007FBE12 /* GreedyAlgorithmController.m in Sources */,
+				9F470A9523C4BEAD007FBE12 /* QuickSortController.m in Sources */,
+				9F470A9823C4BFD4007FBE12 /* HashTableController.m in Sources */,
+				9F470A9223C4BE1A007FBE12 /* RecursionController.m in Sources */,
 				9F470A6423C4B8AE007FBE12 /* main.m in Sources */,
 				9F470A5623C4B8AC007FBE12 /* SceneDelegate.m in Sources */,
+				9F470A8B23C4BAF2007FBE12 /* BinarySearchController.m in Sources */,
+				9F470A8F23C4BDC5007FBE12 /* SelectionSortController.m in Sources */,
+				9F470AAA23C4C0C5007FBE12 /* InvertedIndexController.m in Sources */,
 				9F470A8823C4B920007FBE12 /* RootViewController.m in Sources */,
+				9F470A9E23C4C017007FBE12 /* DixstraAlgorithmController.m in Sources */,
+				9F470ABC23C4C291007FBE12 /* HashTableAlgorithmController.m in Sources */,
+				9F470ABF23C4C29B007FBE12 /* DiffeHellmanController.m in Sources */,
+				9F470AA423C4C055007FBE12 /* KNearestNeighborAlgorithmController.m in Sources */,
+				9F470AB923C4C287007FBE12 /* ShaAlgorithmController.m in Sources */,
+				9F470A9B23C4BFFD007FBE12 /* BreadthFirstSearchController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

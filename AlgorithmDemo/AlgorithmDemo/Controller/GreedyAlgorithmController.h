@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GreedyAlgorithmController.h
 //  AlgorithmDemo
 //
 //  Created by 白成慧&瑞瑞 on 2020/1/7.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
+@interface GreedyAlgorithmController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
