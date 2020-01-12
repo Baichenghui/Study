@@ -38,13 +38,16 @@
     }];
     
     
-    [HHStockVariable setStockLineWidthArray:@[@6,@6,@6,@6]];
+    [HHStockVariable setStockLineWidthArray:@[@5,@5,@5,@5]];
     HHStock *stock = [[HHStock alloc] initWithFrame:self.stockContainerView.frame dataSource:self];
     _stock = stock;
     [self.stockContainerView addSubview:stock.mainView];
     [stock.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.stockContainerView);
     }];
+    
+    
+    [self fetchData];
 }
 
 - (void)fetchData {
@@ -60,6 +63,7 @@
             preModel = model;
         }];
         [self.stockDatadict setObject:array forKey:@"dayhqs"];
+        [self.stock draw];
     } fail:^(NSDictionary *info) {
         
     }];

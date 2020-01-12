@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F470AC523C93EDF007FBE12 /* HHKline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AC423C93EDF007FBE12 /* HHKline.m */; };
+		9F470AC923C950FE007FBE12 /* UIBezierPath+HHStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AC823C950FE007FBE12 /* UIBezierPath+HHStock.m */; };
+		9FEB508623CB3ECD00DAB544 /* dayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB508523CB3ECC00DAB544 /* dayData.plist */; };
 		A4B538326566FFBAFDD53E22 /* Pods_HHStockDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */; };
 		F503339F23C8610800D75941 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F503339E23C8610800D75941 /* AppDelegate.m */; };
 		F50333A223C8610800D75941 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333A123C8610800D75941 /* SceneDelegate.m */; };
@@ -22,7 +25,6 @@
 		F50333F023C8654C00D75941 /* HHStock.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333EF23C8654C00D75941 /* HHStock.m */; };
 		F50333F423C865ED00D75941 /* HHLinePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333F323C865ED00D75941 /* HHLinePositionModel.m */; };
 		F50333F723C867C900D75941 /* HHVolumePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F50333F623C867C900D75941 /* HHVolumePositionModel.m */; };
-		F588977A23C86F970002F3DA /* dayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F588977923C86F970002F3DA /* dayData.plist */; };
 		F588977D23C86FD10002F3DA /* AppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F588977B23C86FD10002F3DA /* AppServer.m */; };
 		F588978023C870540002F3DA /* HDLineDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F588977F23C870540002F3DA /* HDLineDataModel.m */; };
 		F588978323C872A60002F3DA /* HHStockView_Kline.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978223C872A60002F3DA /* HHStockView_Kline.m */; };
@@ -53,6 +55,11 @@
 /* Begin PBXFileReference section */
 		162116BDDCBFA53C73D9747D /* Pods-HHStockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHStockDemo.release.xcconfig"; path = "Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHStockDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F470AC323C93EDF007FBE12 /* HHKline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHKline.h; sourceTree = "<group>"; };
+		9F470AC423C93EDF007FBE12 /* HHKline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKline.m; sourceTree = "<group>"; };
+		9F470AC723C950FE007FBE12 /* UIBezierPath+HHStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+HHStock.h"; sourceTree = "<group>"; };
+		9F470AC823C950FE007FBE12 /* UIBezierPath+HHStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+HHStock.m"; sourceTree = "<group>"; };
+		9FEB508523CB3ECC00DAB544 /* dayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dayData.plist; sourceTree = "<group>"; };
 		D1BB16728A9435C45E17CD5D /* Pods-HHStockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHStockDemo.debug.xcconfig"; path = "Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F503339A23C8610800D75941 /* HHStockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHStockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F503339D23C8610800D75941 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,7 +91,6 @@
 		F50333F323C865ED00D75941 /* HHLinePositionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHLinePositionModel.m; sourceTree = "<group>"; };
 		F50333F523C867C900D75941 /* HHVolumePositionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHVolumePositionModel.h; sourceTree = "<group>"; };
 		F50333F623C867C900D75941 /* HHVolumePositionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHVolumePositionModel.m; sourceTree = "<group>"; };
-		F588977923C86F970002F3DA /* dayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dayData.plist; sourceTree = "<group>"; };
 		F588977B23C86FD10002F3DA /* AppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppServer.m; sourceTree = "<group>"; };
 		F588977C23C86FD10002F3DA /* AppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppServer.h; sourceTree = "<group>"; };
 		F588977E23C870540002F3DA /* HDLineDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDLineDataModel.h; sourceTree = "<group>"; };
@@ -137,6 +143,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F470AC623C950EC007FBE12 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9F470AC723C950FE007FBE12 /* UIBezierPath+HHStock.h */,
+				9F470AC823C950FE007FBE12 /* UIBezierPath+HHStock.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		EED457BD84EB7A6F488F80EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +197,7 @@
 				F588977F23C870540002F3DA /* HDLineDataModel.m */,
 				F50333A323C8610800D75941 /* ViewController.h */,
 				F50333A423C8610800D75941 /* ViewController.m */,
-				F588977923C86F970002F3DA /* dayData.plist */,
+				9FEB508523CB3ECC00DAB544 /* dayData.plist */,
 				F50333A623C8610800D75941 /* Main.storyboard */,
 				F50333A923C8610D00D75941 /* Assets.xcassets */,
 				F50333AB23C8610D00D75941 /* LaunchScreen.storyboard */,
@@ -232,6 +247,7 @@
 		F50333D423C861E800D75941 /* Stock */ = {
 			isa = PBXGroup;
 			children = (
+				9F470AC623C950EC007FBE12 /* Category */,
 				F50333E623C8646600D75941 /* View */,
 				F50333E523C8645A00D75941 /* Model */,
 				F50333EE23C8654C00D75941 /* HHStock.h */,
@@ -347,6 +363,8 @@
 			children = (
 				F588978723C877AF0002F3DA /* HHKlineView.h */,
 				F588978823C877AF0002F3DA /* HHKlineView.m */,
+				9F470AC323C93EDF007FBE12 /* HHKline.h */,
+				9F470AC423C93EDF007FBE12 /* HHKline.m */,
 			);
 			path = KlineView;
 			sourceTree = "<group>";
@@ -477,7 +495,7 @@
 				F50333AD23C8610D00D75941 /* LaunchScreen.storyboard in Resources */,
 				F50333AA23C8610D00D75941 /* Assets.xcassets in Resources */,
 				F50333A823C8610800D75941 /* Main.storyboard in Resources */,
-				F588977A23C86F970002F3DA /* dayData.plist in Resources */,
+				9FEB508623CB3ECD00DAB544 /* dayData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,8 +575,10 @@
 				F50333A523C8610800D75941 /* ViewController.m in Sources */,
 				F503339F23C8610800D75941 /* AppDelegate.m in Sources */,
 				F50333F023C8654C00D75941 /* HHStock.m in Sources */,
+				9F470AC923C950FE007FBE12 /* UIBezierPath+HHStock.m in Sources */,
 				F50333F723C867C900D75941 /* HHVolumePositionModel.m in Sources */,
 				F50333B023C8610D00D75941 /* main.m in Sources */,
+				9F470AC523C93EDF007FBE12 /* HHKline.m in Sources */,
 				F50333F423C865ED00D75941 /* HHLinePositionModel.m in Sources */,
 				F50333A223C8610800D75941 /* SceneDelegate.m in Sources */,
 			);
@@ -665,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -717,7 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -733,6 +753,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M4C57BTLY;
 				INFOPLIST_FILE = HHStockDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -751,6 +772,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M4C57BTLY;
 				INFOPLIST_FILE = HHStockDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

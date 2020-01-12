@@ -22,14 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithLineModels:(NSArray <id<HHDataModelProtocol>>*) lineModels;
 
-
 /**
  重绘视图
  
  @param lineModels  K线数据源
  */
 - (void)reDrawWithLineModels:(NSArray <id<HHDataModelProtocol>>*) lineModels;
-
+  
 @end
 
 NS_ASSUME_NONNULL_END

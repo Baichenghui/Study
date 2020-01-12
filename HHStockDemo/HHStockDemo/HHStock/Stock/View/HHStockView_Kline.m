@@ -74,16 +74,36 @@
  */
 - (void)reDrawWithLineModels:(NSArray <id<HHDataModelProtocol>>*) lineModels {
     _lineModels = lineModels;
-    
-//    [HHStockVariable setLineWith:(self.stockScrollView.bounds.size.width / lineModels.count) - [HHStockVariable lineGap]];
-    [self layoutIfNeeded];
+     
     [self updateScrollViewContentWidth];
-    [self setNeedsDisplay];
+    [self draw];
     if (self.lineModels.count > 0) {
         self.stockScrollView.contentOffset = CGPointMake(self.stockScrollView.contentSize.width - self.stockScrollView.bounds.size.width, self.stockScrollView.contentOffset.y);
     }
 }
 
+- (void)draw {
+    if (self.lineModels.count > 0) {
+        if (!self.maskView || self.maskView.isHidden) {
+            //更新绘制的数据源
+            [self updateDrawModels];
+            //更新背景线
+            self.stockScrollView.isShowBgLine = YES;
+            [self.stockScrollView draw];
+            //绘制K线上部分
+            self.drawLinePositionModels = [self.kLineView drawViewWithXPosition:[self xPosition] drawModels:self.drawLineModels maxValue:maxValue minValue:minValue];
+            //绘制成交量
+//            [self.volumeView drawViewWithXPosition:[self xPosition] drawModels:self.drawLineModels linePositionModels:self.drawLinePositionModels];
+        } else {
+            [self.maskView draw];
+        }
+//        //绘制左侧文字部分
+//        [self drawLeftDesc];
+//        //绘制顶部的MA数据
+//        [self drawTopDesc];
+    }
+}
+ 
 
 /**
  构造器
@@ -127,6 +147,9 @@
         make.height.equalTo(_stockScrollView.contentView).multipliedBy([HHStockVariable volumeViewRadio]);
     }];
 
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self draw];
+    });
 }
 
 - (void)initUI_stockScrollView {
@@ -155,16 +178,19 @@
 /**
  scrollView滑动重绘页面
  */
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    [self setNeedsDisplay];
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView { 
+    [self draw];
 }
+
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+//    [self draw];
+//}
 
 #pragma mark - private
 
-
 - (CGFloat)updateScrollViewContentWidth {
     //根据stockModels的个数和间隔和K线的宽度计算出self的宽度，并设置contentsize
-    CGFloat kLineViewWidth = self.lineModels.count * [YYStockVariable lineWidth] + (self.lineModels.count + 1) * [YYStockVariable lineGap];
+    CGFloat kLineViewWidth = self.lineModels.count * [HHStockVariable lineWidth] + (self.lineModels.count + 1) * [HHStockVariable lineGap];
     
     if(kLineViewWidth < self.stockScrollView.bounds.size.width) {
         kLineViewWidth = self.stockScrollView.bounds.size.width;
@@ -173,6 +199,81 @@
     //更新scrollview的contentsize
     self.stockScrollView.contentSize = CGSizeMake(kLineViewWidth, self.stockScrollView.contentSize.height);
     return kLineViewWidth;
+}
+
+/**
+ 更新需要绘制的数据源
+ */
+- (void)updateDrawModels {
+
+    NSInteger startIndex = [self startIndex];
+    NSInteger drawLineCount = (self.stockScrollView.frame.size.width) / ([HHStockVariable lineGap] +  [HHStockVariable lineWidth]);
+//    NSInteger drawLineCount = (self.stockScrollView.frame.size.width - [HHStockVariable lineGap]) / ([HHStockVariable lineGap] +  [HHStockVariable lineWidth]);
+
+    
+    [self.drawLineModels removeAllObjects];
+    NSInteger length = startIndex+drawLineCount < self.lineModels.count ? drawLineCount+1 : self.lineModels.count - startIndex;
+    [self.drawLineModels addObjectsFromArray:[self.lineModels subarrayWithRange:NSMakeRange(startIndex, length)]];
+    
+    //更新顶部ma数据
+    selectedModel = self.drawLineModels.lastObject;
+    
+    //更新最大值最小值-价格
+    CGFloat max =  [[[self.drawLineModels valueForKeyPath:@"High"] valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat ma5max = [[[self.drawLineModels valueForKeyPath:@"MA5"] valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat ma10max = [[[self.drawLineModels valueForKeyPath:@"MA10"] valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat ma20max = [[[self.drawLineModels valueForKeyPath:@"MA20"] valueForKeyPath:@"@max.floatValue"] floatValue];
+    
+    __block CGFloat min =  [[[self.drawLineModels valueForKeyPath:@"Low"] valueForKeyPath:@"@min.floatValue"] floatValue];
+    [self.drawLineModels enumerateObjectsUsingBlock:^(id<HHDataModelProtocol>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat ma5value = [[obj MA5] floatValue];
+        CGFloat ma10value = [[obj MA10] floatValue];
+        CGFloat ma20value = [[obj MA20] floatValue];
+        if ( ma5value > 0 && ma5value < min ) min = ma5value;
+        if ( ma10value > 0 && ma10value < min ) min = ma10value;
+        if ( ma20value > 0 && ma20value < min ) min = ma20value;
+    }];
+
+    max = MAX(MAX(MAX(ma5max, ma10max), ma20max), max);
+
+    CGFloat average = (min+max) / 2;
+    maxValue = max;
+    minValue = average * 2 - maxValue;
+}
+
+
+- (CGRect)rectOfNSString:(NSString *)string attribute:(NSDictionary *)attribute {
+    CGRect rect = [string boundingRectWithSize:CGSizeMake(MAXFLOAT, 0)
+                                     options:NSStringDrawingTruncatesLastVisibleLine |NSStringDrawingUsesLineFragmentOrigin |
+                   NSStringDrawingUsesFontLeading
+                                  attributes:attribute
+                                     context:nil];
+    return rect;
+}
+
+#pragma mark - setter,getter方法
+- (NSInteger)xPosition {
+    NSInteger leftArrCount = [self startIndex];
+    CGFloat startXPosition = (leftArrCount + 1) * [HHStockVariable lineGap] + leftArrCount * [HHStockVariable lineWidth] + [HHStockVariable lineWidth]/2;
+    return startXPosition;
+}
+
+- (NSMutableArray *)drawLineModels {
+    if (!_drawLineModels) {
+        _drawLineModels = [NSMutableArray array];
+    }
+    return _drawLineModels;
+}
+
+- (NSInteger)startIndex {
+    CGFloat offsetX = self.stockScrollView.contentOffset.x < 0 ? 0 : self.stockScrollView.contentOffset.x;
+    
+    NSUInteger leftCount = ABS(offsetX) / ([HHStockVariable lineGap] + [HHStockVariable lineWidth]);
+
+    if (leftCount > self.lineModels.count) {
+        leftCount = self.lineModels.count - 1;
+    }
+    return leftCount;
 }
 
 @end

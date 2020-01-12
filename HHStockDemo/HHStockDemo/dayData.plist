@@ -376,7 +376,7 @@
 			<key>day</key>
 			<integer>20160429</integer>
 			<key>open</key>
-			<real>9.958</real>
+			<real>1249.506</real>
 			<key>close</key>
 			<real>1242.506</real>
 			<key>high</key>
@@ -1184,7 +1184,7 @@
 			<key>low</key>
 			<real>1135.98</real>
 			<key>volume</key>
-			<real>43416858</real>
+			<integer>43416858</integer>
 			<key>amount</key>
 			<real>0</real>
 		</dict>

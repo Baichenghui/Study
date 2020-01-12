@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HHDataModelProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHKlineView : UIView
+
+- (NSArray *)drawViewWithXPosition:(CGFloat)xPosition
+                        drawModels:(NSMutableArray <id<HHDataModelProtocol>>*)drawLineModels
+                          maxValue:(CGFloat)maxValue
+                          minValue:(CGFloat)minValue;
 
 @end
 

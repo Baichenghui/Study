@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHKlineMaskView : UIView
 
+- (void)draw ;
 @end
 
 NS_ASSUME_NONNULL_END

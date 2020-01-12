@@ -18,4 +18,11 @@
 }
 */
 
+- (void)drawViewWithXPosition:(CGFloat)xPosition
+                   drawModels:(NSArray <id<HHDataModelProtocol>>*)drawLineModels
+           linePositionModels:(NSArray <HHLinePositionModel *>*)linePositionModels {
+    
+    
+}
+
 @end

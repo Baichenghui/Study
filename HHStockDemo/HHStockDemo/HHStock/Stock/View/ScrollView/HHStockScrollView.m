@@ -21,9 +21,14 @@
 }
 */
 
+- (void)draw {
+    
+}
+
 - (UIView *)contentView {
     if (!_contentView) {
         _contentView = [UIView new];
+        _contentView.backgroundColor = [UIColor whiteColor];
         [self addSubview:_contentView];
         [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self);
