@@ -22,17 +22,17 @@ static CGFloat HHStockTimeLineVolumeWidth = 6;
 /**
  K线图的间隔，初始值为1
  */
-static CGFloat HHStockLineGap = 2;
+static CGFloat HHStockLineGap = 5;
 
 /**
  KLineView的高度占比
  */
-static CGFloat HHStockLineViewRadio = 0.6;
+static CGFloat HHStockLineViewRadio = 0.55;
 
 /**
  成交量图的高度占比
  */
-static CGFloat HHStockVolumeViewRadio = 0.3;
+static CGFloat HHStockVolumeViewRadio = 0.25;
 
 /**
  设置K线宽度数组

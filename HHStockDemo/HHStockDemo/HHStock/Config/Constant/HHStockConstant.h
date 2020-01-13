@@ -76,7 +76,7 @@
 /**
  *  K线ScrollView距离顶部的距离
  */
-#define HHStockScrollViewTopGap 25
+#define HHStockScrollViewTopGap 30
 
 /**
  *  K线ScrollView距离左边的距离

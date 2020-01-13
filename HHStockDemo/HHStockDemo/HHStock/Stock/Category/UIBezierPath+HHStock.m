@@ -16,13 +16,10 @@
     UIBezierPath *path = [UIBezierPath bezierPath];
     [linesArray enumerateObjectsUsingBlock:^(NSValue *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGPoint point = [obj CGPointValue];
-        if (idx == 0)
-        {
+        if (idx == 0) {
             [path moveToPoint:CGPointMake(point.x,point.y)];
         }
-
-        else
-        {
+        else {
             [path addLineToPoint:CGPointMake(point.x,point.y)];
         }
     }];
@@ -33,8 +30,7 @@
      NSAssert(0 != linesArray.count && NULL != linesArray, @"传入的数组为nil ,打印结果---->>%@",linesArray);
     
     NSMutableArray *resultArray = [NSMutableArray array];
-    for (NSMutableArray *lineArray in linesArray)
-    {
+    for (NSMutableArray *lineArray in linesArray) {
         UIBezierPath *path = [UIBezierPath drawLine:lineArray];
         [resultArray addObject:path];
     }
@@ -54,7 +50,6 @@
     [candlePath moveToPoint:CGPointMake(xPostion+candleWidth/2-lineWidth/2, high)];
     [candlePath addLineToPoint:CGPointMake(xPostion+candleWidth/2-lineWidth/2, low)];
     return candlePath;
-}
-
+} 
 
 @end

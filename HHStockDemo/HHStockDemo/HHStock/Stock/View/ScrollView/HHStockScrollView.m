@@ -17,6 +17,8 @@
     
 }
 
+#pragma mark - Getter
+
 - (UIView *)contentView {
     if (!_contentView) {
         _contentView = [UIView new];
@@ -37,6 +39,5 @@
         make.height.equalTo(self);
     }];
 }
-
-
+ 
 @end

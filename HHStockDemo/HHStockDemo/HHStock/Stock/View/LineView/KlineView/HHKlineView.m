@@ -111,115 +111,23 @@ static inline bool isEqualZero(float value)
     [self.layer addSublayer:self.ma20LineLayer];
 }
 
-- (void)draw {
-    if (!self.drawPositionModels) {
-        return;
-    }
-    
-    if (self.drawPositionModels.count > 0) {
-         [self drawCandleSublayers];
-    }
-    
-    if(self.MA5Positions.count > 0) {
-        UIBezierPath *ma5Path = [UIBezierPath drawLine:self.MA5Positions];
-        self.ma5LineLayer.path = ma5Path.CGPath;
-    }
-    
-    if(self.MA10Positions.count > 0) {
-        UIBezierPath *ma10Path = [UIBezierPath drawLine:self.MA10Positions];
-        self.ma10LineLayer.path = ma10Path.CGPath;
-    }
-    
-    if(self.MA20Positions.count > 0) {
-        UIBezierPath *ma20Path = [UIBezierPath drawLine:self.MA20Positions];
-        self.ma20LineLayer.path = ma20Path.CGPath;
-    }
-}
- 
-/// k线绘制
-- (void)drawCandleSublayers {
-    CGMutablePathRef redRef = CGPathCreateMutable();
-    CGMutablePathRef greenRef = CGPathCreateMutable();
-
-    __weak typeof(self) weakSelf = self;
-    [self.drawPositionModels enumerateObjectsUsingBlock:^(HHLinePositionModel *model, NSUInteger idx, BOOL * _Nonnull stop) {
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-
-        if (model.OpenPoint.y < model.ClosePoint.y) {
-            [strongSelf addCandleRef:redRef postion:model];
-        }
-        else if (model.OpenPoint.y > model.ClosePoint.y) {
-            [strongSelf addCandleRef:greenRef postion:model];
-        }
-        else {
-            [strongSelf addCandleRef:redRef postion:model];
-        }
-    }];
-
-    self.redLayer.path = redRef;
-    self.greenLayer.path = greenRef;
-     
-    //释放，避免内存泄漏
-    CGPathRelease(redRef);
-    CGPathRelease(greenRef);
-}
-
-- (void)addCandleRef:(CGMutablePathRef)ref postion:(HHLinePositionModel*)postion {
-    //k线柱绘制
-    CGFloat openPrice = postion.OpenPoint.y;
-    CGFloat closePrice = postion.ClosePoint.y;
-    CGFloat hightPrice = postion.HighPoint.y;
-    CGFloat lowPrice = postion.LowPoint.y;
-    CGFloat x = postion.OpenPoint.x;
-     
-    CGFloat y = openPrice > closePrice ? (closePrice) : (openPrice);
-    CGFloat height = MAX(fabs(closePrice-openPrice), HHStockLineMinThick);
-    CGRect rect = CGRectMake(x, y, [HHStockVariable lineWidth], height);
-    
-    if (isEqualZero(fabs(closePrice-openPrice))) {
-        rect = CGRectMake(x, closePrice - height, [HHStockVariable lineWidth], height);
-    }
-    CGPathAddRect(ref, NULL, rect);
-    
-    //上、下影线绘制
-    CGFloat xPostion = x + [HHStockVariable lineWidth] / 2;
-    if (closePrice < openPrice) {
-        if (!isEqualZero(closePrice - hightPrice)) {
-            CGPathMoveToPoint(ref, NULL, xPostion, closePrice);
-            CGPathAddLineToPoint(ref, NULL, xPostion, hightPrice);
-        }
-        
-        if (!isEqualZero(lowPrice - openPrice)) {
-            CGPathMoveToPoint(ref, NULL, xPostion, lowPrice);
-            CGPathAddLineToPoint(ref, NULL, xPostion, openPrice + HHStockShadowLineWidth / 2.f);
-        }
-    }
-    else {
-        if (!isEqualZero(openPrice - hightPrice)) {
-            CGPathMoveToPoint(ref, NULL, xPostion, openPrice);
-            CGPathAddLineToPoint(ref, NULL, xPostion, hightPrice);
-        }
-        
-        if (!isEqualZero(lowPrice - closePrice)) {
-            CGPathMoveToPoint(ref, NULL, xPostion, lowPrice);
-            CGPathAddLineToPoint(ref, NULL, xPostion, closePrice - HHStockShadowLineWidth);
-        }
-    }
-}
+#pragma mark - Public
 
 - (NSArray *)drawViewWithXPosition:(CGFloat)xPosition drawModels:(NSMutableArray <id<HHDataModelProtocol>>*)drawLineModels  maxValue:(CGFloat)maxValue minValue:(CGFloat)minValue {
     NSAssert(drawLineModels, @"数据源不能为空");
     //转换为实际坐标
-    [self convertToPositionModelsWithXPosition:xPosition drawLineModels:drawLineModels maxValue:maxValue minValue:minValue];
+    [self _convertToPositionModelsWithXPosition:xPosition drawLineModels:drawLineModels maxValue:maxValue minValue:minValue];
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
-        [strongSelf draw];
+        [strongSelf _draw];
     });
     return [self.drawPositionModels copy];
 }
 
-- (NSArray *)convertToPositionModelsWithXPosition:(CGFloat)startX drawLineModels:(NSArray <id<HHDataModelProtocol>>*)drawLineModels  maxValue:(CGFloat)maxValue minValue:(CGFloat)minValue {
+#pragma mark - Private
+
+- (NSArray *)_convertToPositionModelsWithXPosition:(CGFloat)startX drawLineModels:(NSArray <id<HHDataModelProtocol>>*)drawLineModels  maxValue:(CGFloat)maxValue minValue:(CGFloat)minValue {
     if (!drawLineModels) return nil;
 
     _drawLineModels = drawLineModels;
@@ -238,7 +146,6 @@ static inline bool isEqualZero(float value)
         __strong typeof(weakSelf) strongSelf = weakSelf;
         
         CGFloat xPosition = startX + idx * ([HHStockVariable lineWidth] + [HHStockVariable lineGap]);
-//        NSLog(@"xPosition:%f",xPosition);
         CGPoint highPoint = CGPointMake(xPosition, ABS(maxY - (model.High.floatValue - minValue)/unitValue));
         CGPoint lowPoint = CGPointMake(xPosition, ABS(maxY - (model.Low.floatValue - minValue)/unitValue));
         CGPoint openPoint = CGPointMake(xPosition, ABS(maxY - (model.Open.floatValue - minValue)/unitValue));
@@ -246,8 +153,8 @@ static inline bool isEqualZero(float value)
         
         //格式化openPoint和closePointY
         if(ABS(closePointY - openPoint.y) < HHStockLineMinThick) {
-            NSLog(@"closePointY:%f",closePointY);
-            NSLog(@"openPointY:%f",openPoint.y);
+//            NSLog(@"closePointY:%f",closePointY);
+//            NSLog(@"openPointY:%f",openPoint.y);
  
             if(openPoint.y > closePointY) {
                 openPoint.y = closePointY + HHStockLineMinThick;
@@ -290,6 +197,104 @@ static inline bool isEqualZero(float value)
     }];
     
     return self.drawPositionModels ;
+}
+ 
+- (void)_draw {
+    if (!self.drawPositionModels) {
+        return;
+    }
+    
+    if (self.drawPositionModels.count > 0) {
+         [self _drawCandleSublayers];
+    }
+    
+    if(self.MA5Positions.count > 0) {
+        UIBezierPath *ma5Path = [UIBezierPath drawLine:self.MA5Positions];
+        self.ma5LineLayer.path = ma5Path.CGPath;
+    }
+    
+    if(self.MA10Positions.count > 0) {
+        UIBezierPath *ma10Path = [UIBezierPath drawLine:self.MA10Positions];
+        self.ma10LineLayer.path = ma10Path.CGPath;
+    }
+    
+    if(self.MA20Positions.count > 0) {
+        UIBezierPath *ma20Path = [UIBezierPath drawLine:self.MA20Positions];
+        self.ma20LineLayer.path = ma20Path.CGPath;
+    }
+}
+ 
+/// k线绘制
+- (void)_drawCandleSublayers {
+    CGMutablePathRef redRef = CGPathCreateMutable();
+    CGMutablePathRef greenRef = CGPathCreateMutable();
+
+    __weak typeof(self) weakSelf = self;
+    [self.drawPositionModels enumerateObjectsUsingBlock:^(HHLinePositionModel *model, NSUInteger idx, BOOL * _Nonnull stop) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+
+        if ([[strongSelf.drawLineModels[idx] Open] floatValue] < [[strongSelf.drawLineModels[idx] Close] floatValue]) {
+            [strongSelf _addCandleRef:redRef postion:model];
+        } else if ([[strongSelf.drawLineModels[idx] Open] floatValue] > [[strongSelf.drawLineModels[idx] Close] floatValue]) {
+            [strongSelf _addCandleRef:greenRef postion:model];
+        } else {
+            if ([[strongSelf.drawLineModels[idx] Open] floatValue] >= [[[strongSelf.drawLineModels[idx] preDataModel] Close] floatValue]) {
+                [strongSelf _addCandleRef:redRef postion:model];
+            } else {
+                [strongSelf _addCandleRef:greenRef postion:model];
+            }
+        } 
+    }];
+
+    self.redLayer.path = redRef;
+    self.greenLayer.path = greenRef;
+     
+    //释放，避免内存泄漏
+    CGPathRelease(redRef);
+    CGPathRelease(greenRef);
+}
+
+- (void)_addCandleRef:(CGMutablePathRef)ref postion:(HHLinePositionModel*)postion {
+    //k线柱绘制
+    CGFloat openPrice = postion.OpenPoint.y;
+    CGFloat closePrice = postion.ClosePoint.y;
+    CGFloat hightPrice = postion.HighPoint.y;
+    CGFloat lowPrice = postion.LowPoint.y;
+    CGFloat x = postion.OpenPoint.x;
+     
+    CGFloat y = openPrice > closePrice ? (closePrice) : (openPrice);
+    CGFloat height = MAX(fabs(closePrice-openPrice), HHStockLineMinThick);
+    CGRect rect = CGRectMake(x, y, [HHStockVariable lineWidth], height);
+    
+    if (isEqualZero(fabs(closePrice-openPrice))) {
+        rect = CGRectMake(x, closePrice - height, [HHStockVariable lineWidth], height);
+    }
+    CGPathAddRect(ref, NULL, rect);
+    
+    //上、下影线绘制
+    CGFloat xPostion = x + [HHStockVariable lineWidth] / 2;
+    if (closePrice < openPrice) {
+        if (!isEqualZero(closePrice - hightPrice)) {
+            CGPathMoveToPoint(ref, NULL, xPostion, closePrice);
+            CGPathAddLineToPoint(ref, NULL, xPostion, hightPrice);
+        }
+        
+        if (!isEqualZero(lowPrice - openPrice)) {
+            CGPathMoveToPoint(ref, NULL, xPostion, lowPrice);
+            CGPathAddLineToPoint(ref, NULL, xPostion, openPrice + HHStockShadowLineWidth / 2.f);
+        }
+    }
+    else {
+        if (!isEqualZero(openPrice - hightPrice)) {
+            CGPathMoveToPoint(ref, NULL, xPostion, openPrice);
+            CGPathAddLineToPoint(ref, NULL, xPostion, hightPrice);
+        }
+        
+        if (!isEqualZero(lowPrice - closePrice)) {
+            CGPathMoveToPoint(ref, NULL, xPostion, lowPrice);
+            CGPathAddLineToPoint(ref, NULL, xPostion, closePrice - HHStockShadowLineWidth);
+        }
+    }
 }
 
 #pragma mark - Getter

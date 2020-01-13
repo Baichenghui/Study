@@ -33,13 +33,14 @@
     [self.view addSubview:self.stockContainerView];
     [_stockContainerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(@0);
-        make.top.mas_equalTo(@100);
-        make.height.mas_equalTo(@500);
+        make.top.mas_equalTo(@200);
+        make.height.mas_equalTo(@300);
     }];
     
     
-    [HHStockVariable setStockLineWidthArray:@[@5,@5,@5,@5]];
+    [HHStockVariable setStockLineWidthArray:@[@6,@6,@6,@6]];
     HHStock *stock = [[HHStock alloc] initWithFrame:self.stockContainerView.frame dataSource:self];
+    stock.mainView.backgroundColor = [UIColor blueColor];
     _stock = stock;
     [self.stockContainerView addSubview:stock.mainView];
     [stock.mainView mas_makeConstraints:^(MASConstraintMaker *make) {

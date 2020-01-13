@@ -93,7 +93,7 @@
             //绘制K线上部分
             self.drawLinePositionModels = [self.kLineView drawViewWithXPosition:[self xPosition] drawModels:self.drawLineModels maxValue:maxValue minValue:minValue];
             //绘制成交量
-//            [self.volumeView drawViewWithXPosition:[self xPosition] drawModels:self.drawLineModels linePositionModels:self.drawLinePositionModels];
+            [self.volumeView drawViewWithXPosition:[self xPosition] drawModels:self.drawLineModels linePositionModels:self.drawLinePositionModels];
         } else {
             [self.maskView draw];
         }
@@ -124,7 +124,7 @@
 /**
  初始化子View
  */
-- (void)initUI {
+- (void)initUI {  
     //加载StockScrollView
     [self initUI_stockScrollView];
     
@@ -161,6 +161,8 @@
     _stockScrollView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2];
     _stockScrollView.showsHorizontalScrollIndicator = NO;
     _stockScrollView.delegate = self;
+    _stockScrollView.bounces = NO;
+//    _stockScrollView.contentView.backgroundColor = [UIColor grayColor];
 
     [self addSubview:_stockScrollView];
     [_stockScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
