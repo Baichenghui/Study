@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F470AC523C93EDF007FBE12 /* HHKline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AC423C93EDF007FBE12 /* HHKline.m */; };
 		9F470AC923C950FE007FBE12 /* UIBezierPath+HHStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F470AC823C950FE007FBE12 /* UIBezierPath+HHStock.m */; };
 		9FEB508623CB3ECD00DAB544 /* dayData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FEB508523CB3ECC00DAB544 /* dayData.plist */; };
 		A4B538326566FFBAFDD53E22 /* Pods_HHStockDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */; };
@@ -55,8 +54,6 @@
 /* Begin PBXFileReference section */
 		162116BDDCBFA53C73D9747D /* Pods-HHStockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHStockDemo.release.xcconfig"; path = "Target Support Files/Pods-HHStockDemo/Pods-HHStockDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6EC049E5D361E11130A11FCA /* Pods_HHStockDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHStockDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F470AC323C93EDF007FBE12 /* HHKline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHKline.h; sourceTree = "<group>"; };
-		9F470AC423C93EDF007FBE12 /* HHKline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKline.m; sourceTree = "<group>"; };
 		9F470AC723C950FE007FBE12 /* UIBezierPath+HHStock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+HHStock.h"; sourceTree = "<group>"; };
 		9F470AC823C950FE007FBE12 /* UIBezierPath+HHStock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+HHStock.m"; sourceTree = "<group>"; };
 		9FEB508523CB3ECC00DAB544 /* dayData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dayData.plist; sourceTree = "<group>"; };
@@ -363,8 +360,6 @@
 			children = (
 				F588978723C877AF0002F3DA /* HHKlineView.h */,
 				F588978823C877AF0002F3DA /* HHKlineView.m */,
-				9F470AC323C93EDF007FBE12 /* HHKline.h */,
-				9F470AC423C93EDF007FBE12 /* HHKline.m */,
 			);
 			path = KlineView;
 			sourceTree = "<group>";
@@ -578,7 +573,6 @@
 				9F470AC923C950FE007FBE12 /* UIBezierPath+HHStock.m in Sources */,
 				F50333F723C867C900D75941 /* HHVolumePositionModel.m in Sources */,
 				F50333B023C8610D00D75941 /* main.m in Sources */,
-				9F470AC523C93EDF007FBE12 /* HHKline.m in Sources */,
 				F50333F423C865ED00D75941 /* HHLinePositionModel.m in Sources */,
 				F50333A223C8610800D75941 /* SceneDelegate.m in Sources */,
 			);
@@ -753,7 +747,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M4C57BTLY;
 				INFOPLIST_FILE = HHStockDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -772,7 +766,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M4C57BTLY;
 				INFOPLIST_FILE = HHStockDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -11,12 +11,11 @@
 #import "HHKlineView.h"
 #import "HHStockVariable.h"
 #import "HHStockConstant.h"
-#import "UIColor+HHStock.h"
 #import "HHLinePositionModel.h" 
-
-//#import "HHKline.h"
-
-
+ 
+#import "UIColor+HHStock.h"
+#import "UIBezierPath+HHStock.h"
+ 
 static inline bool isEqualZero(float value)
 {
     return fabsf(value) <= 0.00001f;
@@ -35,9 +34,15 @@ static inline bool isEqualZero(float value)
 @property (nonatomic,strong) CAShapeLayer *redLayer;
 @property (nonatomic,strong) CAShapeLayer *greenLayer;
 
+@property (nonatomic,strong) CAShapeLayer *ma5LineLayer;
+@property (nonatomic,strong) CAShapeLayer *ma10LineLayer;
+@property (nonatomic,strong) CAShapeLayer *ma20LineLayer;
+
 @end
 
 @implementation HHKlineView
+
+#pragma mark - Initialize
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
@@ -49,45 +54,61 @@ static inline bool isEqualZero(float value)
 - (void)didInitialize {
     [self initLayer];
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
-//- (void)drawRect:(CGRect)rect {
-//    [super drawRect:rect];
-//
-//    CGContextRef ctx = UIGraphicsGetCurrentContext();
-//    if (!self.drawPositionModels) {
-//        return;
-//    }
-//
-//    if (self.drawPositionModels.count > 0) {
-//        HHKline *line = [[HHKline alloc] initWithContext:ctx drawModels:self.drawLineModels linePositionModels:self.drawPositionModels];
-//        [line draw];
-//    }
-//}
-
+ 
 - (void)initLayer {
+    //redLayer
     if (!self.redLayer) {
         self.redLayer = [CAShapeLayer layer];
-        self.redLayer.lineWidth = HHStockShadowLineWidth;
-        self.redLayer.fillColor = [UIColor HHStock_increaseColor].CGColor;
-        self.redLayer.strokeColor = [UIColor HHStock_increaseColor].CGColor;
-        [self.layer addSublayer:self.redLayer];
     }
+    self.redLayer.lineWidth = HHStockShadowLineWidth;
+    self.redLayer.fillColor = [UIColor HHStock_increaseColor].CGColor;
+    self.redLayer.strokeColor = [UIColor HHStock_increaseColor].CGColor;
+    [self.layer addSublayer:self.redLayer];
       
+    //greenLayer
     if (!self.greenLayer) {
         self.greenLayer = [CAShapeLayer layer];
-        self.greenLayer.lineWidth = HHStockShadowLineWidth;
-        self.greenLayer.fillColor = [UIColor HHStock_decreaseColor].CGColor;
-        self.greenLayer.strokeColor = [UIColor HHStock_decreaseColor].CGColor;
-        [self.layer addSublayer:self.greenLayer];
     }
+    self.greenLayer.lineWidth = HHStockShadowLineWidth;
+    self.greenLayer.fillColor = [UIColor HHStock_decreaseColor].CGColor;
+    self.greenLayer.strokeColor = [UIColor HHStock_decreaseColor].CGColor;
+    [self.layer addSublayer:self.greenLayer];
+    
+    //ma5LineLayer
+    if (!self.ma5LineLayer) {
+        self.ma5LineLayer = [CAShapeLayer layer];
+    }
+    self.ma5LineLayer.lineWidth = HHStockMALineLineWidth;
+    self.ma5LineLayer.lineCap = kCALineCapRound;
+    self.ma5LineLayer.lineJoin = kCALineJoinRound;
+    self.ma5LineLayer.contentsScale = [UIScreen mainScreen].scale;
+    self.ma5LineLayer.strokeColor = [UIColor HHStock_MA5LineColor].CGColor;
+    self.ma5LineLayer.fillColor = [[UIColor clearColor] CGColor];
+    [self.layer addSublayer:self.ma5LineLayer];
+    
+    //ma10LineLayer
+    if (!self.ma10LineLayer) {
+        self.ma10LineLayer = [CAShapeLayer layer];
+    }
+    self.ma10LineLayer.lineWidth = HHStockMALineLineWidth;
+    self.ma10LineLayer.lineCap = kCALineCapRound;
+    self.ma10LineLayer.lineJoin = kCALineJoinRound;
+    self.ma10LineLayer.contentsScale = [UIScreen mainScreen].scale;
+    self.ma10LineLayer.strokeColor = [UIColor HHStock_MA10LineColor].CGColor;
+    self.ma10LineLayer.fillColor = [[UIColor clearColor] CGColor];
+    [self.layer addSublayer:self.ma10LineLayer];
+    
+    //ma20LineLayer
+    if (!self.ma20LineLayer) {
+        self.ma20LineLayer = [CAShapeLayer layer];
+    }
+    self.ma20LineLayer.lineWidth = HHStockMALineLineWidth;
+    self.ma20LineLayer.lineCap = kCALineCapRound;
+    self.ma20LineLayer.lineJoin = kCALineJoinRound;
+    self.ma20LineLayer.contentsScale = [UIScreen mainScreen].scale;
+    self.ma20LineLayer.strokeColor = [UIColor HHStock_MA20LineColor].CGColor;
+    self.ma20LineLayer.fillColor = [[UIColor clearColor] CGColor];
+    [self.layer addSublayer:self.ma20LineLayer];
 }
 
 - (void)draw {
@@ -100,35 +121,47 @@ static inline bool isEqualZero(float value)
     }
     
     if(self.MA5Positions.count > 0) {
-        
+        UIBezierPath *ma5Path = [UIBezierPath drawLine:self.MA5Positions];
+        self.ma5LineLayer.path = ma5Path.CGPath;
     }
     
     if(self.MA10Positions.count > 0) {
-        
+        UIBezierPath *ma10Path = [UIBezierPath drawLine:self.MA10Positions];
+        self.ma10LineLayer.path = ma10Path.CGPath;
     }
     
     if(self.MA20Positions.count > 0) {
-        
+        UIBezierPath *ma20Path = [UIBezierPath drawLine:self.MA20Positions];
+        self.ma20LineLayer.path = ma20Path.CGPath;
     }
 }
-
+ 
+/// k线绘制
 - (void)drawCandleSublayers {
     CGMutablePathRef redRef = CGPathCreateMutable();
     CGMutablePathRef greenRef = CGPathCreateMutable();
+
+    __weak typeof(self) weakSelf = self;
     [self.drawPositionModels enumerateObjectsUsingBlock:^(HHLinePositionModel *model, NSUInteger idx, BOOL * _Nonnull stop) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+
         if (model.OpenPoint.y < model.ClosePoint.y) {
-            [self addCandleRef:redRef postion:model];
+            [strongSelf addCandleRef:redRef postion:model];
         }
         else if (model.OpenPoint.y > model.ClosePoint.y) {
-            [self addCandleRef:greenRef postion:model];
+            [strongSelf addCandleRef:greenRef postion:model];
         }
         else {
-            [self addCandleRef:redRef postion:model];
+            [strongSelf addCandleRef:redRef postion:model];
         }
     }];
-     
+
     self.redLayer.path = redRef;
     self.greenLayer.path = greenRef;
+     
+    //释放，避免内存泄漏
+    CGPathRelease(redRef);
+    CGPathRelease(greenRef);
 }
 
 - (void)addCandleRef:(CGMutablePathRef)ref postion:(HHLinePositionModel*)postion {
@@ -178,8 +211,10 @@ static inline bool isEqualZero(float value)
     NSAssert(drawLineModels, @"数据源不能为空");
     //转换为实际坐标
     [self convertToPositionModelsWithXPosition:xPosition drawLineModels:drawLineModels maxValue:maxValue minValue:minValue];
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self draw];
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf draw];
     });
     return [self.drawPositionModels copy];
 }
@@ -198,7 +233,9 @@ static inline bool isEqualZero(float value)
     CGFloat unitValue = (maxValue - minValue)/(maxY - minY);
     if (unitValue == 0) unitValue = 0.01f;
     
+    __weak typeof(self) weakSelf = self;
     [drawLineModels enumerateObjectsUsingBlock:^(id<HHDataModelProtocol>  _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         CGFloat xPosition = startX + idx * ([HHStockVariable lineWidth] + [HHStockVariable lineGap]);
 //        NSLog(@"xPosition:%f",xPosition);
@@ -239,21 +276,23 @@ static inline bool isEqualZero(float value)
         }
         CGPoint closePoint = CGPointMake(xPosition, closePointY);
         HHLinePositionModel *positionModel = [HHLinePositionModel modelWithOpen:openPoint close:closePoint high:highPoint low:lowPoint];
-        [self.drawPositionModels addObject:positionModel];
+        [strongSelf.drawPositionModels addObject:positionModel];
         
         if (model.MA5.floatValue > 0.f) {
-            [self.MA5Positions addObject: [NSValue valueWithCGPoint:CGPointMake(xPosition, ABS(maxY - (model.MA5.floatValue - minValue)/unitValue))]];
+            [strongSelf.MA5Positions addObject: [NSValue valueWithCGPoint:CGPointMake(xPosition, ABS(maxY - (model.MA5.floatValue - minValue)/unitValue))]];
         }
         if (model.MA10.floatValue > 0.f) {
-            [self.MA10Positions addObject: [NSValue valueWithCGPoint:CGPointMake(xPosition, ABS(maxY - (model.MA10.floatValue - minValue)/unitValue))]];
+            [strongSelf.MA10Positions addObject: [NSValue valueWithCGPoint:CGPointMake(xPosition, ABS(maxY - (model.MA10.floatValue - minValue)/unitValue))]];
         }
         if (model.MA20.floatValue > 0.f) {
-            [self.MA20Positions addObject: [NSValue valueWithCGPoint:CGPointMake(xPosition, ABS(maxY - (model.MA20.floatValue - minValue)/unitValue))]];
+            [strongSelf.MA20Positions addObject: [NSValue valueWithCGPoint:CGPointMake(xPosition, ABS(maxY - (model.MA20.floatValue - minValue)/unitValue))]];
         }
     }];
     
     return self.drawPositionModels ;
 }
+
+#pragma mark - Getter
 
 - (NSMutableArray *)drawPositionModels {
     if (!_drawPositionModels) {

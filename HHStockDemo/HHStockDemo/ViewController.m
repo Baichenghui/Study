@@ -51,8 +51,10 @@
 }
 
 - (void)fetchData {
-     
+
+    __weak typeof(self) weakSelf = self;
     [AppServer Get:@"day" params:nil success:^(NSDictionary *response) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         NSMutableArray *array = [NSMutableArray array];
         __block HDLineDataModel *preModel;
         [response[@"dayhqs"] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -62,8 +64,8 @@
             [array addObject: model];
             preModel = model;
         }];
-        [self.stockDatadict setObject:array forKey:@"dayhqs"];
-        [self.stock draw];
+        [strongSelf.stockDatadict setObject:array forKey:@"dayhqs"];
+        [strongSelf.stock draw];
     } fail:^(NSDictionary *info) {
         
     }];

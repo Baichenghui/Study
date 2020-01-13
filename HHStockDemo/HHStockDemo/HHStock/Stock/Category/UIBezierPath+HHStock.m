@@ -12,19 +12,20 @@
  
 @implementation UIBezierPath (HHStock)
  
-+ (UIBezierPath*)drawLine:(NSMutableArray*)linesArray {
++ (UIBezierPath*)drawLine:(NSMutableArray *)linesArray {
     UIBezierPath *path = [UIBezierPath bezierPath];
-//    [linesArray enumerateObjectsUsingBlock:^(ZYWLineModel* obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        if (idx == 0)
-//        {
-//            [path moveToPoint:CGPointMake(obj.xPosition,obj.yPosition)];
-//        }
-//
-//        else
-//        {
-//            [path addLineToPoint:CGPointMake(obj.xPosition,obj.yPosition)];
-//        }
-//    }];
+    [linesArray enumerateObjectsUsingBlock:^(NSValue *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGPoint point = [obj CGPointValue];
+        if (idx == 0)
+        {
+            [path moveToPoint:CGPointMake(point.x,point.y)];
+        }
+
+        else
+        {
+            [path addLineToPoint:CGPointMake(point.x,point.y)];
+        }
+    }];
     return path;
 }
 
