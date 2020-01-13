@@ -152,10 +152,7 @@ static inline bool isEqualZero(float value)
         CGFloat closePointY = ABS(maxY - (model.Close.floatValue - minValue)/unitValue);
         
         //格式化openPoint和closePointY
-        if(ABS(closePointY - openPoint.y) < HHStockLineMinThick) {
-//            NSLog(@"closePointY:%f",closePointY);
-//            NSLog(@"openPointY:%f",openPoint.y);
- 
+        if(ABS(closePointY - openPoint.y) < HHStockLineMinThick) { 
             if(openPoint.y > closePointY) {
                 openPoint.y = closePointY + HHStockLineMinThick;
             } else if(openPoint.y < closePointY) {

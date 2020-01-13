@@ -32,6 +32,7 @@
 		F588978C23C878280002F3DA /* HHKlineVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978B23C878280002F3DA /* HHKlineVolumeView.m */; };
 		F588978F23C8783E0002F3DA /* HHKlineMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588978E23C8783E0002F3DA /* HHKlineMaskView.m */; };
 		F588979223C878570002F3DA /* HHStockScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F588979123C878570002F3DA /* HHStockScrollView.m */; };
+		F5CA27C223CC47620005B244 /* HHStockHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CA27C123CC47620005B244 /* HHStockHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		F588978E23C8783E0002F3DA /* HHKlineMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKlineMaskView.m; sourceTree = "<group>"; };
 		F588979023C878570002F3DA /* HHStockScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStockScrollView.h; sourceTree = "<group>"; };
 		F588979123C878570002F3DA /* HHStockScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStockScrollView.m; sourceTree = "<group>"; };
+		F5CA27C023CC47620005B244 /* HHStockHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStockHelper.h; sourceTree = "<group>"; };
+		F5CA27C123CC47620005B244 /* HHStockHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStockHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,7 @@
 		F50333D423C861E800D75941 /* Stock */ = {
 			isa = PBXGroup;
 			children = (
+				F5CA27BF23CC47440005B244 /* Helper */,
 				9F470AC623C950EC007FBE12 /* Category */,
 				F50333E623C8646600D75941 /* View */,
 				F50333E523C8645A00D75941 /* Model */,
@@ -380,6 +384,15 @@
 				F588978B23C878280002F3DA /* HHKlineVolumeView.m */,
 			);
 			path = VolumeView;
+			sourceTree = "<group>";
+		};
+		F5CA27BF23CC47440005B244 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F5CA27C023CC47620005B244 /* HHStockHelper.h */,
+				F5CA27C123CC47620005B244 /* HHStockHelper.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +588,7 @@
 				F50333B023C8610D00D75941 /* main.m in Sources */,
 				F50333F423C865ED00D75941 /* HHLinePositionModel.m in Sources */,
 				F50333A223C8610800D75941 /* SceneDelegate.m in Sources */,
+				F5CA27C223CC47620005B244 /* HHStockHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

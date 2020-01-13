@@ -24,7 +24,7 @@
 /**
  数据源
  */
-@property (nonatomic, strong) NSArray <id<HHDataModelProtocol>>*lineModels;
+@property (nonatomic, strong) NSArray <id<HHDataModelProtocol>> *lineModels;
 
 /**
  K线部分
@@ -39,17 +39,23 @@
 /**
  当前绘制在屏幕上的数据源数组
  */
-@property (nonatomic, strong) NSMutableArray <id<HHDataModelProtocol>>*drawLineModels;
+@property (nonatomic, strong) NSMutableArray <id<HHDataModelProtocol>> *drawLineModels;
 
 /**
  当前绘制在屏幕上的数据源位置数组
  */
-@property (nonatomic, copy) NSArray <HHLinePositionModel *>*drawLinePositionModels;
+@property (nonatomic, copy) NSArray <HHLinePositionModel *> *drawLinePositionModels;
 
 /**
  长按时出现的遮罩View
  */
 @property (nonatomic, strong) HHKlineMaskView *maskView;
+
+/// 滚动 scrollview 时需要加载数据
+@property (nonatomic, assign, getter=isScrollNeedToLoadData) BOOL scrollNeedToLoadData;
+
+// scrollView lastOffsetX
+@property (nonatomic, assign) CGFloat lastOffsetX;
 
 @end
 
@@ -65,20 +71,20 @@
     //当前长按选中的model
     id<HHDataModelProtocol> selectedModel;
 }
-
-
-/**
- 重绘视图
  
- @param lineModels  K线数据源
- */
-- (void)reDrawWithLineModels:(NSArray <id<HHDataModelProtocol>>*) lineModels {
+- (void)reDrawWithLineModels:(NSArray <id<HHDataModelProtocol>>*) lineModels isRefresh:(BOOL)isRefresh {
     _lineModels = lineModels;
+    
+    self.scrollNeedToLoadData = NO;
      
     [self updateScrollViewContentWidth];
     [self draw];
     if (self.lineModels.count > 0) {
-        self.stockScrollView.contentOffset = CGPointMake(self.stockScrollView.contentSize.width - self.stockScrollView.bounds.size.width, self.stockScrollView.contentOffset.y);
+        if (isRefresh) {
+            self.stockScrollView.contentOffset = CGPointMake(self.stockScrollView.contentSize.width - self.stockScrollView.bounds.size.width, self.stockScrollView.contentOffset.y);
+        } else { 
+            [self.stockScrollView setContentOffset:CGPointMake(self.lastOffsetX, self.stockScrollView.contentOffset.y)];
+        }
     }
 }
 
@@ -103,7 +109,6 @@
 //        [self drawTopDesc];
     }
 }
- 
 
 /**
  构造器
@@ -124,7 +129,7 @@
 /**
  初始化子View
  */
-- (void)initUI {  
+- (void)initUI {
     //加载StockScrollView
     [self initUI_stockScrollView];
     
@@ -146,8 +151,7 @@
         make.left.right.bottom.equalTo(_stockScrollView.contentView);
         make.height.equalTo(_stockScrollView.contentView).multipliedBy([HHStockVariable volumeViewRadio]);
     }];
-
-    
+ 
     __weak typeof(self) weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
@@ -180,11 +184,27 @@
 //    [_stockScrollView addGestureRecognizer:longPress];
 }
 
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    self.scrollNeedToLoadData = YES;
+}
+
 /**
  scrollView滑动重绘页面
  */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView { 
     [self draw];
+    
+    if (!self.scrollNeedToLoadData) {
+        return;
+    }
+
+    self.lastOffsetX = scrollView.contentSize.width - scrollView.contentOffset.x;
+    
+    if ([self.delegate respondsToSelector:@selector(stockView:didScrollView:)]) {
+        [self.delegate stockView:self didScrollView:scrollView];
+    }
 }
 
 //- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -214,7 +234,6 @@
     NSInteger startIndex = [self startIndex];
     NSInteger drawLineCount = (self.stockScrollView.frame.size.width) / ([HHStockVariable lineGap] +  [HHStockVariable lineWidth]);
 //    NSInteger drawLineCount = (self.stockScrollView.frame.size.width - [HHStockVariable lineGap]) / ([HHStockVariable lineGap] +  [HHStockVariable lineWidth]);
-
     
     [self.drawLineModels removeAllObjects];
     NSInteger length = startIndex+drawLineCount < self.lineModels.count ? drawLineCount+1 : self.lineModels.count - startIndex;
@@ -245,7 +264,6 @@
     maxValue = max;
     minValue = average * 2 - maxValue;
 }
-
 
 - (CGRect)rectOfNSString:(NSString *)string attribute:(NSDictionary *)attribute {
     CGRect rect = [string boundingRectWithSize:CGSizeMake(MAXFLOAT, 0)

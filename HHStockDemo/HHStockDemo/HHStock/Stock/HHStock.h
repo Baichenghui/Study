@@ -15,13 +15,22 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class HHStock;
+ 
+@protocol HHStockDelegate <NSObject>
+  
+/// 滚动加载更多数据
+/// @param stock stock
+/// @param scrollView scrollView
+- (void)stock:(HHStock *)stock didScrollViewToLoadData:(UIScrollView *)scrollView;
+
+@end
 
 @protocol HHStockDataSource <NSObject>
 @required 
 /**
  K线的数据源
  */
--(NSArray *)HHStock:(HHStock *)stock stockDatasOfIndex:(NSInteger)index;
+-(NSArray *)stock:(HHStock *)stock stockDatasOfIndex:(NSInteger)index;
 
 /**
  K线的顶部栏文字
@@ -32,6 +41,14 @@ NS_ASSUME_NONNULL_BEGIN
  K线的类型
  */
 -(HHStockType)stockTypeOfIndex:(NSInteger)index;
+
+/// 是否正在为 stock 加载数据
+/// @param stock stock
+- (BOOL)isLoadingDataForStock:(HHStock *)stock;
+
+/// 是否还有更多数据
+/// @param stock stock
+- (BOOL)hasMoreDataForStock:(HHStock *)stock;
 
 @optional
 
@@ -48,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface HHStock : NSObject
-
+ 
 /**
  HHStock的ContentView
  */
@@ -62,12 +79,12 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return HHStock对象
  */
-- (instancetype)initWithFrame:(CGRect)frame dataSource:(id<HHStockDataSource>)dataSource;
+- (instancetype)initWithFrame:(CGRect)frame dataSource:(id<HHStockDataSource>)dataSource delegate:(id)delegate ;
 
 /**
  开始绘制
  */
-- (void)draw;
+- (void)draw:(BOOL)isRefresh;
 
 /**
  stockView的容器

@@ -102,7 +102,13 @@
         CGFloat average = [[[array valueForKeyPath:@"close"] valueForKeyPath:@"@avg.floatValue"] floatValue];
         MA5 = @(average);
     } else {
-        MA5 = @0;
+        if (index < 4) {
+            NSArray *array = [_parentDictArray subarrayWithRange:NSMakeRange(0, index)];
+            CGFloat average = [[[array valueForKeyPath:@"close"] valueForKeyPath:@"@avg.floatValue"] floatValue];
+            MA5 = @(average);
+        } else {
+            MA5 = @0;
+        }
     }
     
     if (index >= 9) {
@@ -110,7 +116,13 @@
         CGFloat average = [[[array valueForKeyPath:@"close"] valueForKeyPath:@"@avg.floatValue"] floatValue];
         MA10 = @(average);
     } else {
-        MA10 = @0;
+        if (index < 9) {
+            NSArray *array = [_parentDictArray subarrayWithRange:NSMakeRange(0, index)];
+            CGFloat average = [[[array valueForKeyPath:@"close"] valueForKeyPath:@"@avg.floatValue"] floatValue];
+            MA10 = @(average);
+        } else {
+            MA10 = @0;
+        }
     }
     
     if (index >= 19) {
@@ -118,7 +130,13 @@
         CGFloat average = [[[array valueForKeyPath:@"close"] valueForKeyPath:@"@avg.floatValue"] floatValue];
         MA20 = @(average);
     } else {
-        MA20 = @0;
+        if (index < 19) {
+            NSArray *array = [_parentDictArray subarrayWithRange:NSMakeRange(0, index)];
+            CGFloat average = [[[array valueForKeyPath:@"close"] valueForKeyPath:@"@avg.floatValue"] floatValue];
+            MA20 = @(average);
+        } else {
+            MA20 = @0;
+        }
     }
     
 }

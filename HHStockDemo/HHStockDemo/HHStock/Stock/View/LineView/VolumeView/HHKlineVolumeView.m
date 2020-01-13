@@ -101,7 +101,9 @@ static inline bool isEqualZero(float value)
     
     CGFloat unitValue = (maxValue - minValue)/(maxY - minY);
     
+    __weak typeof(self) weakSelf = self;
     [drawLineModels enumerateObjectsUsingBlock:^(id<HHDataModelProtocol>  _Nonnull model, NSUInteger idx, BOOL * _Nonnull stop) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         CGFloat xPosition = startX + idx * ([HHStockVariable lineWidth] + [HHStockVariable lineGap]);
         CGFloat yPosition = ABS(maxY - (model.Volume - minValue)/unitValue);
@@ -109,7 +111,7 @@ static inline bool isEqualZero(float value)
         CGPoint endPoint = CGPointMake(xPosition, maxY);
         
         HHVolumePositionModel *positionModel = [HHVolumePositionModel modelWithStartPoint:startPoint endPoint:endPoint dayDesc:model.Day];
-        [self.drawPositionModels addObject:positionModel];
+        [strongSelf.drawPositionModels addObject:positionModel];
     }];
     
     return self.drawPositionModels ;
