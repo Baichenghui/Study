@@ -1,0 +1,1399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7543C5B9EB5B97B57C9EA80C /* Pods_HHTimeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2657AF777BEEAD1848C713 /* Pods_HHTimeUITests.framework */; };
+		9F3A23AF23841FDA002F9CCF /* HHCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A23AD23841FDA002F9CCF /* HHCalendarVC.swift */; };
+		9F3A23E5238571A1002F9CCF /* HHLunarFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A23E4238571A1002F9CCF /* HHLunarFormatter.swift */; };
+		9F3A24172386E001002F9CCF /* HHCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A24162386E001002F9CCF /* HHCalendarCell.swift */; };
+		9F3A24272388FF10002F9CCF /* HHAlarmClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A24262388FF10002F9CCF /* HHAlarmClockVC.swift */; };
+		9F3A24292388FF54002F9CCF /* HHAlarmClockUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A24282388FF54002F9CCF /* HHAlarmClockUtil.swift */; };
+		9F3A242F23893957002F9CCF /* weakup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F3A242E23893957002F9CCF /* weakup.mp3 */; };
+		9F3A24312389395E002F9CCF /* chirp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F3A24302389395D002F9CCF /* chirp.mp3 */; };
+		9F3A2433238976FB002F9CCF /* HHCalendarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A2432238976FB002F9CCF /* HHCalendarData.swift */; };
+		9F3A243523897705002F9CCF /* HHCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A243423897705002F9CCF /* HHCalendarManager.swift */; };
+		9F3E1331238A90FE00C720B0 /* LuanarCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E1330238A90FE00C720B0 /* LuanarCore.m */; };
+		9F3E1336238D667500C720B0 /* HHLuanarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E1335238D667500C720B0 /* HHLuanarCore.swift */; };
+		9F3E1339238D691000C720B0 /* LCMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E1338238D691000C720B0 /* LCMemoryCache.m */; };
+		9F6CBB1823927188001658C2 /* HHCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CBB1723927188001658C2 /* HHCalendar.swift */; };
+		9F6CBB1A2392755A001658C2 /* HHCalendarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CBB192392755A001658C2 /* HHCalendarScrollView.swift */; };
+		9F6CBB1C23927637001658C2 /* HHCalendarHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CBB1B23927637001658C2 /* HHCalendarHeadView.swift */; };
+		9F6CBB2023933E66001658C2 /* HHCalendarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CBB1F23933E66001658C2 /* HHCalendarLoader.swift */; };
+		9F82C79C236D5BB2001E9F1F /* HHBaseNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C79A236D5BB2001E9F1F /* HHBaseNavgationController.swift */; };
+		9F82C79D236D5BB2001E9F1F /* HHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C79B236D5BB2001E9F1F /* HHBaseViewController.swift */; };
+		9F82C7A0236D5C2A001E9F1F /* HHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C79F236D5C2A001E9F1F /* HHTheme.swift */; };
+		9F82C7A3236D5D42001E9F1F /* HHNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7A2236D5D42001E9F1F /* HHNotificationManager.swift */; };
+		9F82C7A5236D5EA5001E9F1F /* HHSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7A4236D5EA5001E9F1F /* HHSQLiteManager.swift */; };
+		9F82C7A7236D5F9E001E9F1F /* DaysMatterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7A6236D5F9E001E9F1F /* DaysMatterVC.swift */; };
+		9F82C7A9236D5FAE001E9F1F /* MemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7A8236D5FAE001E9F1F /* MemoVC.swift */; };
+		9F82C7AB236D5FCC001E9F1F /* HabitTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7AA236D5FCC001E9F1F /* HabitTrainingVC.swift */; };
+		9F82C7AD236D5FDB001E9F1F /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7AC236D5FDB001E9F1F /* MineVC.swift */; };
+		9F82C7AF236D603C001E9F1F /* HHBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7AE236D603C001E9F1F /* HHBaseViewModel.swift */; };
+		9F82C7B3236DC4CC001E9F1F /* HHDaysMatterDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7B2236DC4CC001E9F1F /* HHDaysMatterDao.swift */; };
+		9F82C7B6236DCEAC001E9F1F /* HHMemoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7B4236DCEAC001E9F1F /* HHMemoDao.swift */; };
+		9F82C7B7236DCEAC001E9F1F /* HHHabitTrainingDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7B5236DCEAC001E9F1F /* HHHabitTrainingDao.swift */; };
+		9F82C7BA2371A806001E9F1F /* HHBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7B92371A806001E9F1F /* HHBaseView.swift */; };
+		9F82C7BC2371A83F001E9F1F /* HHBaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7BB2371A83F001E9F1F /* HHBaseTableViewHeaderFooterView.swift */; };
+		9F82C7BE2371A867001E9F1F /* HHBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7BD2371A867001E9F1F /* HHBaseTableViewCell.swift */; };
+		9F82C7C02371A890001E9F1F /* HHBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82C7BF2371A890001E9F1F /* HHBaseCollectionViewCell.swift */; };
+		9F9D583C2377BCC400F2AA6C /* HHEventKitUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D583B2377BCC400F2AA6C /* HHEventKitUtil.swift */; };
+		9F9D5840237AE64D00F2AA6C /* HHDiaryBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D583F237AE64D00F2AA6C /* HHDiaryBean.swift */; };
+		9F9D5842237AE6D500F2AA6C /* HHDiaryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D5841237AE6D500F2AA6C /* HHDiaryDao.swift */; };
+		9FDDB99D238FF776007198B0 /* KDCalendarDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDB998238FF776007198B0 /* KDCalendarDateCell.swift */; };
+		9FDDB99E238FF776007198B0 /* KDCalendarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDB999238FF776007198B0 /* KDCalendarCore.swift */; };
+		9FDDB99F238FF776007198B0 /* KDCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDB99A238FF776007198B0 /* KDCalendar.swift */; };
+		9FDDB9A0238FF776007198B0 /* KDCalendarAppearStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDB99B238FF776007198B0 /* KDCalendarAppearStyle.swift */; };
+		9FDDB9A1238FF776007198B0 /* KDCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDB99C238FF776007198B0 /* KDCalendarHeaderView.swift */; };
+		BBB219BD39CACD9B82E6029B /* Pods_HHTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B26DF438904D20B8186B7AD /* Pods_HHTime.framework */; };
+		C19CE6BC74B113AA4CFBFA86 /* Pods_HHTimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246A542A907B9721F8F04178 /* Pods_HHTimeTests.framework */; };
+		F5082649236FCB7600C4D6EF /* HHCategoryDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5082648236FCB7600C4D6EF /* HHCategoryDao.swift */; };
+		F508264C236FCEB400C4D6EF /* HHCategoryBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508264B236FCEB400C4D6EF /* HHCategoryBean.swift */; };
+		F508264E236FCEDC00C4D6EF /* HHDaysMatterBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508264D236FCEDC00C4D6EF /* HHDaysMatterBean.swift */; };
+		F5082650236FCEE800C4D6EF /* HHHabitTrainingBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508264F236FCEE800C4D6EF /* HHHabitTrainingBean.swift */; };
+		F5082652236FCEF300C4D6EF /* HHMemoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5082651236FCEF300C4D6EF /* HHMemoBean.swift */; };
+		F52EEFF8238FA1C40096B14C /* weakup.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9F3A242D2389385E002F9CCF /* weakup.caf */; };
+		F52FE44C23700671005BD229 /* HHUserDefaultUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FE44B23700671005BD229 /* HHUserDefaultUtil.swift */; };
+		F52FE44F23710099005BD229 /* HHBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FE44E23710099005BD229 /* HHBaseTableViewController.swift */; };
+		F52FE45223710B8C005BD229 /* HHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FE45123710B8C005BD229 /* HHTableView.swift */; };
+		F552C76A23951E99007F784F /* HHHabitTrainingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C76923951E99007F784F /* HHHabitTrainingUtil.swift */; };
+		F552C76C23951ECD007F784F /* HHHabitDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C76B23951ECD007F784F /* HHHabitDao.swift */; };
+		F552C76E23951EDD007F784F /* HHHabitBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C76D23951EDD007F784F /* HHHabitBean.swift */; };
+		F552C77423974E32007F784F /* HHCategoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C77323974E32007F784F /* HHCategoryResult.swift */; };
+		F552C77623974E58007F784F /* HHDaysMatterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C77523974E58007F784F /* HHDaysMatterResult.swift */; };
+		F552C77823974E68007F784F /* HHMemoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C77723974E68007F784F /* HHMemoResult.swift */; };
+		F552C77A23974E78007F784F /* HHDiaryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C77923974E78007F784F /* HHDiaryResult.swift */; };
+		F552C77C23974E8C007F784F /* HHHabitTrainingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C77B23974E8C007F784F /* HHHabitTrainingResult.swift */; };
+		F552C77E23974E9B007F784F /* HHHabitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C77D23974E9B007F784F /* HHHabitResult.swift */; };
+		F552C78323978F54007F784F /* HHDaysMatterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C78223978F54007F784F /* HHDaysMatterRepository.swift */; };
+		F552C78523978F7A007F784F /* HHMemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C78423978F7A007F784F /* HHMemoRepository.swift */; };
+		F552C78723978F8C007F784F /* HHDiaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C78623978F8C007F784F /* HHDiaryRepository.swift */; };
+		F552C78923978F9F007F784F /* HHHabitTrainingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552C78823978F9F007F784F /* HHHabitTrainingRepository.swift */; };
+		F5A3E8AC23711B9C00E42095 /* HHTableViewConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3E8AB23711B9C00E42095 /* HHTableViewConfigurations.swift */; };
+		F5A3E8AE2371499000E42095 /* UIScrollViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3E8AD2371499000E42095 /* UIScrollViewExtensions.swift */; };
+		F5A3E8B0237154EA00E42095 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3E8AF237154EA00E42095 /* UITableViewExtensions.swift */; };
+		F5BCDCF1236BB9330025CF3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDCF0236BB9330025CF3A /* AppDelegate.swift */; };
+		F5BCDCF3236BB9330025CF3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDCF2236BB9330025CF3A /* SceneDelegate.swift */; };
+		F5BCDCF5236BB9330025CF3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDCF4236BB9330025CF3A /* ViewController.swift */; };
+		F5BCDCF8236BB9330025CF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BCDCF6236BB9330025CF3A /* Main.storyboard */; };
+		F5BCDCFA236BB9350025CF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BCDCF9236BB9350025CF3A /* Assets.xcassets */; };
+		F5BCDCFD236BB9350025CF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BCDCFB236BB9350025CF3A /* LaunchScreen.storyboard */; };
+		F5BCDD08236BB9360025CF3A /* HHTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDD07236BB9360025CF3A /* HHTimeTests.swift */; };
+		F5BCDD13236BB9360025CF3A /* HHTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDD12236BB9360025CF3A /* HHTimeUITests.swift */; };
+		F5BCDD3D236BC2C70025CF3A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDD3A236BC2C70025CF3A /* UIColorExtensions.swift */; };
+		F5BCDD3E236BC2C70025CF3A /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDD3B236BC2C70025CF3A /* UIImageExtensions.swift */; };
+		F5BCDD3F236BC2C70025CF3A /* NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDD3C236BC2C70025CF3A /* NSStringExtensions.swift */; };
+		F5BCDD5A236BD3150025CF3A /* HHDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BCDD59236BD3150025CF3A /* HHDateUtil.swift */; };
+		F5D1CD082397BC6600DCD21D /* HHDaysMatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1CD072397BC6600DCD21D /* HHDaysMatterTests.swift */; };
+		F5D1CD0A2397BC7A00DCD21D /* HHCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1CD092397BC7A00DCD21D /* HHCalendarTests.swift */; };
+		F5D1CD0C2397BC8A00DCD21D /* HHAlarmClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1CD0B2397BC8A00DCD21D /* HHAlarmClockTests.swift */; };
+		F5D1CD0E2397BCBA00DCD21D /* HHMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1CD0D2397BCBA00DCD21D /* HHMemoTests.swift */; };
+		F5D1CD102397BCCD00DCD21D /* HHHabitTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1CD0F2397BCCD00DCD21D /* HHHabitTrainingTests.swift */; };
+		F5D1CD122397BCD900DCD21D /* HHHabitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1CD112397BCD900DCD21D /* HHHabitTests.swift */; };
+		F5E1ABC0238FD6FB00130464 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1ABBF238FD6FB00130464 /* DictionaryExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5BCDD04236BB9360025CF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5BCDCE5236BB9330025CF3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5BCDCEC236BB9330025CF3A;
+			remoteInfo = HHTime;
+		};
+		F5BCDD0F236BB9360025CF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5BCDCE5236BB9330025CF3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5BCDCEC236BB9330025CF3A;
+			remoteInfo = HHTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03065D267C11762A7CC86D47 /* Pods-HHTimeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTimeUITests.debug.xcconfig"; path = "Target Support Files/Pods-HHTimeUITests/Pods-HHTimeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		246A542A907B9721F8F04178 /* Pods_HHTimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2657AF777BEEAD1848C713 /* Pods_HHTimeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTimeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B0738FDB43F275975A0124 /* Pods-HHTimeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTimeUITests.release.xcconfig"; path = "Target Support Files/Pods-HHTimeUITests/Pods-HHTimeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		392F4D8AE3D1BA563556CF15 /* Pods-HHTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTime.debug.xcconfig"; path = "Target Support Files/Pods-HHTime/Pods-HHTime.debug.xcconfig"; sourceTree = "<group>"; };
+		3B26DF438904D20B8186B7AD /* Pods_HHTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		563AB1CC407CF9F5F69E4CDF /* Pods-HHTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTimeTests.release.xcconfig"; path = "Target Support Files/Pods-HHTimeTests/Pods-HHTimeTests.release.xcconfig"; sourceTree = "<group>"; };
+		85637DBAB7E2CAADF9C390E6 /* Pods-HHTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTime.release.xcconfig"; path = "Target Support Files/Pods-HHTime/Pods-HHTime.release.xcconfig"; sourceTree = "<group>"; };
+		9F3A23AD23841FDA002F9CCF /* HHCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarVC.swift; sourceTree = "<group>"; };
+		9F3A23E4238571A1002F9CCF /* HHLunarFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHLunarFormatter.swift; sourceTree = "<group>"; };
+		9F3A24162386E001002F9CCF /* HHCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarCell.swift; sourceTree = "<group>"; };
+		9F3A24262388FF10002F9CCF /* HHAlarmClockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHAlarmClockVC.swift; sourceTree = "<group>"; };
+		9F3A24282388FF54002F9CCF /* HHAlarmClockUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHAlarmClockUtil.swift; sourceTree = "<group>"; };
+		9F3A242D2389385E002F9CCF /* weakup.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = weakup.caf; sourceTree = "<group>"; };
+		9F3A242E23893957002F9CCF /* weakup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = weakup.mp3; sourceTree = "<group>"; };
+		9F3A24302389395D002F9CCF /* chirp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp.mp3; sourceTree = "<group>"; };
+		9F3A2432238976FB002F9CCF /* HHCalendarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarData.swift; sourceTree = "<group>"; };
+		9F3A243423897705002F9CCF /* HHCalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarManager.swift; sourceTree = "<group>"; };
+		9F3E132E238A90FE00C720B0 /* HHTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F3E132F238A90FE00C720B0 /* LuanarCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LuanarCore.h; sourceTree = "<group>"; };
+		9F3E1330238A90FE00C720B0 /* LuanarCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuanarCore.m; sourceTree = "<group>"; };
+		9F3E1335238D667500C720B0 /* HHLuanarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHLuanarCore.swift; sourceTree = "<group>"; };
+		9F3E1337238D691000C720B0 /* LCMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCMemoryCache.h; sourceTree = "<group>"; };
+		9F3E1338238D691000C720B0 /* LCMemoryCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCMemoryCache.m; sourceTree = "<group>"; };
+		9F6CBB1723927188001658C2 /* HHCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendar.swift; sourceTree = "<group>"; };
+		9F6CBB192392755A001658C2 /* HHCalendarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarScrollView.swift; sourceTree = "<group>"; };
+		9F6CBB1B23927637001658C2 /* HHCalendarHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarHeadView.swift; sourceTree = "<group>"; };
+		9F6CBB1F23933E66001658C2 /* HHCalendarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarLoader.swift; sourceTree = "<group>"; };
+		9F82C79A236D5BB2001E9F1F /* HHBaseNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseNavgationController.swift; sourceTree = "<group>"; };
+		9F82C79B236D5BB2001E9F1F /* HHBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseViewController.swift; sourceTree = "<group>"; };
+		9F82C79F236D5C2A001E9F1F /* HHTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTheme.swift; sourceTree = "<group>"; };
+		9F82C7A2236D5D42001E9F1F /* HHNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHNotificationManager.swift; sourceTree = "<group>"; };
+		9F82C7A4236D5EA5001E9F1F /* HHSQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSQLiteManager.swift; sourceTree = "<group>"; };
+		9F82C7A6236D5F9E001E9F1F /* DaysMatterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysMatterVC.swift; sourceTree = "<group>"; };
+		9F82C7A8236D5FAE001E9F1F /* MemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoVC.swift; sourceTree = "<group>"; };
+		9F82C7AA236D5FCC001E9F1F /* HabitTrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrainingVC.swift; sourceTree = "<group>"; };
+		9F82C7AC236D5FDB001E9F1F /* MineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
+		9F82C7AE236D603C001E9F1F /* HHBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseViewModel.swift; sourceTree = "<group>"; };
+		9F82C7B2236DC4CC001E9F1F /* HHDaysMatterDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDaysMatterDao.swift; sourceTree = "<group>"; };
+		9F82C7B4236DCEAC001E9F1F /* HHMemoDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHMemoDao.swift; sourceTree = "<group>"; };
+		9F82C7B5236DCEAC001E9F1F /* HHHabitTrainingDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHHabitTrainingDao.swift; sourceTree = "<group>"; };
+		9F82C7B92371A806001E9F1F /* HHBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseView.swift; sourceTree = "<group>"; };
+		9F82C7BB2371A83F001E9F1F /* HHBaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		9F82C7BD2371A867001E9F1F /* HHBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseTableViewCell.swift; sourceTree = "<group>"; };
+		9F82C7BF2371A890001E9F1F /* HHBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		9F9D583B2377BCC400F2AA6C /* HHEventKitUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHEventKitUtil.swift; sourceTree = "<group>"; };
+		9F9D583F237AE64D00F2AA6C /* HHDiaryBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDiaryBean.swift; sourceTree = "<group>"; };
+		9F9D5841237AE6D500F2AA6C /* HHDiaryDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDiaryDao.swift; sourceTree = "<group>"; };
+		9FDDB998238FF776007198B0 /* KDCalendarDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCalendarDateCell.swift; sourceTree = "<group>"; };
+		9FDDB999238FF776007198B0 /* KDCalendarCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCalendarCore.swift; sourceTree = "<group>"; };
+		9FDDB99A238FF776007198B0 /* KDCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCalendar.swift; sourceTree = "<group>"; };
+		9FDDB99B238FF776007198B0 /* KDCalendarAppearStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCalendarAppearStyle.swift; sourceTree = "<group>"; };
+		9FDDB99C238FF776007198B0 /* KDCalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCalendarHeaderView.swift; sourceTree = "<group>"; };
+		A3912994EF398D69F25CED5A /* Pods-HHTimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHTimeTests.debug.xcconfig"; path = "Target Support Files/Pods-HHTimeTests/Pods-HHTimeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5082648236FCB7600C4D6EF /* HHCategoryDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCategoryDao.swift; sourceTree = "<group>"; };
+		F508264B236FCEB400C4D6EF /* HHCategoryBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCategoryBean.swift; sourceTree = "<group>"; };
+		F508264D236FCEDC00C4D6EF /* HHDaysMatterBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDaysMatterBean.swift; sourceTree = "<group>"; };
+		F508264F236FCEE800C4D6EF /* HHHabitTrainingBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitTrainingBean.swift; sourceTree = "<group>"; };
+		F5082651236FCEF300C4D6EF /* HHMemoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHMemoBean.swift; sourceTree = "<group>"; };
+		F52FE44B23700671005BD229 /* HHUserDefaultUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHUserDefaultUtil.swift; sourceTree = "<group>"; };
+		F52FE44E23710099005BD229 /* HHBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseTableViewController.swift; sourceTree = "<group>"; };
+		F52FE45123710B8C005BD229 /* HHTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTableView.swift; sourceTree = "<group>"; };
+		F552C76923951E99007F784F /* HHHabitTrainingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitTrainingUtil.swift; sourceTree = "<group>"; };
+		F552C76B23951ECD007F784F /* HHHabitDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitDao.swift; sourceTree = "<group>"; };
+		F552C76D23951EDD007F784F /* HHHabitBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitBean.swift; sourceTree = "<group>"; };
+		F552C77323974E32007F784F /* HHCategoryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCategoryResult.swift; sourceTree = "<group>"; };
+		F552C77523974E58007F784F /* HHDaysMatterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDaysMatterResult.swift; sourceTree = "<group>"; };
+		F552C77723974E68007F784F /* HHMemoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHMemoResult.swift; sourceTree = "<group>"; };
+		F552C77923974E78007F784F /* HHDiaryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDiaryResult.swift; sourceTree = "<group>"; };
+		F552C77B23974E8C007F784F /* HHHabitTrainingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitTrainingResult.swift; sourceTree = "<group>"; };
+		F552C77D23974E9B007F784F /* HHHabitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitResult.swift; sourceTree = "<group>"; };
+		F552C78223978F54007F784F /* HHDaysMatterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDaysMatterRepository.swift; sourceTree = "<group>"; };
+		F552C78423978F7A007F784F /* HHMemoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHMemoRepository.swift; sourceTree = "<group>"; };
+		F552C78623978F8C007F784F /* HHDiaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDiaryRepository.swift; sourceTree = "<group>"; };
+		F552C78823978F9F007F784F /* HHHabitTrainingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitTrainingRepository.swift; sourceTree = "<group>"; };
+		F5A3E8AB23711B9C00E42095 /* HHTableViewConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTableViewConfigurations.swift; sourceTree = "<group>"; };
+		F5A3E8AD2371499000E42095 /* UIScrollViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtensions.swift; sourceTree = "<group>"; };
+		F5A3E8AF237154EA00E42095 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		F5BCDCED236BB9330025CF3A /* HHTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BCDCF0236BB9330025CF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5BCDCF2236BB9330025CF3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5BCDCF4236BB9330025CF3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5BCDCF7236BB9330025CF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5BCDCF9236BB9350025CF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5BCDCFC236BB9350025CF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5BCDCFE236BB9350025CF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BCDD03236BB9360025CF3A /* HHTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BCDD07236BB9360025CF3A /* HHTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTimeTests.swift; sourceTree = "<group>"; };
+		F5BCDD09236BB9360025CF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BCDD0E236BB9360025CF3A /* HHTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BCDD12236BB9360025CF3A /* HHTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHTimeUITests.swift; sourceTree = "<group>"; };
+		F5BCDD14236BB9360025CF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BCDD3A236BC2C70025CF3A /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		F5BCDD3B236BC2C70025CF3A /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		F5BCDD3C236BC2C70025CF3A /* NSStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStringExtensions.swift; sourceTree = "<group>"; };
+		F5BCDD59236BD3150025CF3A /* HHDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDateUtil.swift; sourceTree = "<group>"; };
+		F5D1CD072397BC6600DCD21D /* HHDaysMatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDaysMatterTests.swift; sourceTree = "<group>"; };
+		F5D1CD092397BC7A00DCD21D /* HHCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCalendarTests.swift; sourceTree = "<group>"; };
+		F5D1CD0B2397BC8A00DCD21D /* HHAlarmClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHAlarmClockTests.swift; sourceTree = "<group>"; };
+		F5D1CD0D2397BCBA00DCD21D /* HHMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHMemoTests.swift; sourceTree = "<group>"; };
+		F5D1CD0F2397BCCD00DCD21D /* HHHabitTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitTrainingTests.swift; sourceTree = "<group>"; };
+		F5D1CD112397BCD900DCD21D /* HHHabitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHHabitTests.swift; sourceTree = "<group>"; };
+		F5E1ABBF238FD6FB00130464 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5BCDCEA236BB9330025CF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB219BD39CACD9B82E6029B /* Pods_HHTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BCDD00236BB9360025CF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19CE6BC74B113AA4CFBFA86 /* Pods_HHTimeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BCDD0B236BB9360025CF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7543C5B9EB5B97B57C9EA80C /* Pods_HHTimeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BB28ED16F3DC059824EB1C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				392F4D8AE3D1BA563556CF15 /* Pods-HHTime.debug.xcconfig */,
+				85637DBAB7E2CAADF9C390E6 /* Pods-HHTime.release.xcconfig */,
+				A3912994EF398D69F25CED5A /* Pods-HHTimeTests.debug.xcconfig */,
+				563AB1CC407CF9F5F69E4CDF /* Pods-HHTimeTests.release.xcconfig */,
+				03065D267C11762A7CC86D47 /* Pods-HHTimeUITests.debug.xcconfig */,
+				38B0738FDB43F275975A0124 /* Pods-HHTimeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89FE8C45A3DB2C254B10C257 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B26DF438904D20B8186B7AD /* Pods_HHTime.framework */,
+				246A542A907B9721F8F04178 /* Pods_HHTimeTests.framework */,
+				2C2657AF777BEEAD1848C713 /* Pods_HHTimeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F3A24252388FED1002F9CCF /* AlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A24262388FF10002F9CCF /* HHAlarmClockVC.swift */,
+			);
+			path = AlarmClock;
+			sourceTree = "<group>";
+		};
+		9F3A242A23892F44002F9CCF /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A24302389395D002F9CCF /* chirp.mp3 */,
+				9F3A242E23893957002F9CCF /* weakup.mp3 */,
+				9F3A242D2389385E002F9CCF /* weakup.caf */,
+			);
+			name = mp3;
+			sourceTree = "<group>";
+		};
+		9F3E1327238A86BD00C720B0 /* LunarCore */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A2432238976FB002F9CCF /* HHCalendarData.swift */,
+				9F3A23E4238571A1002F9CCF /* HHLunarFormatter.swift */,
+				9F3A243423897705002F9CCF /* HHCalendarManager.swift */,
+				9F3E1335238D667500C720B0 /* HHLuanarCore.swift */,
+				9F3E132F238A90FE00C720B0 /* LuanarCore.h */,
+				9F3E1330238A90FE00C720B0 /* LuanarCore.m */,
+				9F3E132E238A90FE00C720B0 /* HHTime-Bridging-Header.h */,
+				9F3E1337238D691000C720B0 /* LCMemoryCache.h */,
+				9F3E1338238D691000C720B0 /* LCMemoryCache.m */,
+			);
+			path = LunarCore;
+			sourceTree = "<group>";
+		};
+		9F6CBB1623927172001658C2 /* HHCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CBB1723927188001658C2 /* HHCalendar.swift */,
+				9F3A24162386E001002F9CCF /* HHCalendarCell.swift */,
+				9F6CBB192392755A001658C2 /* HHCalendarScrollView.swift */,
+				9F6CBB1B23927637001658C2 /* HHCalendarHeadView.swift */,
+				9F6CBB1F23933E66001658C2 /* HHCalendarLoader.swift */,
+			);
+			path = HHCalendar;
+			sourceTree = "<group>";
+		};
+		9F82C776236D52C2001E9F1F /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CBB1623927172001658C2 /* HHCalendar */,
+				9FDDB997238FF776007198B0 /* KDCalendar */,
+				9F3E1327238A86BD00C720B0 /* LunarCore */,
+				F52FE4502371034D005BD229 /* TableView */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		9F82C777236D52C2001E9F1F /* Modlue */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C797236D5AF5001E9F1F /* Main */,
+				9F3A24252388FED1002F9CCF /* AlarmClock */,
+				9F82C778236D52C9001E9F1F /* Calendar */,
+				9F82C77B236D537F001E9F1F /* DaysMatter */,
+				9F82C77A236D5342001E9F1F /* Memo */,
+				9F82C77C236D53B8001E9F1F /* HabitTraining */,
+				9F82C77D236D53F8001E9F1F /* Mine */,
+			);
+			path = Modlue;
+			sourceTree = "<group>";
+		};
+		9F82C778236D52C9001E9F1F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A23AD23841FDA002F9CCF /* HHCalendarVC.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		9F82C779236D52D2001E9F1F /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				F552C78A23979471007F784F /* Convert */,
+				F552C78123978EA0007F784F /* Repository */,
+				F508264A236FCD0100C4D6EF /* Bean */,
+				F552C77223974A70007F784F /* Result */,
+				9F82C7B8236EBA95001E9F1F /* Dao */,
+				9F82C7A4236D5EA5001E9F1F /* HHSQLiteManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		9F82C77A236D5342001E9F1F /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C78C236D5ABF001E9F1F /* Controller */,
+				9F82C78E236D5ABF001E9F1F /* Model */,
+				9F82C78D236D5ABF001E9F1F /* View */,
+				9F82C78B236D5ABF001E9F1F /* ViewModel */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		9F82C77B236D537F001E9F1F /* DaysMatter */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C788236D5A3D001E9F1F /* Model */,
+				9F82C78A236D5A7B001E9F1F /* View */,
+				9F82C789236D5A42001E9F1F /* ViewModel */,
+				9F82C787236D5A36001E9F1F /* Controller */,
+			);
+			path = DaysMatter;
+			sourceTree = "<group>";
+		};
+		9F82C77C236D53B8001E9F1F /* HabitTraining */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C791236D5AC6001E9F1F /* Controller */,
+				9F82C790236D5AC6001E9F1F /* Model */,
+				9F82C792236D5AC6001E9F1F /* View */,
+				9F82C78F236D5AC6001E9F1F /* ViewModel */,
+			);
+			path = HabitTraining;
+			sourceTree = "<group>";
+		};
+		9F82C77D236D53F8001E9F1F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C793236D5AD6001E9F1F /* Controller */,
+				9F82C796236D5AD6001E9F1F /* Model */,
+				9F82C794236D5AD6001E9F1F /* View */,
+				9F82C795236D5AD6001E9F1F /* ViewModel */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		9F82C781236D5855001E9F1F /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C7A2236D5D42001E9F1F /* HHNotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		9F82C783236D58CC001E9F1F /* BaseComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C79A236D5BB2001E9F1F /* HHBaseNavgationController.swift */,
+				9F82C79B236D5BB2001E9F1F /* HHBaseViewController.swift */,
+				F52FE44E23710099005BD229 /* HHBaseTableViewController.swift */,
+				9F82C7AE236D603C001E9F1F /* HHBaseViewModel.swift */,
+				9F82C7B92371A806001E9F1F /* HHBaseView.swift */,
+				9F82C7BB2371A83F001E9F1F /* HHBaseTableViewHeaderFooterView.swift */,
+				9F82C7BD2371A867001E9F1F /* HHBaseTableViewCell.swift */,
+				9F82C7BF2371A890001E9F1F /* HHBaseCollectionViewCell.swift */,
+			);
+			path = BaseComponent;
+			sourceTree = "<group>";
+		};
+		9F82C787236D5A36001E9F1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C7A6236D5F9E001E9F1F /* DaysMatterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F82C788236D5A3D001E9F1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F82C789236D5A42001E9F1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F82C78A236D5A7B001E9F1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F82C78B236D5ABF001E9F1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F82C78C236D5ABF001E9F1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C7A8236D5FAE001E9F1F /* MemoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F82C78D236D5ABF001E9F1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F82C78E236D5ABF001E9F1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F82C78F236D5AC6001E9F1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F82C790236D5AC6001E9F1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F82C791236D5AC6001E9F1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C7AA236D5FCC001E9F1F /* HabitTrainingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F82C792236D5AC6001E9F1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F82C793236D5AD6001E9F1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C7AC236D5FDB001E9F1F /* MineVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F82C794236D5AD6001E9F1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F82C795236D5AD6001E9F1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F82C796236D5AD6001E9F1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F82C797236D5AF5001E9F1F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9F82C79E236D5BD7001E9F1F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C79F236D5C2A001E9F1F /* HHTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		9F82C7B8236EBA95001E9F1F /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				F5082648236FCB7600C4D6EF /* HHCategoryDao.swift */,
+				9F82C7B2236DC4CC001E9F1F /* HHDaysMatterDao.swift */,
+				9F82C7B5236DCEAC001E9F1F /* HHHabitTrainingDao.swift */,
+				F552C76B23951ECD007F784F /* HHHabitDao.swift */,
+				9F82C7B4236DCEAC001E9F1F /* HHMemoDao.swift */,
+				9F9D5841237AE6D500F2AA6C /* HHDiaryDao.swift */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		9FDDB997238FF776007198B0 /* KDCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				9FDDB998238FF776007198B0 /* KDCalendarDateCell.swift */,
+				9FDDB999238FF776007198B0 /* KDCalendarCore.swift */,
+				9FDDB99A238FF776007198B0 /* KDCalendar.swift */,
+				9FDDB99B238FF776007198B0 /* KDCalendarAppearStyle.swift */,
+				9FDDB99C238FF776007198B0 /* KDCalendarHeaderView.swift */,
+			);
+			path = KDCalendar;
+			sourceTree = "<group>";
+		};
+		F508264A236FCD0100C4D6EF /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				F508264B236FCEB400C4D6EF /* HHCategoryBean.swift */,
+				F508264D236FCEDC00C4D6EF /* HHDaysMatterBean.swift */,
+				F5082651236FCEF300C4D6EF /* HHMemoBean.swift */,
+				9F9D583F237AE64D00F2AA6C /* HHDiaryBean.swift */,
+				F508264F236FCEE800C4D6EF /* HHHabitTrainingBean.swift */,
+				F552C76D23951EDD007F784F /* HHHabitBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		F52FE4502371034D005BD229 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F52FE45123710B8C005BD229 /* HHTableView.swift */,
+				F5A3E8AB23711B9C00E42095 /* HHTableViewConfigurations.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F552C77223974A70007F784F /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				F552C77323974E32007F784F /* HHCategoryResult.swift */,
+				F552C77523974E58007F784F /* HHDaysMatterResult.swift */,
+				F552C77723974E68007F784F /* HHMemoResult.swift */,
+				F552C77923974E78007F784F /* HHDiaryResult.swift */,
+				F552C77B23974E8C007F784F /* HHHabitTrainingResult.swift */,
+				F552C77D23974E9B007F784F /* HHHabitResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		F552C78123978EA0007F784F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F552C78223978F54007F784F /* HHDaysMatterRepository.swift */,
+				F552C78423978F7A007F784F /* HHMemoRepository.swift */,
+				F552C78623978F8C007F784F /* HHDiaryRepository.swift */,
+				F552C78823978F9F007F784F /* HHHabitTrainingRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F552C78A23979471007F784F /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		F5BCDCE4236BB9330025CF3A = {
+			isa = PBXGroup;
+			children = (
+				F5BCDCEF236BB9330025CF3A /* HHTime */,
+				F5BCDD06236BB9360025CF3A /* HHTimeTests */,
+				F5BCDD11236BB9360025CF3A /* HHTimeUITests */,
+				F5BCDCEE236BB9330025CF3A /* Products */,
+				5BB28ED16F3DC059824EB1C2 /* Pods */,
+				89FE8C45A3DB2C254B10C257 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5BCDCEE236BB9330025CF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCDCED236BB9330025CF3A /* HHTime.app */,
+				F5BCDD03236BB9360025CF3A /* HHTimeTests.xctest */,
+				F5BCDD0E236BB9360025CF3A /* HHTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5BCDCEF236BB9330025CF3A /* HHTime */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCDCF0236BB9330025CF3A /* AppDelegate.swift */,
+				F5BCDCF2236BB9330025CF3A /* SceneDelegate.swift */,
+				F5BCDCF4236BB9330025CF3A /* ViewController.swift */,
+				9F82C783236D58CC001E9F1F /* BaseComponent */,
+				F5BCDD21236BBC840025CF3A /* Common */,
+				9F82C776236D52C2001E9F1F /* Widget */,
+				9F82C777236D52C2001E9F1F /* Modlue */,
+				F5BCDD23236BBCA40025CF3A /* Supporting Files */,
+			);
+			path = HHTime;
+			sourceTree = "<group>";
+		};
+		F5BCDD06236BB9360025CF3A /* HHTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCDD07236BB9360025CF3A /* HHTimeTests.swift */,
+				F5BCDD09236BB9360025CF3A /* Info.plist */,
+				F5D1CD072397BC6600DCD21D /* HHDaysMatterTests.swift */,
+				F5D1CD092397BC7A00DCD21D /* HHCalendarTests.swift */,
+				F5D1CD0B2397BC8A00DCD21D /* HHAlarmClockTests.swift */,
+				F5D1CD0D2397BCBA00DCD21D /* HHMemoTests.swift */,
+				F5D1CD0F2397BCCD00DCD21D /* HHHabitTrainingTests.swift */,
+				F5D1CD112397BCD900DCD21D /* HHHabitTests.swift */,
+			);
+			path = HHTimeTests;
+			sourceTree = "<group>";
+		};
+		F5BCDD11236BB9360025CF3A /* HHTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCDD12236BB9360025CF3A /* HHTimeUITests.swift */,
+				F5BCDD14236BB9360025CF3A /* Info.plist */,
+			);
+			path = HHTimeUITests;
+			sourceTree = "<group>";
+		};
+		F5BCDD21236BBC840025CF3A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9F82C79E236D5BD7001E9F1F /* Theme */,
+				9F82C781236D5855001E9F1F /* Notification */,
+				9F82C779236D52D2001E9F1F /* DB */,
+				F5BCDD25236BBE120025CF3A /* Extensions */,
+				F5BCDD24236BBE000025CF3A /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F5BCDD23236BBCA40025CF3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A242A23892F44002F9CCF /* mp3 */,
+				F5BCDCF6236BB9330025CF3A /* Main.storyboard */,
+				F5BCDCF9236BB9350025CF3A /* Assets.xcassets */,
+				F5BCDCFB236BB9350025CF3A /* LaunchScreen.storyboard */,
+				F5BCDCFE236BB9350025CF3A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5BCDD24236BBE000025CF3A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCDD59236BD3150025CF3A /* HHDateUtil.swift */,
+				F52FE44B23700671005BD229 /* HHUserDefaultUtil.swift */,
+				9F9D583B2377BCC400F2AA6C /* HHEventKitUtil.swift */,
+				9F3A24282388FF54002F9CCF /* HHAlarmClockUtil.swift */,
+				F552C76923951E99007F784F /* HHHabitTrainingUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F5BCDD25236BBE120025CF3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5BCDD3C236BC2C70025CF3A /* NSStringExtensions.swift */,
+				F5BCDD3A236BC2C70025CF3A /* UIColorExtensions.swift */,
+				F5BCDD3B236BC2C70025CF3A /* UIImageExtensions.swift */,
+				F5A3E8AD2371499000E42095 /* UIScrollViewExtensions.swift */,
+				F5A3E8AF237154EA00E42095 /* UITableViewExtensions.swift */,
+				F5E1ABBF238FD6FB00130464 /* DictionaryExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5BCDCEC236BB9330025CF3A /* HHTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5BCDD17236BB9360025CF3A /* Build configuration list for PBXNativeTarget "HHTime" */;
+			buildPhases = (
+				19C97901C8BE26C7755E565B /* [CP] Check Pods Manifest.lock */,
+				F5BCDCE9236BB9330025CF3A /* Sources */,
+				F5BCDCEA236BB9330025CF3A /* Frameworks */,
+				F5BCDCEB236BB9330025CF3A /* Resources */,
+				FC91C4438E8C800CBE865198 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHTime;
+			productName = HHTime;
+			productReference = F5BCDCED236BB9330025CF3A /* HHTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5BCDD02236BB9360025CF3A /* HHTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5BCDD1A236BB9360025CF3A /* Build configuration list for PBXNativeTarget "HHTimeTests" */;
+			buildPhases = (
+				05D1245B02FF70C14A92C7CE /* [CP] Check Pods Manifest.lock */,
+				F5BCDCFF236BB9360025CF3A /* Sources */,
+				F5BCDD00236BB9360025CF3A /* Frameworks */,
+				F5BCDD01236BB9360025CF3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5BCDD05236BB9360025CF3A /* PBXTargetDependency */,
+			);
+			name = HHTimeTests;
+			productName = HHTimeTests;
+			productReference = F5BCDD03236BB9360025CF3A /* HHTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5BCDD0D236BB9360025CF3A /* HHTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5BCDD1D236BB9360025CF3A /* Build configuration list for PBXNativeTarget "HHTimeUITests" */;
+			buildPhases = (
+				F2FF324D9B8AADF174920585 /* [CP] Check Pods Manifest.lock */,
+				F5BCDD0A236BB9360025CF3A /* Sources */,
+				F5BCDD0B236BB9360025CF3A /* Frameworks */,
+				F5BCDD0C236BB9360025CF3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5BCDD10236BB9360025CF3A /* PBXTargetDependency */,
+			);
+			name = HHTimeUITests;
+			productName = HHTimeUITests;
+			productReference = F5BCDD0E236BB9360025CF3A /* HHTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5BCDCE5236BB9330025CF3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = hh;
+				TargetAttributes = {
+					F5BCDCEC236BB9330025CF3A = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1120;
+					};
+					F5BCDD02236BB9360025CF3A = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F5BCDCEC236BB9330025CF3A;
+					};
+					F5BCDD0D236BB9360025CF3A = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F5BCDCEC236BB9330025CF3A;
+					};
+				};
+			};
+			buildConfigurationList = F5BCDCE8236BB9330025CF3A /* Build configuration list for PBXProject "HHTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5BCDCE4236BB9330025CF3A;
+			productRefGroup = F5BCDCEE236BB9330025CF3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5BCDCEC236BB9330025CF3A /* HHTime */,
+				F5BCDD02236BB9360025CF3A /* HHTimeTests */,
+				F5BCDD0D236BB9360025CF3A /* HHTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5BCDCEB236BB9330025CF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52EEFF8238FA1C40096B14C /* weakup.caf in Resources */,
+				F5BCDCFD236BB9350025CF3A /* LaunchScreen.storyboard in Resources */,
+				9F3A242F23893957002F9CCF /* weakup.mp3 in Resources */,
+				9F3A24312389395E002F9CCF /* chirp.mp3 in Resources */,
+				F5BCDCFA236BB9350025CF3A /* Assets.xcassets in Resources */,
+				F5BCDCF8236BB9330025CF3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BCDD01236BB9360025CF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BCDD0C236BB9360025CF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D1245B02FF70C14A92C7CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHTimeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C97901C8BE26C7755E565B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2FF324D9B8AADF174920585 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHTimeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC91C4438E8C800CBE865198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHTime/Pods-HHTime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HHTime/Pods-HHTime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HHTime/Pods-HHTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5BCDCE9236BB9330025CF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F508264C236FCEB400C4D6EF /* HHCategoryBean.swift in Sources */,
+				9F3E1336238D667500C720B0 /* HHLuanarCore.swift in Sources */,
+				F5082649236FCB7600C4D6EF /* HHCategoryDao.swift in Sources */,
+				F552C76A23951E99007F784F /* HHHabitTrainingUtil.swift in Sources */,
+				F5BCDCF5236BB9330025CF3A /* ViewController.swift in Sources */,
+				F552C77C23974E8C007F784F /* HHHabitTrainingResult.swift in Sources */,
+				F552C77623974E58007F784F /* HHDaysMatterResult.swift in Sources */,
+				9F82C7AB236D5FCC001E9F1F /* HabitTrainingVC.swift in Sources */,
+				9F82C7B6236DCEAC001E9F1F /* HHMemoDao.swift in Sources */,
+				9F3A24172386E001002F9CCF /* HHCalendarCell.swift in Sources */,
+				9F82C7BE2371A867001E9F1F /* HHBaseTableViewCell.swift in Sources */,
+				F552C78723978F8C007F784F /* HHDiaryRepository.swift in Sources */,
+				F552C77823974E68007F784F /* HHMemoResult.swift in Sources */,
+				9F82C79D236D5BB2001E9F1F /* HHBaseViewController.swift in Sources */,
+				F5082652236FCEF300C4D6EF /* HHMemoBean.swift in Sources */,
+				9F3A23AF23841FDA002F9CCF /* HHCalendarVC.swift in Sources */,
+				F5BCDCF1236BB9330025CF3A /* AppDelegate.swift in Sources */,
+				9F82C7A7236D5F9E001E9F1F /* DaysMatterVC.swift in Sources */,
+				9F6CBB1823927188001658C2 /* HHCalendar.swift in Sources */,
+				9F82C7C02371A890001E9F1F /* HHBaseCollectionViewCell.swift in Sources */,
+				F5BCDD3E236BC2C70025CF3A /* UIImageExtensions.swift in Sources */,
+				9F3A23E5238571A1002F9CCF /* HHLunarFormatter.swift in Sources */,
+				F552C77E23974E9B007F784F /* HHHabitResult.swift in Sources */,
+				F52FE44F23710099005BD229 /* HHBaseTableViewController.swift in Sources */,
+				9F3A243523897705002F9CCF /* HHCalendarManager.swift in Sources */,
+				9F82C7BA2371A806001E9F1F /* HHBaseView.swift in Sources */,
+				F5BCDD3F236BC2C70025CF3A /* NSStringExtensions.swift in Sources */,
+				9F3A2433238976FB002F9CCF /* HHCalendarData.swift in Sources */,
+				F5A3E8AE2371499000E42095 /* UIScrollViewExtensions.swift in Sources */,
+				F52FE44C23700671005BD229 /* HHUserDefaultUtil.swift in Sources */,
+				F5BCDD5A236BD3150025CF3A /* HHDateUtil.swift in Sources */,
+				9F6CBB1A2392755A001658C2 /* HHCalendarScrollView.swift in Sources */,
+				9F82C7A3236D5D42001E9F1F /* HHNotificationManager.swift in Sources */,
+				9F82C7B3236DC4CC001E9F1F /* HHDaysMatterDao.swift in Sources */,
+				F5BCDCF3236BB9330025CF3A /* SceneDelegate.swift in Sources */,
+				F5082650236FCEE800C4D6EF /* HHHabitTrainingBean.swift in Sources */,
+				9FDDB99E238FF776007198B0 /* KDCalendarCore.swift in Sources */,
+				9F82C7B7236DCEAC001E9F1F /* HHHabitTrainingDao.swift in Sources */,
+				F5E1ABC0238FD6FB00130464 /* DictionaryExtensions.swift in Sources */,
+				9F82C7A0236D5C2A001E9F1F /* HHTheme.swift in Sources */,
+				9F3A24272388FF10002F9CCF /* HHAlarmClockVC.swift in Sources */,
+				9F9D583C2377BCC400F2AA6C /* HHEventKitUtil.swift in Sources */,
+				F552C76E23951EDD007F784F /* HHHabitBean.swift in Sources */,
+				F5A3E8B0237154EA00E42095 /* UITableViewExtensions.swift in Sources */,
+				9F82C7AD236D5FDB001E9F1F /* MineVC.swift in Sources */,
+				9FDDB9A1238FF776007198B0 /* KDCalendarHeaderView.swift in Sources */,
+				9FDDB99F238FF776007198B0 /* KDCalendar.swift in Sources */,
+				F508264E236FCEDC00C4D6EF /* HHDaysMatterBean.swift in Sources */,
+				F5A3E8AC23711B9C00E42095 /* HHTableViewConfigurations.swift in Sources */,
+				F552C78923978F9F007F784F /* HHHabitTrainingRepository.swift in Sources */,
+				9F82C7AF236D603C001E9F1F /* HHBaseViewModel.swift in Sources */,
+				9F3A24292388FF54002F9CCF /* HHAlarmClockUtil.swift in Sources */,
+				9F6CBB1C23927637001658C2 /* HHCalendarHeadView.swift in Sources */,
+				9F3E1339238D691000C720B0 /* LCMemoryCache.m in Sources */,
+				9F6CBB2023933E66001658C2 /* HHCalendarLoader.swift in Sources */,
+				F552C78523978F7A007F784F /* HHMemoRepository.swift in Sources */,
+				9FDDB9A0238FF776007198B0 /* KDCalendarAppearStyle.swift in Sources */,
+				F552C76C23951ECD007F784F /* HHHabitDao.swift in Sources */,
+				9FDDB99D238FF776007198B0 /* KDCalendarDateCell.swift in Sources */,
+				9F9D5842237AE6D500F2AA6C /* HHDiaryDao.swift in Sources */,
+				9F9D5840237AE64D00F2AA6C /* HHDiaryBean.swift in Sources */,
+				9F3E1331238A90FE00C720B0 /* LuanarCore.m in Sources */,
+				9F82C79C236D5BB2001E9F1F /* HHBaseNavgationController.swift in Sources */,
+				9F82C7A5236D5EA5001E9F1F /* HHSQLiteManager.swift in Sources */,
+				F552C78323978F54007F784F /* HHDaysMatterRepository.swift in Sources */,
+				9F82C7BC2371A83F001E9F1F /* HHBaseTableViewHeaderFooterView.swift in Sources */,
+				F552C77A23974E78007F784F /* HHDiaryResult.swift in Sources */,
+				F52FE45223710B8C005BD229 /* HHTableView.swift in Sources */,
+				9F82C7A9236D5FAE001E9F1F /* MemoVC.swift in Sources */,
+				F552C77423974E32007F784F /* HHCategoryResult.swift in Sources */,
+				F5BCDD3D236BC2C70025CF3A /* UIColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BCDCFF236BB9360025CF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D1CD0E2397BCBA00DCD21D /* HHMemoTests.swift in Sources */,
+				F5D1CD0C2397BC8A00DCD21D /* HHAlarmClockTests.swift in Sources */,
+				F5D1CD102397BCCD00DCD21D /* HHHabitTrainingTests.swift in Sources */,
+				F5BCDD08236BB9360025CF3A /* HHTimeTests.swift in Sources */,
+				F5D1CD0A2397BC7A00DCD21D /* HHCalendarTests.swift in Sources */,
+				F5D1CD082397BC6600DCD21D /* HHDaysMatterTests.swift in Sources */,
+				F5D1CD122397BCD900DCD21D /* HHHabitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BCDD0A236BB9360025CF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5BCDD13236BB9360025CF3A /* HHTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5BCDD05236BB9360025CF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5BCDCEC236BB9330025CF3A /* HHTime */;
+			targetProxy = F5BCDD04236BB9360025CF3A /* PBXContainerItemProxy */;
+		};
+		F5BCDD10236BB9360025CF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5BCDCEC236BB9330025CF3A /* HHTime */;
+			targetProxy = F5BCDD0F236BB9360025CF3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5BCDCF6236BB9330025CF3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5BCDCF7236BB9330025CF3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5BCDCFB236BB9350025CF3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5BCDCFC236BB9350025CF3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5BCDD15236BB9360025CF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5BCDD16236BB9360025CF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5BCDD18236BB9360025CF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392F4D8AE3D1BA563556CF15 /* Pods-HHTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M4C57BTLY;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = HHTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.Time;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HHTime/Widget/LunarCore/HHTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		F5BCDD19236BB9360025CF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85637DBAB7E2CAADF9C390E6 /* Pods-HHTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M4C57BTLY;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = HHTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.Time;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HHTime/Widget/LunarCore/HHTime-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		F5BCDD1B236BB9360025CF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3912994EF398D69F25CED5A /* Pods-HHTimeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HHTimeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.HHTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHTime.app/HHTime";
+			};
+			name = Debug;
+		};
+		F5BCDD1C236BB9360025CF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 563AB1CC407CF9F5F69E4CDF /* Pods-HHTimeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HHTimeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.HHTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHTime.app/HHTime";
+			};
+			name = Release;
+		};
+		F5BCDD1E236BB9360025CF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03065D267C11762A7CC86D47 /* Pods-HHTimeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HHTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.HHTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HHTime;
+			};
+			name = Debug;
+		};
+		F5BCDD1F236BB9360025CF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B0738FDB43F275975A0124 /* Pods-HHTimeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HHTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hh.HHTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HHTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5BCDCE8236BB9330025CF3A /* Build configuration list for PBXProject "HHTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BCDD15236BB9360025CF3A /* Debug */,
+				F5BCDD16236BB9360025CF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5BCDD17236BB9360025CF3A /* Build configuration list for PBXNativeTarget "HHTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BCDD18236BB9360025CF3A /* Debug */,
+				F5BCDD19236BB9360025CF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5BCDD1A236BB9360025CF3A /* Build configuration list for PBXNativeTarget "HHTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BCDD1B236BB9360025CF3A /* Debug */,
+				F5BCDD1C236BB9360025CF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5BCDD1D236BB9360025CF3A /* Build configuration list for PBXNativeTarget "HHTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5BCDD1E236BB9360025CF3A /* Debug */,
+				F5BCDD1F236BB9360025CF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5BCDCE5236BB9330025CF3A /* Project object */;
+}

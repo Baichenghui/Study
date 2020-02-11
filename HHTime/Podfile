@@ -1,0 +1,32 @@
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '10.0'
+use_frameworks!
+
+def share_pods 
+#      pod 'Alamofire','~> 4.7.3'
+#      pod 'RxSwift','~> 5.0.1'
+      pod 'FMDB'
+      pod 'FSCalendar' 
+end
+
+target 'HHTime' do
+  
+  share_pods
+
+  target 'HHTimeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HHTimeUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+#target 'Widget' do
+# use_frameworks!
+# share_pods
+#end
