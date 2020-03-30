@@ -13,3 +13,6 @@ GCDAsyncSocket 的二次封装
 ### threadDemo
 多线程相关，示例都是与GCD相关。GCD是非常强大的。
 
+### DesignPatternDemo
+设计模式学习demo
+
