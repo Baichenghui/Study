@@ -16,6 +16,7 @@
 		F55F138723D43C1E00779C94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F138623D43C1E00779C94 /* main.m */; };
 		F55F139123D43C1E00779C94 /* DesignPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F139023D43C1E00779C94 /* DesignPatternDemoTests.m */; };
 		F55F139C23D43C1E00779C94 /* DesignPatternDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F139B23D43C1E00779C94 /* DesignPatternDemoUITests.m */; };
+		F578AEA02431EFC2001DA356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F578AE9F2431EFC2001DA356 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F55F139723D43C1E00779C94 /* DesignPatternDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F139B23D43C1E00779C94 /* DesignPatternDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternDemoUITests.m; sourceTree = "<group>"; };
 		F55F139D23D43C1E00779C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F578AE9F2431EFC2001DA356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				F55F137A23D43C1900779C94 /* ViewController.h */,
 				F55F137B23D43C1900779C94 /* ViewController.m */,
 				F55F137D23D43C1900779C94 /* Main.storyboard */,
+				F578AE9F2431EFC2001DA356 /* README.md */,
 				F55F138023D43C1E00779C94 /* Assets.xcassets */,
 				F55F138223D43C1E00779C94 /* LaunchScreen.storyboard */,
 				F55F138523D43C1E00779C94 /* Info.plist */,
@@ -242,6 +245,7 @@
 			files = (
 				F55F138423D43C1E00779C94 /* LaunchScreen.storyboard in Resources */,
 				F55F138123D43C1E00779C94 /* Assets.xcassets in Resources */,
+				F578AEA02431EFC2001DA356 /* README.md in Resources */,
 				F55F137F23D43C1900779C94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
