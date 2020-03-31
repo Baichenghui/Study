@@ -17,6 +17,32 @@
 		F55F139123D43C1E00779C94 /* DesignPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F139023D43C1E00779C94 /* DesignPatternDemoTests.m */; };
 		F55F139C23D43C1E00779C94 /* DesignPatternDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F139B23D43C1E00779C94 /* DesignPatternDemoUITests.m */; };
 		F578AEA02431EFC2001DA356 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F578AE9F2431EFC2001DA356 /* README.md */; };
+		F578AEA424334963001DA356 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEA224334963001DA356 /* RootViewController.m */; };
+		F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */; };
+		F578AEAE24334F93001DA356 /* FactoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEAD24334F93001DA356 /* FactoryVC.m */; };
+		F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEB024334F9E001DA356 /* AbstructFactoryVC.m */; };
+		F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEB324334FB0001DA356 /* SingletonVC.m */; };
+		F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEB624334FC5001DA356 /* BuilderVC.m */; };
+		F578AEBA24334FD1001DA356 /* PrototypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEB924334FD1001DA356 /* PrototypeVC.m */; };
+		F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEBC24334FEB001DA356 /* BaseVC.m */; };
+		F578AEC024335029001DA356 /* AdapterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEBF24335029001DA356 /* AdapterVC.m */; };
+		F578AEC324335036001DA356 /* DecoratorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEC224335036001DA356 /* DecoratorVC.m */; };
+		F578AEC62433503F001DA356 /* ProxyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEC52433503F001DA356 /* ProxyVC.m */; };
+		F578AEC924335048001DA356 /* FacadeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEC824335048001DA356 /* FacadeVC.m */; };
+		F578AECC24335052001DA356 /* BridgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AECB24335052001DA356 /* BridgeVC.m */; };
+		F578AECF24335066001DA356 /* CompositeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AECE24335066001DA356 /* CompositeVC.m */; };
+		F578AED224335099001DA356 /* FlyweightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AED124335099001DA356 /* FlyweightVC.m */; };
+		F578AED5243350BF001DA356 /* StrategyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AED4243350BF001DA356 /* StrategyVC.m */; };
+		F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AED7243350C9001DA356 /* TemplateMethodVC.m */; };
+		F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEDA243350D5001DA356 /* ObserverVC.m */; };
+		F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEDD243350DF001DA356 /* IteratorVC.m */; };
+		F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEE0243350EA001DA356 /* ChainOfResponsibilityVC.m */; };
+		F578AEE4243350F4001DA356 /* CommandVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEE3243350F4001DA356 /* CommandVC.m */; };
+		F578AEE7243350FE001DA356 /* MementoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEE6243350FE001DA356 /* MementoVC.m */; };
+		F578AEEA24335109001DA356 /* StateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEE924335109001DA356 /* StateVC.m */; };
+		F578AEED2433512C001DA356 /* VisitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEEC2433512C001DA356 /* VisitorVC.m */; };
+		F578AEF024335137001DA356 /* MediatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEEF24335137001DA356 /* MediatorVC.m */; };
+		F578AEF324335141001DA356 /* InterpreterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEF224335141001DA356 /* InterpreterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +82,58 @@
 		F55F139B23D43C1E00779C94 /* DesignPatternDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternDemoUITests.m; sourceTree = "<group>"; };
 		F55F139D23D43C1E00779C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F578AE9F2431EFC2001DA356 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F578AEA224334963001DA356 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F578AEA324334963001DA356 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F578AEA924334F86001DA356 /* SimpleFactoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleFactoryVC.h; sourceTree = "<group>"; };
+		F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleFactoryVC.m; sourceTree = "<group>"; };
+		F578AEAC24334F93001DA356 /* FactoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryVC.h; sourceTree = "<group>"; };
+		F578AEAD24334F93001DA356 /* FactoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryVC.m; sourceTree = "<group>"; };
+		F578AEAF24334F9E001DA356 /* AbstructFactoryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstructFactoryVC.h; sourceTree = "<group>"; };
+		F578AEB024334F9E001DA356 /* AbstructFactoryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructFactoryVC.m; sourceTree = "<group>"; };
+		F578AEB224334FB0001DA356 /* SingletonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonVC.h; sourceTree = "<group>"; };
+		F578AEB324334FB0001DA356 /* SingletonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonVC.m; sourceTree = "<group>"; };
+		F578AEB524334FC5001DA356 /* BuilderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderVC.h; sourceTree = "<group>"; };
+		F578AEB624334FC5001DA356 /* BuilderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderVC.m; sourceTree = "<group>"; };
+		F578AEB824334FD1001DA356 /* PrototypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeVC.h; sourceTree = "<group>"; };
+		F578AEB924334FD1001DA356 /* PrototypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeVC.m; sourceTree = "<group>"; };
+		F578AEBB24334FEB001DA356 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		F578AEBC24334FEB001DA356 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		F578AEBE24335029001DA356 /* AdapterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterVC.h; sourceTree = "<group>"; };
+		F578AEBF24335029001DA356 /* AdapterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterVC.m; sourceTree = "<group>"; };
+		F578AEC124335036001DA356 /* DecoratorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorVC.h; sourceTree = "<group>"; };
+		F578AEC224335036001DA356 /* DecoratorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorVC.m; sourceTree = "<group>"; };
+		F578AEC42433503F001DA356 /* ProxyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyVC.h; sourceTree = "<group>"; };
+		F578AEC52433503F001DA356 /* ProxyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyVC.m; sourceTree = "<group>"; };
+		F578AEC724335048001DA356 /* FacadeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacadeVC.h; sourceTree = "<group>"; };
+		F578AEC824335048001DA356 /* FacadeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacadeVC.m; sourceTree = "<group>"; };
+		F578AECA24335052001DA356 /* BridgeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeVC.h; sourceTree = "<group>"; };
+		F578AECB24335052001DA356 /* BridgeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeVC.m; sourceTree = "<group>"; };
+		F578AECD24335066001DA356 /* CompositeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeVC.h; sourceTree = "<group>"; };
+		F578AECE24335066001DA356 /* CompositeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompositeVC.m; sourceTree = "<group>"; };
+		F578AED024335099001DA356 /* FlyweightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightVC.h; sourceTree = "<group>"; };
+		F578AED124335099001DA356 /* FlyweightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightVC.m; sourceTree = "<group>"; };
+		F578AED3243350BF001DA356 /* StrategyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyVC.h; sourceTree = "<group>"; };
+		F578AED4243350BF001DA356 /* StrategyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyVC.m; sourceTree = "<group>"; };
+		F578AED6243350C9001DA356 /* TemplateMethodVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateMethodVC.h; sourceTree = "<group>"; };
+		F578AED7243350C9001DA356 /* TemplateMethodVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateMethodVC.m; sourceTree = "<group>"; };
+		F578AED9243350D5001DA356 /* ObserverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverVC.h; sourceTree = "<group>"; };
+		F578AEDA243350D5001DA356 /* ObserverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverVC.m; sourceTree = "<group>"; };
+		F578AEDC243350DF001DA356 /* IteratorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IteratorVC.h; sourceTree = "<group>"; };
+		F578AEDD243350DF001DA356 /* IteratorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IteratorVC.m; sourceTree = "<group>"; };
+		F578AEDF243350EA001DA356 /* ChainOfResponsibilityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainOfResponsibilityVC.h; sourceTree = "<group>"; };
+		F578AEE0243350EA001DA356 /* ChainOfResponsibilityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainOfResponsibilityVC.m; sourceTree = "<group>"; };
+		F578AEE2243350F4001DA356 /* CommandVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandVC.h; sourceTree = "<group>"; };
+		F578AEE3243350F4001DA356 /* CommandVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandVC.m; sourceTree = "<group>"; };
+		F578AEE5243350FE001DA356 /* MementoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MementoVC.h; sourceTree = "<group>"; };
+		F578AEE6243350FE001DA356 /* MementoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MementoVC.m; sourceTree = "<group>"; };
+		F578AEE824335109001DA356 /* StateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateVC.h; sourceTree = "<group>"; };
+		F578AEE924335109001DA356 /* StateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateVC.m; sourceTree = "<group>"; };
+		F578AEEB2433512C001DA356 /* VisitorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisitorVC.h; sourceTree = "<group>"; };
+		F578AEEC2433512C001DA356 /* VisitorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisitorVC.m; sourceTree = "<group>"; };
+		F578AEEE24335137001DA356 /* MediatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorVC.h; sourceTree = "<group>"; };
+		F578AEEF24335137001DA356 /* MediatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorVC.m; sourceTree = "<group>"; };
+		F578AEF124335141001DA356 /* InterpreterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterpreterVC.h; sourceTree = "<group>"; };
+		F578AEF224335141001DA356 /* InterpreterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterpreterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +184,7 @@
 		F55F137323D43C1900779C94 /* DesignPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F578AEA12433493B001DA356 /* Controller */,
 				F55F137423D43C1900779C94 /* AppDelegate.h */,
 				F55F137523D43C1900779C94 /* AppDelegate.m */,
 				F55F137723D43C1900779C94 /* SceneDelegate.h */,
@@ -138,6 +217,89 @@
 				F55F139D23D43C1E00779C94 /* Info.plist */,
 			);
 			path = DesignPatternDemoUITests;
+			sourceTree = "<group>";
+		};
+		F578AEA12433493B001DA356 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEBB24334FEB001DA356 /* BaseVC.h */,
+				F578AEBC24334FEB001DA356 /* BaseVC.m */,
+				F578AEA324334963001DA356 /* RootViewController.h */,
+				F578AEA224334963001DA356 /* RootViewController.m */,
+				F578AEA824334AFC001DA356 /* behaviorType */,
+				F578AEA624334ABD001DA356 /* structureType */,
+				F578AEA524334AAC001DA356 /* CreateType */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F578AEA524334AAC001DA356 /* CreateType */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEA924334F86001DA356 /* SimpleFactoryVC.h */,
+				F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */,
+				F578AEAC24334F93001DA356 /* FactoryVC.h */,
+				F578AEAD24334F93001DA356 /* FactoryVC.m */,
+				F578AEAF24334F9E001DA356 /* AbstructFactoryVC.h */,
+				F578AEB024334F9E001DA356 /* AbstructFactoryVC.m */,
+				F578AEB224334FB0001DA356 /* SingletonVC.h */,
+				F578AEB324334FB0001DA356 /* SingletonVC.m */,
+				F578AEB524334FC5001DA356 /* BuilderVC.h */,
+				F578AEB624334FC5001DA356 /* BuilderVC.m */,
+				F578AEB824334FD1001DA356 /* PrototypeVC.h */,
+				F578AEB924334FD1001DA356 /* PrototypeVC.m */,
+			);
+			name = CreateType;
+			sourceTree = "<group>";
+		};
+		F578AEA624334ABD001DA356 /* structureType */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEBE24335029001DA356 /* AdapterVC.h */,
+				F578AEBF24335029001DA356 /* AdapterVC.m */,
+				F578AEC124335036001DA356 /* DecoratorVC.h */,
+				F578AEC224335036001DA356 /* DecoratorVC.m */,
+				F578AEC42433503F001DA356 /* ProxyVC.h */,
+				F578AEC52433503F001DA356 /* ProxyVC.m */,
+				F578AEC724335048001DA356 /* FacadeVC.h */,
+				F578AEC824335048001DA356 /* FacadeVC.m */,
+				F578AECA24335052001DA356 /* BridgeVC.h */,
+				F578AECB24335052001DA356 /* BridgeVC.m */,
+				F578AECD24335066001DA356 /* CompositeVC.h */,
+				F578AECE24335066001DA356 /* CompositeVC.m */,
+				F578AED024335099001DA356 /* FlyweightVC.h */,
+				F578AED124335099001DA356 /* FlyweightVC.m */,
+			);
+			name = structureType;
+			sourceTree = "<group>";
+		};
+		F578AEA824334AFC001DA356 /* behaviorType */ = {
+			isa = PBXGroup;
+			children = (
+				F578AED3243350BF001DA356 /* StrategyVC.h */,
+				F578AED4243350BF001DA356 /* StrategyVC.m */,
+				F578AED6243350C9001DA356 /* TemplateMethodVC.h */,
+				F578AED7243350C9001DA356 /* TemplateMethodVC.m */,
+				F578AED9243350D5001DA356 /* ObserverVC.h */,
+				F578AEDA243350D5001DA356 /* ObserverVC.m */,
+				F578AEDC243350DF001DA356 /* IteratorVC.h */,
+				F578AEDD243350DF001DA356 /* IteratorVC.m */,
+				F578AEDF243350EA001DA356 /* ChainOfResponsibilityVC.h */,
+				F578AEE0243350EA001DA356 /* ChainOfResponsibilityVC.m */,
+				F578AEE2243350F4001DA356 /* CommandVC.h */,
+				F578AEE3243350F4001DA356 /* CommandVC.m */,
+				F578AEE5243350FE001DA356 /* MementoVC.h */,
+				F578AEE6243350FE001DA356 /* MementoVC.m */,
+				F578AEE824335109001DA356 /* StateVC.h */,
+				F578AEE924335109001DA356 /* StateVC.m */,
+				F578AEEB2433512C001DA356 /* VisitorVC.h */,
+				F578AEEC2433512C001DA356 /* VisitorVC.m */,
+				F578AEEE24335137001DA356 /* MediatorVC.h */,
+				F578AEEF24335137001DA356 /* MediatorVC.m */,
+				F578AEF124335141001DA356 /* InterpreterVC.h */,
+				F578AEF224335141001DA356 /* InterpreterVC.m */,
+			);
+			name = behaviorType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +433,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F578AEF024335137001DA356 /* MediatorVC.m in Sources */,
 				F55F137C23D43C1900779C94 /* ViewController.m in Sources */,
+				F578AEBA24334FD1001DA356 /* PrototypeVC.m in Sources */,
+				F578AEE4243350F4001DA356 /* CommandVC.m in Sources */,
+				F578AEC924335048001DA356 /* FacadeVC.m in Sources */,
+				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
+				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
+				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
+				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
+				F578AEEA24335109001DA356 /* StateVC.m in Sources */,
+				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
+				F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */,
+				F578AED224335099001DA356 /* FlyweightVC.m in Sources */,
 				F55F137623D43C1900779C94 /* AppDelegate.m in Sources */,
+				F578AEAE24334F93001DA356 /* FactoryVC.m in Sources */,
 				F55F138723D43C1E00779C94 /* main.m in Sources */,
+				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,
+				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
+				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
+				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
+				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
+				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
+				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
+				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
+				F578AEC024335029001DA356 /* AdapterVC.m in Sources */,
+				F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */,
+				F578AECF24335066001DA356 /* CompositeVC.m in Sources */,
+				F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */,
+				F578AEF324335141001DA356 /* InterpreterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
