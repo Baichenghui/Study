@@ -6,6 +6,8 @@
 //  Copyright © 2020 hh. All rights reserved.
 //
 
+//中介者模式
+
 #import "BaseVC.h"
 
 NS_ASSUME_NONNULL_BEGIN

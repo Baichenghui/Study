@@ -7,6 +7,9 @@
 //
 
 #import "AdapterVC.h"
+#import "Adaptee.h"
+#import "Adapter.h"
+#import "Target.h"
 
 @interface AdapterVC ()
 
@@ -17,6 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    Adaptee *adaptee = [Adaptee new];
+    Adapter *adapter = [Adapter new];
+    adapter.adaptee = adaptee;
+    
+    [adapter eat];
+    
 }
 
 /*

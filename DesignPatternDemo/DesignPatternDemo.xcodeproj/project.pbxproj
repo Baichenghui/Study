@@ -63,6 +63,9 @@
 		F5E297E3243586E800F7120F /* OperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E2243586E800F7120F /* OperationMul.m */; };
 		F5E297E62435870300F7120F /* OperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E52435870300F7120F /* OperationDiv.m */; };
 		F5FCA5D62435E7C400DD6C3A /* PrototypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5D52435E7C400DD6C3A /* PrototypeModel.m */; };
+		F5FCA5D92435F10300DD6C3A /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5D82435F10300DD6C3A /* Adaptee.m */; };
+		F5FCA5DC2435F10B00DD6C3A /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5DB2435F10B00DD6C3A /* Adapter.m */; };
+		F5FCA5DF2435F11400DD6C3A /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5DE2435F11400DD6C3A /* Target.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +204,12 @@
 		F5FCA5D32435E48000DD6C3A /* IPrototypeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPrototypeProtocol.h; sourceTree = "<group>"; };
 		F5FCA5D42435E7C400DD6C3A /* PrototypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeModel.h; sourceTree = "<group>"; };
 		F5FCA5D52435E7C400DD6C3A /* PrototypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeModel.m; sourceTree = "<group>"; };
+		F5FCA5D72435F10300DD6C3A /* Adaptee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptee.h; sourceTree = "<group>"; };
+		F5FCA5D82435F10300DD6C3A /* Adaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptee.m; sourceTree = "<group>"; };
+		F5FCA5DA2435F10B00DD6C3A /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		F5FCA5DB2435F10B00DD6C3A /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		F5FCA5DD2435F11400DD6C3A /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
+		F5FCA5DE2435F11400DD6C3A /* Target.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +460,12 @@
 			children = (
 				F578AEBE24335029001DA356 /* AdapterVC.h */,
 				F578AEBF24335029001DA356 /* AdapterVC.m */,
+				F5FCA5D72435F10300DD6C3A /* Adaptee.h */,
+				F5FCA5D82435F10300DD6C3A /* Adaptee.m */,
+				F5FCA5DA2435F10B00DD6C3A /* Adapter.h */,
+				F5FCA5DB2435F10B00DD6C3A /* Adapter.m */,
+				F5FCA5DD2435F11400DD6C3A /* Target.h */,
+				F5FCA5DE2435F11400DD6C3A /* Target.m */,
 			);
 			name = Adapter;
 			sourceTree = "<group>";
@@ -743,6 +758,7 @@
 				F578AEBA24334FD1001DA356 /* PrototypeVC.m in Sources */,
 				F578AEE4243350F4001DA356 /* CommandVC.m in Sources */,
 				F578AEC924335048001DA356 /* FacadeVC.m in Sources */,
+				F5FCA5DF2435F11400DD6C3A /* Target.m in Sources */,
 				F5E297E0243586D000F7120F /* OperationSub.m in Sources */,
 				F5237DF624358D4200746D81 /* AddFactory.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
@@ -756,6 +772,7 @@
 				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
 				F5237E122435B6AA00746D81 /* AccessUser.m in Sources */,
 				F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */,
+				F5FCA5DC2435F10B00DD6C3A /* Adapter.m in Sources */,
 				F578AED224335099001DA356 /* FlyweightVC.m in Sources */,
 				F55F137623D43C1900779C94 /* AppDelegate.m in Sources */,
 				F578AEAE24334F93001DA356 /* FactoryVC.m in Sources */,
@@ -781,6 +798,7 @@
 				F5237DFA2435917A00746D81 /* SubFactory.m in Sources */,
 				F578AF0E243582DD001DA356 /* CalculateSimpleFactory.m in Sources */,
 				F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */,
+				F5FCA5D92435F10300DD6C3A /* Adaptee.m in Sources */,
 				F5237E1B2435B98900746D81 /* Department.m in Sources */,
 				F578AECF24335066001DA356 /* CompositeVC.m in Sources */,
 				F5E297E62435870300F7120F /* OperationDiv.m in Sources */,

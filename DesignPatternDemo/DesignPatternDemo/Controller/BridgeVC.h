@@ -6,6 +6,8 @@
 //  Copyright © 2020 hh. All rights reserved.
 //
 
+//桥接模式
+
 #import "BaseVC.h"
 
 NS_ASSUME_NONNULL_BEGIN

@@ -1,19 +1,17 @@
 //
-//  InterpreterVC.h
+//  Adaptee.h
 //  DesignPatternDemo
 //
-//  Created by tianxi on 2020/3/31.
+//  Created by tianxi on 2020/4/2.
 //  Copyright © 2020 hh. All rights reserved.
 //
 
-//解释器模式
-
-#import "BaseVC.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InterpreterVC : BaseVC
-
+@interface Adaptee : NSObject
+- (void)eat;
 @end
 
 NS_ASSUME_NONNULL_END
