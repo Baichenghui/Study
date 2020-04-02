@@ -11,6 +11,14 @@
 		F5237DFA2435917A00746D81 /* SubFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DF92435917A00746D81 /* SubFactory.m */; };
 		F5237DFD2435918000746D81 /* MulFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DFC2435918000746D81 /* MulFactory.m */; };
 		F5237E002435918800746D81 /* DivFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DFF2435918800746D81 /* DivFactory.m */; };
+		F5237E062435B62300746D81 /* SqlserverFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E052435B62300746D81 /* SqlserverFactory.m */; };
+		F5237E092435B63A00746D81 /* AccessFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E082435B63A00746D81 /* AccessFactory.m */; };
+		F5237E0C2435B68900746D81 /* SqlserverUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E0B2435B68900746D81 /* SqlserverUser.m */; };
+		F5237E0F2435B69E00746D81 /* SqlserverDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E0E2435B69E00746D81 /* SqlserverDepartment.m */; };
+		F5237E122435B6AA00746D81 /* AccessUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E112435B6AA00746D81 /* AccessUser.m */; };
+		F5237E152435B6B800746D81 /* AccessDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E142435B6B800746D81 /* AccessDepartment.m */; };
+		F5237E182435B97F00746D81 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E172435B97F00746D81 /* User.m */; };
+		F5237E1B2435B98900746D81 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E1A2435B98900746D81 /* Department.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -80,6 +88,25 @@
 		F5237DFC2435918000746D81 /* MulFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MulFactory.m; sourceTree = "<group>"; };
 		F5237DFE2435918800746D81 /* DivFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivFactory.h; sourceTree = "<group>"; };
 		F5237DFF2435918800746D81 /* DivFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivFactory.m; sourceTree = "<group>"; };
+		F5237E012435B54600746D81 /* IAbstructFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAbstructFactoryProtocol.h; sourceTree = "<group>"; };
+		F5237E022435B5BA00746D81 /* IUserProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUserProtocol.h; sourceTree = "<group>"; };
+		F5237E032435B5C900746D81 /* IDepartmentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDepartmentProtocol.h; sourceTree = "<group>"; };
+		F5237E042435B62300746D81 /* SqlserverFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlserverFactory.h; sourceTree = "<group>"; };
+		F5237E052435B62300746D81 /* SqlserverFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlserverFactory.m; sourceTree = "<group>"; };
+		F5237E072435B63A00746D81 /* AccessFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessFactory.h; sourceTree = "<group>"; };
+		F5237E082435B63A00746D81 /* AccessFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessFactory.m; sourceTree = "<group>"; };
+		F5237E0A2435B68900746D81 /* SqlserverUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlserverUser.h; sourceTree = "<group>"; };
+		F5237E0B2435B68900746D81 /* SqlserverUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlserverUser.m; sourceTree = "<group>"; };
+		F5237E0D2435B69E00746D81 /* SqlserverDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlserverDepartment.h; sourceTree = "<group>"; };
+		F5237E0E2435B69E00746D81 /* SqlserverDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlserverDepartment.m; sourceTree = "<group>"; };
+		F5237E102435B6AA00746D81 /* AccessUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessUser.h; sourceTree = "<group>"; };
+		F5237E112435B6AA00746D81 /* AccessUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessUser.m; sourceTree = "<group>"; };
+		F5237E132435B6B800746D81 /* AccessDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessDepartment.h; sourceTree = "<group>"; };
+		F5237E142435B6B800746D81 /* AccessDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessDepartment.m; sourceTree = "<group>"; };
+		F5237E162435B97F00746D81 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F5237E172435B97F00746D81 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F5237E192435B98900746D81 /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		F5237E1A2435B98900746D81 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -345,6 +372,25 @@
 			children = (
 				F578AEAF24334F9E001DA356 /* AbstructFactoryVC.h */,
 				F578AEB024334F9E001DA356 /* AbstructFactoryVC.m */,
+				F5237E012435B54600746D81 /* IAbstructFactoryProtocol.h */,
+				F5237E022435B5BA00746D81 /* IUserProtocol.h */,
+				F5237E032435B5C900746D81 /* IDepartmentProtocol.h */,
+				F5237E042435B62300746D81 /* SqlserverFactory.h */,
+				F5237E052435B62300746D81 /* SqlserverFactory.m */,
+				F5237E072435B63A00746D81 /* AccessFactory.h */,
+				F5237E082435B63A00746D81 /* AccessFactory.m */,
+				F5237E0A2435B68900746D81 /* SqlserverUser.h */,
+				F5237E0B2435B68900746D81 /* SqlserverUser.m */,
+				F5237E0D2435B69E00746D81 /* SqlserverDepartment.h */,
+				F5237E0E2435B69E00746D81 /* SqlserverDepartment.m */,
+				F5237E102435B6AA00746D81 /* AccessUser.h */,
+				F5237E112435B6AA00746D81 /* AccessUser.m */,
+				F5237E132435B6B800746D81 /* AccessDepartment.h */,
+				F5237E142435B6B800746D81 /* AccessDepartment.m */,
+				F5237E162435B97F00746D81 /* User.h */,
+				F5237E172435B97F00746D81 /* User.m */,
+				F5237E192435B98900746D81 /* Department.h */,
+				F5237E1A2435B98900746D81 /* Department.m */,
 			);
 			name = AbstructFactory;
 			sourceTree = "<group>";
@@ -680,13 +726,17 @@
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
 				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
 				F578AEEA24335109001DA356 /* StateVC.m in Sources */,
+				F5237E0F2435B69E00746D81 /* SqlserverDepartment.m in Sources */,
 				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
+				F5237E122435B6AA00746D81 /* AccessUser.m in Sources */,
 				F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */,
 				F578AED224335099001DA356 /* FlyweightVC.m in Sources */,
 				F55F137623D43C1900779C94 /* AppDelegate.m in Sources */,
 				F578AEAE24334F93001DA356 /* FactoryVC.m in Sources */,
 				F55F138723D43C1E00779C94 /* main.m in Sources */,
 				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
+				F5237E182435B97F00746D81 /* User.m in Sources */,
+				F5237E062435B62300746D81 /* SqlserverFactory.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,
 				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
 				F5237E002435918800746D81 /* DivFactory.m in Sources */,
@@ -696,6 +746,7 @@
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
 				F5237DFD2435918000746D81 /* MulFactory.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
+				F5237E092435B63A00746D81 /* AccessFactory.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
 				F5E297E3243586E800F7120F /* OperationMul.m in Sources */,
@@ -703,10 +754,13 @@
 				F5237DFA2435917A00746D81 /* SubFactory.m in Sources */,
 				F578AF0E243582DD001DA356 /* CalculateSimpleFactory.m in Sources */,
 				F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */,
+				F5237E1B2435B98900746D81 /* Department.m in Sources */,
 				F578AECF24335066001DA356 /* CompositeVC.m in Sources */,
 				F5E297E62435870300F7120F /* OperationDiv.m in Sources */,
+				F5237E0C2435B68900746D81 /* SqlserverUser.m in Sources */,
 				F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */,
 				F578AEF324335141001DA356 /* InterpreterVC.m in Sources */,
+				F5237E152435B6B800746D81 /* AccessDepartment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

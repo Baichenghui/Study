@@ -7,6 +7,10 @@
 //
 
 #import "AbstructFactoryVC.h"
+#import "SqlserverFactory.h"
+#import "AccessFactory.h"
+#import "User.h"
+#import "Department.h"
 
 @interface AbstructFactoryVC ()
 
@@ -17,6 +21,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self test];
+}
+
+- (void)test {
+    //替换成Sqlserver
+//    id<IAbstructFactoryProtocol> factory = [SqlserverFactory new];
+    //替换成Access
+    id<IAbstructFactoryProtocol> factory = [AccessFactory new];
+    
+    id<IDepartmentProtocol> dpt = [factory createDpt];
+    [dpt getObj];
+    [dpt insert:[Department new]];
+    
+    id<IUserProtocol> user = [factory createUser];
+    [user getObj];
+    [user insert:[User new]];
 }
 
 /*
