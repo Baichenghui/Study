@@ -62,6 +62,7 @@
 		F5E297E0243586D000F7120F /* OperationSub.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297DF243586D000F7120F /* OperationSub.m */; };
 		F5E297E3243586E800F7120F /* OperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E2243586E800F7120F /* OperationMul.m */; };
 		F5E297E62435870300F7120F /* OperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E52435870300F7120F /* OperationDiv.m */; };
+		F5FCA5D62435E7C400DD6C3A /* PrototypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5D52435E7C400DD6C3A /* PrototypeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,9 @@
 		F5E297E2243586E800F7120F /* OperationMul.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationMul.m; sourceTree = "<group>"; };
 		F5E297E42435870300F7120F /* OperationDiv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationDiv.h; sourceTree = "<group>"; };
 		F5E297E52435870300F7120F /* OperationDiv.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationDiv.m; sourceTree = "<group>"; };
+		F5FCA5D32435E48000DD6C3A /* IPrototypeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPrototypeProtocol.h; sourceTree = "<group>"; };
+		F5FCA5D42435E7C400DD6C3A /* PrototypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeModel.h; sourceTree = "<group>"; };
+		F5FCA5D52435E7C400DD6C3A /* PrototypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -435,6 +439,9 @@
 			children = (
 				F578AEB824334FD1001DA356 /* PrototypeVC.h */,
 				F578AEB924334FD1001DA356 /* PrototypeVC.m */,
+				F5FCA5D32435E48000DD6C3A /* IPrototypeProtocol.h */,
+				F5FCA5D42435E7C400DD6C3A /* PrototypeModel.h */,
+				F5FCA5D52435E7C400DD6C3A /* PrototypeModel.m */,
 			);
 			name = Prototype;
 			sourceTree = "<group>";
@@ -760,6 +767,7 @@
 				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
 				F5237E002435918800746D81 /* DivFactory.m in Sources */,
 				F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */,
+				F5FCA5D62435E7C400DD6C3A /* PrototypeModel.m in Sources */,
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
