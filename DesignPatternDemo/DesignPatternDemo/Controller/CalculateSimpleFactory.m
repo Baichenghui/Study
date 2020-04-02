@@ -6,14 +6,14 @@
 //  Copyright © 2020 hh. All rights reserved.
 //
 
-#import "CalculateFactory.h"
+#import "CalculateSimpleFactory.h"
 #import "OperationAdd.h"
 #import "OperationSub.h"
 #import "OperationMul.h"
 #import "OperationDiv.h"
 
 
-@implementation CalculateFactory
+@implementation CalculateSimpleFactory
 
 + (id<IOperationProtocol>)createOperationWithType:(NSString *)type {
     if ([type isEqualToString:@"+"]) {

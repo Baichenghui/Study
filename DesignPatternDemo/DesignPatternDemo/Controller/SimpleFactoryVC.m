@@ -7,7 +7,7 @@
 //
 
 #import "SimpleFactoryVC.h"
-#import "CalculateFactory.h"
+#import "CalculateSimpleFactory.h"
 
 @interface SimpleFactoryVC ()
 
@@ -25,7 +25,7 @@
 }
 
 - (void)addTest {
-    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"+"];
+    id<IOperationProtocol> operation = [CalculateSimpleFactory createOperationWithType:@"+"];
     operation.numA = 10;
     operation.numB = 20;
     CGFloat result = [operation getResult];
@@ -33,7 +33,7 @@
 }
 
 - (void)subTest {
-    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"-"];
+    id<IOperationProtocol> operation = [CalculateSimpleFactory createOperationWithType:@"-"];
     operation.numA = 10;
     operation.numB = 20;
     CGFloat result = [operation getResult];
@@ -41,7 +41,7 @@
 }
 
 - (void)mulTest {
-    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"*"];
+    id<IOperationProtocol> operation = [CalculateSimpleFactory createOperationWithType:@"*"];
     operation.numA = 10;
     operation.numB = 20;
     CGFloat result = [operation getResult];
@@ -49,7 +49,7 @@
 }
 
 - (void)divTest {
-    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"/"];
+    id<IOperationProtocol> operation = [CalculateSimpleFactory createOperationWithType:@"/"];
     operation.numA = 10;
     operation.numB = 20;
     CGFloat result = [operation getResult];

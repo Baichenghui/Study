@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5237DF624358D4200746D81 /* AddFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DF524358D4200746D81 /* AddFactory.m */; };
+		F5237DFA2435917A00746D81 /* SubFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DF92435917A00746D81 /* SubFactory.m */; };
+		F5237DFD2435918000746D81 /* MulFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DFC2435918000746D81 /* MulFactory.m */; };
+		F5237E002435918800746D81 /* DivFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237DFF2435918800746D81 /* DivFactory.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -42,7 +46,7 @@
 		F578AEED2433512C001DA356 /* VisitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEEC2433512C001DA356 /* VisitorVC.m */; };
 		F578AEF024335137001DA356 /* MediatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEEF24335137001DA356 /* MediatorVC.m */; };
 		F578AEF324335141001DA356 /* InterpreterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEF224335141001DA356 /* InterpreterVC.m */; };
-		F578AF0E243582DD001DA356 /* CalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AF0D243582DD001DA356 /* CalculateFactory.m */; };
+		F578AF0E243582DD001DA356 /* CalculateSimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AF0D243582DD001DA356 /* CalculateSimpleFactory.m */; };
 		F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297DC2435852B00F7120F /* OperationAdd.m */; };
 		F5E297E0243586D000F7120F /* OperationSub.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297DF243586D000F7120F /* OperationSub.m */; };
 		F5E297E3243586E800F7120F /* OperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E2243586E800F7120F /* OperationMul.m */; };
@@ -67,6 +71,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5237DF424358D4200746D81 /* AddFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFactory.h; sourceTree = "<group>"; };
+		F5237DF524358D4200746D81 /* AddFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFactory.m; sourceTree = "<group>"; };
+		F5237DF7243590A700746D81 /* IFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFactoryProtocol.h; sourceTree = "<group>"; };
+		F5237DF82435917A00746D81 /* SubFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubFactory.h; sourceTree = "<group>"; };
+		F5237DF92435917A00746D81 /* SubFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubFactory.m; sourceTree = "<group>"; };
+		F5237DFB2435918000746D81 /* MulFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MulFactory.h; sourceTree = "<group>"; };
+		F5237DFC2435918000746D81 /* MulFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MulFactory.m; sourceTree = "<group>"; };
+		F5237DFE2435918800746D81 /* DivFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivFactory.h; sourceTree = "<group>"; };
+		F5237DFF2435918800746D81 /* DivFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivFactory.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,8 +149,8 @@
 		F578AEEF24335137001DA356 /* MediatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorVC.m; sourceTree = "<group>"; };
 		F578AEF124335141001DA356 /* InterpreterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterpreterVC.h; sourceTree = "<group>"; };
 		F578AEF224335141001DA356 /* InterpreterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterpreterVC.m; sourceTree = "<group>"; };
-		F578AF0C243582DD001DA356 /* CalculateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateFactory.h; sourceTree = "<group>"; };
-		F578AF0D243582DD001DA356 /* CalculateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateFactory.m; sourceTree = "<group>"; };
+		F578AF0C243582DD001DA356 /* CalculateSimpleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateSimpleFactory.h; sourceTree = "<group>"; };
+		F578AF0D243582DD001DA356 /* CalculateSimpleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateSimpleFactory.m; sourceTree = "<group>"; };
 		F578AF0F2435830C001DA356 /* IOperationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOperationProtocol.h; sourceTree = "<group>"; };
 		F5E297DB2435852B00F7120F /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		F5E297DC2435852B00F7120F /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
@@ -292,10 +305,6 @@
 		F578AEF424349DBB001DA356 /* SimpleFactory */ = {
 			isa = PBXGroup;
 			children = (
-				F578AEA924334F86001DA356 /* SimpleFactoryVC.h */,
-				F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */,
-				F578AF0C243582DD001DA356 /* CalculateFactory.h */,
-				F578AF0D243582DD001DA356 /* CalculateFactory.m */,
 				F578AF0F2435830C001DA356 /* IOperationProtocol.h */,
 				F5E297DB2435852B00F7120F /* OperationAdd.h */,
 				F5E297DC2435852B00F7120F /* OperationAdd.m */,
@@ -305,6 +314,10 @@
 				F5E297E2243586E800F7120F /* OperationMul.m */,
 				F5E297E42435870300F7120F /* OperationDiv.h */,
 				F5E297E52435870300F7120F /* OperationDiv.m */,
+				F578AEA924334F86001DA356 /* SimpleFactoryVC.h */,
+				F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */,
+				F578AF0C243582DD001DA356 /* CalculateSimpleFactory.h */,
+				F578AF0D243582DD001DA356 /* CalculateSimpleFactory.m */,
 			);
 			name = SimpleFactory;
 			sourceTree = "<group>";
@@ -314,6 +327,15 @@
 			children = (
 				F578AEAC24334F93001DA356 /* FactoryVC.h */,
 				F578AEAD24334F93001DA356 /* FactoryVC.m */,
+				F5237DF424358D4200746D81 /* AddFactory.h */,
+				F5237DF524358D4200746D81 /* AddFactory.m */,
+				F5237DF7243590A700746D81 /* IFactoryProtocol.h */,
+				F5237DF82435917A00746D81 /* SubFactory.h */,
+				F5237DF92435917A00746D81 /* SubFactory.m */,
+				F5237DFB2435918000746D81 /* MulFactory.h */,
+				F5237DFC2435918000746D81 /* MulFactory.m */,
+				F5237DFE2435918800746D81 /* DivFactory.h */,
+				F5237DFF2435918800746D81 /* DivFactory.m */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -652,6 +674,7 @@
 				F578AEE4243350F4001DA356 /* CommandVC.m in Sources */,
 				F578AEC924335048001DA356 /* FacadeVC.m in Sources */,
 				F5E297E0243586D000F7120F /* OperationSub.m in Sources */,
+				F5237DF624358D4200746D81 /* AddFactory.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
@@ -666,16 +689,19 @@
 				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,
 				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
+				F5237E002435918800746D81 /* DivFactory.m in Sources */,
 				F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */,
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
+				F5237DFD2435918000746D81 /* MulFactory.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
 				F5E297E3243586E800F7120F /* OperationMul.m in Sources */,
 				F578AEC024335029001DA356 /* AdapterVC.m in Sources */,
-				F578AF0E243582DD001DA356 /* CalculateFactory.m in Sources */,
+				F5237DFA2435917A00746D81 /* SubFactory.m in Sources */,
+				F578AF0E243582DD001DA356 /* CalculateSimpleFactory.m in Sources */,
 				F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */,
 				F578AECF24335066001DA356 /* CompositeVC.m in Sources */,
 				F5E297E62435870300F7120F /* OperationDiv.m in Sources */,

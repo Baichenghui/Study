@@ -1,5 +1,5 @@
 //
-//  CalculateFactory.h
+//  MulFactory.h
 //  DesignPatternDemo
 //
 //  Created by tianxi on 2020/4/2.
@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IOperationProtocol.h"
+#import "IFactoryProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CalculateFactory : NSObject
-
-+ (id<IOperationProtocol>)createOperationWithType:(NSString *)type;
+@interface MulFactory : NSObject<IFactoryProtocol>
 
 @end
 
