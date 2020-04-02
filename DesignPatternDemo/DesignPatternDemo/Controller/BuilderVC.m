@@ -7,6 +7,8 @@
 //
 
 #import "BuilderVC.h"
+#import "DateBuilder.h"
+#import "BuilderDirector.h"
 
 @interface BuilderVC ()
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    DateBuilder *builder = [DateBuilder new];
+    
+    BuilderDirector *director = [BuilderDirector new];
+    [director builderWithbuilder:builder];
 }
 
 /*

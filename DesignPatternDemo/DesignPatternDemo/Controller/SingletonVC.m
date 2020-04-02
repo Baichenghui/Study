@@ -7,6 +7,7 @@
 //
 
 #import "SingletonVC.h"
+#import "SingletonManager.h"
 
 @interface SingletonVC ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    SingletonManager *manager = [SingletonManager shareManager];
 }
 
 /*

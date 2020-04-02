@@ -20,6 +20,8 @@
 		F5237E182435B97F00746D81 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E172435B97F00746D81 /* User.m */; };
 		F5237E1B2435B98900746D81 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E1A2435B98900746D81 /* Department.m */; };
 		F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E1D2435C6D500746D81 /* SingletonManager.m */; };
+		F5237E212435D64300746D81 /* DateBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E202435D64300746D81 /* DateBuilder.m */; };
+		F5237E252435D6D400746D81 /* BuilderDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E242435D6D400746D81 /* BuilderDirector.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -110,6 +112,11 @@
 		F5237E1A2435B98900746D81 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 		F5237E1C2435C6D500746D81 /* SingletonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonManager.h; sourceTree = "<group>"; };
 		F5237E1D2435C6D500746D81 /* SingletonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonManager.m; sourceTree = "<group>"; };
+		F5237E1F2435D64300746D81 /* DateBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateBuilder.h; sourceTree = "<group>"; };
+		F5237E202435D64300746D81 /* DateBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateBuilder.m; sourceTree = "<group>"; };
+		F5237E222435D65600746D81 /* IDateBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDateBuilderProtocol.h; sourceTree = "<group>"; };
+		F5237E232435D6D400746D81 /* BuilderDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderDirector.h; sourceTree = "<group>"; };
+		F5237E242435D6D400746D81 /* BuilderDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderDirector.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -414,6 +421,11 @@
 			children = (
 				F578AEB524334FC5001DA356 /* BuilderVC.h */,
 				F578AEB624334FC5001DA356 /* BuilderVC.m */,
+				F5237E1F2435D64300746D81 /* DateBuilder.h */,
+				F5237E202435D64300746D81 /* DateBuilder.m */,
+				F5237E222435D65600746D81 /* IDateBuilderProtocol.h */,
+				F5237E232435D6D400746D81 /* BuilderDirector.h */,
+				F5237E242435D6D400746D81 /* BuilderDirector.m */,
 			);
 			name = Builder;
 			sourceTree = "<group>";
@@ -731,6 +743,7 @@
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
 				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
+				F5237E252435D6D400746D81 /* BuilderDirector.m in Sources */,
 				F578AEEA24335109001DA356 /* StateVC.m in Sources */,
 				F5237E0F2435B69E00746D81 /* SqlserverDepartment.m in Sources */,
 				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
@@ -765,6 +778,7 @@
 				F5E297E62435870300F7120F /* OperationDiv.m in Sources */,
 				F5237E0C2435B68900746D81 /* SqlserverUser.m in Sources */,
 				F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */,
+				F5237E212435D64300746D81 /* DateBuilder.m in Sources */,
 				F578AEF324335141001DA356 /* InterpreterVC.m in Sources */,
 				F5237E152435B6B800746D81 /* AccessDepartment.m in Sources */,
 			);
