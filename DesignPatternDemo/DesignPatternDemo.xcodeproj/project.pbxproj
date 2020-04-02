@@ -42,6 +42,11 @@
 		F578AEED2433512C001DA356 /* VisitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEEC2433512C001DA356 /* VisitorVC.m */; };
 		F578AEF024335137001DA356 /* MediatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEEF24335137001DA356 /* MediatorVC.m */; };
 		F578AEF324335141001DA356 /* InterpreterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AEF224335141001DA356 /* InterpreterVC.m */; };
+		F578AF0E243582DD001DA356 /* CalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F578AF0D243582DD001DA356 /* CalculateFactory.m */; };
+		F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297DC2435852B00F7120F /* OperationAdd.m */; };
+		F5E297E0243586D000F7120F /* OperationSub.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297DF243586D000F7120F /* OperationSub.m */; };
+		F5E297E3243586E800F7120F /* OperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E2243586E800F7120F /* OperationMul.m */; };
+		F5E297E62435870300F7120F /* OperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E297E52435870300F7120F /* OperationDiv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +136,17 @@
 		F578AEEF24335137001DA356 /* MediatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorVC.m; sourceTree = "<group>"; };
 		F578AEF124335141001DA356 /* InterpreterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterpreterVC.h; sourceTree = "<group>"; };
 		F578AEF224335141001DA356 /* InterpreterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterpreterVC.m; sourceTree = "<group>"; };
+		F578AF0C243582DD001DA356 /* CalculateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateFactory.h; sourceTree = "<group>"; };
+		F578AF0D243582DD001DA356 /* CalculateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateFactory.m; sourceTree = "<group>"; };
+		F578AF0F2435830C001DA356 /* IOperationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOperationProtocol.h; sourceTree = "<group>"; };
+		F5E297DB2435852B00F7120F /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
+		F5E297DC2435852B00F7120F /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
+		F5E297DE243586D000F7120F /* OperationSub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationSub.h; sourceTree = "<group>"; };
+		F5E297DF243586D000F7120F /* OperationSub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationSub.m; sourceTree = "<group>"; };
+		F5E297E1243586E800F7120F /* OperationMul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationMul.h; sourceTree = "<group>"; };
+		F5E297E2243586E800F7120F /* OperationMul.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationMul.m; sourceTree = "<group>"; };
+		F5E297E42435870300F7120F /* OperationDiv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationDiv.h; sourceTree = "<group>"; };
+		F5E297E52435870300F7120F /* OperationDiv.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationDiv.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,18 +247,12 @@
 		F578AEA524334AAC001DA356 /* CreateType */ = {
 			isa = PBXGroup;
 			children = (
-				F578AEA924334F86001DA356 /* SimpleFactoryVC.h */,
-				F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */,
-				F578AEAC24334F93001DA356 /* FactoryVC.h */,
-				F578AEAD24334F93001DA356 /* FactoryVC.m */,
-				F578AEAF24334F9E001DA356 /* AbstructFactoryVC.h */,
-				F578AEB024334F9E001DA356 /* AbstructFactoryVC.m */,
-				F578AEB224334FB0001DA356 /* SingletonVC.h */,
-				F578AEB324334FB0001DA356 /* SingletonVC.m */,
-				F578AEB524334FC5001DA356 /* BuilderVC.h */,
-				F578AEB624334FC5001DA356 /* BuilderVC.m */,
-				F578AEB824334FD1001DA356 /* PrototypeVC.h */,
-				F578AEB924334FD1001DA356 /* PrototypeVC.m */,
+				F578AEF924349DFD001DA356 /* Prototype */,
+				F578AEF824349DF4001DA356 /* Builder */,
+				F578AEF724349DEB001DA356 /* Singleton */,
+				F578AEF624349DE2001DA356 /* AbstructFactory */,
+				F578AEF524349DCD001DA356 /* Factory */,
+				F578AEF424349DBB001DA356 /* SimpleFactory */,
 			);
 			name = CreateType;
 			sourceTree = "<group>";
@@ -250,20 +260,13 @@
 		F578AEA624334ABD001DA356 /* structureType */ = {
 			isa = PBXGroup;
 			children = (
-				F578AEBE24335029001DA356 /* AdapterVC.h */,
-				F578AEBF24335029001DA356 /* AdapterVC.m */,
-				F578AEC124335036001DA356 /* DecoratorVC.h */,
-				F578AEC224335036001DA356 /* DecoratorVC.m */,
-				F578AEC42433503F001DA356 /* ProxyVC.h */,
-				F578AEC52433503F001DA356 /* ProxyVC.m */,
-				F578AEC724335048001DA356 /* FacadeVC.h */,
-				F578AEC824335048001DA356 /* FacadeVC.m */,
-				F578AECA24335052001DA356 /* BridgeVC.h */,
-				F578AECB24335052001DA356 /* BridgeVC.m */,
-				F578AECD24335066001DA356 /* CompositeVC.h */,
-				F578AECE24335066001DA356 /* CompositeVC.m */,
-				F578AED024335099001DA356 /* FlyweightVC.h */,
-				F578AED124335099001DA356 /* FlyweightVC.m */,
+				F578AF0024349E4F001DA356 /* Flyweight */,
+				F578AEFF24349E47001DA356 /* Composite */,
+				F578AEFE24349E40001DA356 /* Bridge */,
+				F578AEFD24349E36001DA356 /* Facade */,
+				F578AEFC24349E2D001DA356 /* Proxy */,
+				F578AEFB24349E25001DA356 /* Decorator */,
+				F578AEFA24349E1E001DA356 /* Adapter */,
 			);
 			name = structureType;
 			sourceTree = "<group>";
@@ -271,30 +274,246 @@
 		F578AEA824334AFC001DA356 /* behaviorType */ = {
 			isa = PBXGroup;
 			children = (
+				F578AF0B24349EBF001DA356 /* Interpreter */,
+				F578AF0A24349EB7001DA356 /* Mediator */,
+				F578AF0924349EAF001DA356 /* Visitor */,
+				F578AF0824349EA8001DA356 /* State */,
+				F578AF0724349EA0001DA356 /* Memento */,
+				F578AF0624349E98001DA356 /* Command */,
+				F578AF0524349E91001DA356 /* ChainOfResponsibility */,
+				F578AF0424349E8A001DA356 /* Iterator */,
+				F578AF0324349E83001DA356 /* Observer */,
+				F578AF0224349E7C001DA356 /* TemplateMethod */,
+				F578AF0124349E75001DA356 /* Strategy */,
+			);
+			name = behaviorType;
+			sourceTree = "<group>";
+		};
+		F578AEF424349DBB001DA356 /* SimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEA924334F86001DA356 /* SimpleFactoryVC.h */,
+				F578AEAA24334F86001DA356 /* SimpleFactoryVC.m */,
+				F578AF0C243582DD001DA356 /* CalculateFactory.h */,
+				F578AF0D243582DD001DA356 /* CalculateFactory.m */,
+				F578AF0F2435830C001DA356 /* IOperationProtocol.h */,
+				F5E297DB2435852B00F7120F /* OperationAdd.h */,
+				F5E297DC2435852B00F7120F /* OperationAdd.m */,
+				F5E297DE243586D000F7120F /* OperationSub.h */,
+				F5E297DF243586D000F7120F /* OperationSub.m */,
+				F5E297E1243586E800F7120F /* OperationMul.h */,
+				F5E297E2243586E800F7120F /* OperationMul.m */,
+				F5E297E42435870300F7120F /* OperationDiv.h */,
+				F5E297E52435870300F7120F /* OperationDiv.m */,
+			);
+			name = SimpleFactory;
+			sourceTree = "<group>";
+		};
+		F578AEF524349DCD001DA356 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEAC24334F93001DA356 /* FactoryVC.h */,
+				F578AEAD24334F93001DA356 /* FactoryVC.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		F578AEF624349DE2001DA356 /* AbstructFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEAF24334F9E001DA356 /* AbstructFactoryVC.h */,
+				F578AEB024334F9E001DA356 /* AbstructFactoryVC.m */,
+			);
+			name = AbstructFactory;
+			sourceTree = "<group>";
+		};
+		F578AEF724349DEB001DA356 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEB224334FB0001DA356 /* SingletonVC.h */,
+				F578AEB324334FB0001DA356 /* SingletonVC.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		F578AEF824349DF4001DA356 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEB524334FC5001DA356 /* BuilderVC.h */,
+				F578AEB624334FC5001DA356 /* BuilderVC.m */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		F578AEF924349DFD001DA356 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEB824334FD1001DA356 /* PrototypeVC.h */,
+				F578AEB924334FD1001DA356 /* PrototypeVC.m */,
+			);
+			name = Prototype;
+			sourceTree = "<group>";
+		};
+		F578AEFA24349E1E001DA356 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEBE24335029001DA356 /* AdapterVC.h */,
+				F578AEBF24335029001DA356 /* AdapterVC.m */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+		F578AEFB24349E25001DA356 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEC124335036001DA356 /* DecoratorVC.h */,
+				F578AEC224335036001DA356 /* DecoratorVC.m */,
+			);
+			name = Decorator;
+			sourceTree = "<group>";
+		};
+		F578AEFC24349E2D001DA356 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEC42433503F001DA356 /* ProxyVC.h */,
+				F578AEC52433503F001DA356 /* ProxyVC.m */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
+		F578AEFD24349E36001DA356 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				F578AEC724335048001DA356 /* FacadeVC.h */,
+				F578AEC824335048001DA356 /* FacadeVC.m */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
+		F578AEFE24349E40001DA356 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				F578AECA24335052001DA356 /* BridgeVC.h */,
+				F578AECB24335052001DA356 /* BridgeVC.m */,
+			);
+			name = Bridge;
+			sourceTree = "<group>";
+		};
+		F578AEFF24349E47001DA356 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				F578AECD24335066001DA356 /* CompositeVC.h */,
+				F578AECE24335066001DA356 /* CompositeVC.m */,
+			);
+			name = Composite;
+			sourceTree = "<group>";
+		};
+		F578AF0024349E4F001DA356 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				F578AED024335099001DA356 /* FlyweightVC.h */,
+				F578AED124335099001DA356 /* FlyweightVC.m */,
+			);
+			name = Flyweight;
+			sourceTree = "<group>";
+		};
+		F578AF0124349E75001DA356 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
 				F578AED3243350BF001DA356 /* StrategyVC.h */,
 				F578AED4243350BF001DA356 /* StrategyVC.m */,
+			);
+			name = Strategy;
+			sourceTree = "<group>";
+		};
+		F578AF0224349E7C001DA356 /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
 				F578AED6243350C9001DA356 /* TemplateMethodVC.h */,
 				F578AED7243350C9001DA356 /* TemplateMethodVC.m */,
+			);
+			name = TemplateMethod;
+			sourceTree = "<group>";
+		};
+		F578AF0324349E83001DA356 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
 				F578AED9243350D5001DA356 /* ObserverVC.h */,
 				F578AEDA243350D5001DA356 /* ObserverVC.m */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
+		F578AF0424349E8A001DA356 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEDC243350DF001DA356 /* IteratorVC.h */,
 				F578AEDD243350DF001DA356 /* IteratorVC.m */,
+			);
+			name = Iterator;
+			sourceTree = "<group>";
+		};
+		F578AF0524349E91001DA356 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEDF243350EA001DA356 /* ChainOfResponsibilityVC.h */,
 				F578AEE0243350EA001DA356 /* ChainOfResponsibilityVC.m */,
+			);
+			name = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		F578AF0624349E98001DA356 /* Command */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEE2243350F4001DA356 /* CommandVC.h */,
 				F578AEE3243350F4001DA356 /* CommandVC.m */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		F578AF0724349EA0001DA356 /* Memento */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEE5243350FE001DA356 /* MementoVC.h */,
 				F578AEE6243350FE001DA356 /* MementoVC.m */,
+			);
+			name = Memento;
+			sourceTree = "<group>";
+		};
+		F578AF0824349EA8001DA356 /* State */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEE824335109001DA356 /* StateVC.h */,
 				F578AEE924335109001DA356 /* StateVC.m */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		F578AF0924349EAF001DA356 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEEB2433512C001DA356 /* VisitorVC.h */,
 				F578AEEC2433512C001DA356 /* VisitorVC.m */,
+			);
+			name = Visitor;
+			sourceTree = "<group>";
+		};
+		F578AF0A24349EB7001DA356 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEEE24335137001DA356 /* MediatorVC.h */,
 				F578AEEF24335137001DA356 /* MediatorVC.m */,
+			);
+			name = Mediator;
+			sourceTree = "<group>";
+		};
+		F578AF0B24349EBF001DA356 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
 				F578AEF124335141001DA356 /* InterpreterVC.h */,
 				F578AEF224335141001DA356 /* InterpreterVC.m */,
 			);
-			name = behaviorType;
+			name = Interpreter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +651,7 @@
 				F578AEBA24334FD1001DA356 /* PrototypeVC.m in Sources */,
 				F578AEE4243350F4001DA356 /* CommandVC.m in Sources */,
 				F578AEC924335048001DA356 /* FacadeVC.m in Sources */,
+				F5E297E0243586D000F7120F /* OperationSub.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
@@ -446,15 +666,19 @@
 				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,
 				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
+				F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */,
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
+				F5E297E3243586E800F7120F /* OperationMul.m in Sources */,
 				F578AEC024335029001DA356 /* AdapterVC.m in Sources */,
+				F578AF0E243582DD001DA356 /* CalculateFactory.m in Sources */,
 				F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */,
 				F578AECF24335066001DA356 /* CompositeVC.m in Sources */,
+				F5E297E62435870300F7120F /* OperationDiv.m in Sources */,
 				F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */,
 				F578AEF324335141001DA356 /* InterpreterVC.m in Sources */,
 			);

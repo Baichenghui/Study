@@ -7,6 +7,7 @@
 //
 
 #import "SimpleFactoryVC.h"
+#import "CalculateFactory.h"
 
 @interface SimpleFactoryVC ()
 
@@ -17,6 +18,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self addTest];
+    [self subTest];
+    [self mulTest];
+    [self divTest];
+}
+
+- (void)addTest {
+    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"+"];
+    operation.numA = 10;
+    operation.numB = 20;
+    CGFloat result = [operation getResult];
+    NSLog(@"addTest result:%.f",result);
+}
+
+- (void)subTest {
+    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"-"];
+    operation.numA = 10;
+    operation.numB = 20;
+    CGFloat result = [operation getResult];
+    NSLog(@"subTest result:%.f",result);
+}
+
+- (void)mulTest {
+    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"*"];
+    operation.numA = 10;
+    operation.numB = 20;
+    CGFloat result = [operation getResult];
+    NSLog(@"mulTest result:%.f",result);
+}
+
+- (void)divTest {
+    id<IOperationProtocol> operation = [CalculateFactory createOperationWithType:@"/"];
+    operation.numA = 10;
+    operation.numB = 20;
+    CGFloat result = [operation getResult];
+    NSLog(@"divTest result:%.f",result);
 }
 
 /*
