@@ -19,6 +19,7 @@
 		F5237E152435B6B800746D81 /* AccessDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E142435B6B800746D81 /* AccessDepartment.m */; };
 		F5237E182435B97F00746D81 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E172435B97F00746D81 /* User.m */; };
 		F5237E1B2435B98900746D81 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E1A2435B98900746D81 /* Department.m */; };
+		F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E1D2435C6D500746D81 /* SingletonManager.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -107,6 +108,8 @@
 		F5237E172435B97F00746D81 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		F5237E192435B98900746D81 /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
 		F5237E1A2435B98900746D81 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		F5237E1C2435C6D500746D81 /* SingletonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonManager.h; sourceTree = "<group>"; };
+		F5237E1D2435C6D500746D81 /* SingletonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonManager.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -400,6 +403,8 @@
 			children = (
 				F578AEB224334FB0001DA356 /* SingletonVC.h */,
 				F578AEB324334FB0001DA356 /* SingletonVC.m */,
+				F5237E1C2435C6D500746D81 /* SingletonManager.h */,
+				F5237E1D2435C6D500746D81 /* SingletonManager.m */,
 			);
 			name = Singleton;
 			sourceTree = "<group>";
@@ -722,6 +727,7 @@
 				F5E297E0243586D000F7120F /* OperationSub.m in Sources */,
 				F5237DF624358D4200746D81 /* AddFactory.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
+				F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
 				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
