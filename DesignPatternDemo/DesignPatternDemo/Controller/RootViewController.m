@@ -26,18 +26,18 @@
     _lists = @[
         @{
             @"创建型设计模式":@[
-                    @{@"SimpleFactoryVC":@"简单工厂模式"},
-                    @{@"FactoryVC":@"工厂模式"},
-                    @{@"AbstructFactoryVC":@"抽象工厂模式"},
-                    @{@"SingletonVC":@"单利模式"},
-                    @{@"BuilderVC":@"建造者模式"},
-                    @{@"PrototypeVC":@"原型模式"}]
+                    @{@"SimpleFactoryVC":@"简单工厂模式 *"},
+                    @{@"FactoryVC":@"工厂模式 *"},
+                    @{@"AbstructFactoryVC":@"抽象工厂模式 *"},
+                    @{@"SingletonVC":@"单利模式 *"},
+                    @{@"BuilderVC":@"建造者模式 *"},
+                    @{@"PrototypeVC":@"原型模式 *"}]
         },
         @{
             @"结构型设计模式":@[
-                    @{@"AdapterVC":@"适配器模式"},
+                    @{@"AdapterVC":@"适配器模式 *"},
                     @{@"DecoratorVC":@"装饰模式"},
-                    @{@"ProxyVC":@"代理模式"},
+                    @{@"ProxyVC":@"代理模式 *"},
                     @{@"FacadeVC":@"外观模式"},
                     @{@"BridgeVC":@"桥接模式"},
                     @{@"CompositeVC":@"组合模式"},
@@ -45,13 +45,13 @@
         },
         @{
             @"行为型设计模式":@[
-                    @{@"StrategyVC":@"策略模式"},
+                    @{@"StrategyVC":@"策略模式 *"},
                     @{@"TemplateMethodVC":@"模板方法模式"},
-                    @{@"ObserverVC":@"观察者模式"},
+                    @{@"ObserverVC":@"观察者模式 *"},
                     @{@"IteratorVC":@"迭代子模式"},
                     @{@"ChainOfResponsibilityVC":@"责任链模式"},
                     @{@"CommandVC":@"命令模式"},
-                    @{@"MementoVC":@"备忘录模式"},
+                    @{@"MementoVC":@"备忘录模式 *"},
                     @{@"StateVC":@"状态模式"},
                     @{@"VisitorVC":@"访问者模式"},
                     @{@"MediatorVC":@"中介者模式"},

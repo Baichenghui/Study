@@ -45,7 +45,7 @@
     NSArray *array3 = @[model1];
     NSArray *array4 = [array3 copy];
     NSLog(@"array3:%p model:%@",array3,array3[0]);
-    NSLog(@"array4:%p model:%@",array4,array4[0]); 
+    NSLog(@"array4:%p model:%@",array4,array4[0]);
 }
 
 /*

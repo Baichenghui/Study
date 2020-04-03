@@ -66,6 +66,10 @@
 		F5FCA5D92435F10300DD6C3A /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5D82435F10300DD6C3A /* Adaptee.m */; };
 		F5FCA5DC2435F10B00DD6C3A /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5DB2435F10B00DD6C3A /* Adapter.m */; };
 		F5FCA5DF2435F11400DD6C3A /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5DE2435F11400DD6C3A /* Target.m */; };
+		F5FCA5E32436E4EE00DD6C3A /* StrategyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5E22436E4EE00DD6C3A /* StrategyContext.m */; };
+		F5FCA5E62436E53F00DD6C3A /* RandomStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5E52436E53F00DD6C3A /* RandomStrategy.m */; };
+		F5FCA5E92436E54D00DD6C3A /* NoramlStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5E82436E54D00DD6C3A /* NoramlStrategy.m */; };
+		F5FCA5EC2436E55A00DD6C3A /* SingleStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5EB2436E55A00DD6C3A /* SingleStrategy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +214,16 @@
 		F5FCA5DB2435F10B00DD6C3A /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
 		F5FCA5DD2435F11400DD6C3A /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
 		F5FCA5DE2435F11400DD6C3A /* Target.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target.m; sourceTree = "<group>"; };
+		F5FCA5E02436E4AF00DD6C3A /* IStrategyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IStrategyProtocol.h; sourceTree = "<group>"; };
+		F5FCA5E12436E4EE00DD6C3A /* StrategyContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyContext.h; sourceTree = "<group>"; };
+		F5FCA5E22436E4EE00DD6C3A /* StrategyContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyContext.m; sourceTree = "<group>"; };
+		F5FCA5E42436E53F00DD6C3A /* RandomStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomStrategy.h; sourceTree = "<group>"; };
+		F5FCA5E52436E53F00DD6C3A /* RandomStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomStrategy.m; sourceTree = "<group>"; };
+		F5FCA5E72436E54D00DD6C3A /* NoramlStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoramlStrategy.h; sourceTree = "<group>"; };
+		F5FCA5E82436E54D00DD6C3A /* NoramlStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoramlStrategy.m; sourceTree = "<group>"; };
+		F5FCA5EA2436E55A00DD6C3A /* SingleStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleStrategy.h; sourceTree = "<group>"; };
+		F5FCA5EB2436E55A00DD6C3A /* SingleStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleStrategy.m; sourceTree = "<group>"; };
+		F5FCA5ED2436E94C00DD6C3A /* IMediaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMediaProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +543,16 @@
 			children = (
 				F578AED3243350BF001DA356 /* StrategyVC.h */,
 				F578AED4243350BF001DA356 /* StrategyVC.m */,
+				F5FCA5ED2436E94C00DD6C3A /* IMediaProtocol.h */,
+				F5FCA5E02436E4AF00DD6C3A /* IStrategyProtocol.h */,
+				F5FCA5E12436E4EE00DD6C3A /* StrategyContext.h */,
+				F5FCA5E22436E4EE00DD6C3A /* StrategyContext.m */,
+				F5FCA5E42436E53F00DD6C3A /* RandomStrategy.h */,
+				F5FCA5E52436E53F00DD6C3A /* RandomStrategy.m */,
+				F5FCA5E72436E54D00DD6C3A /* NoramlStrategy.h */,
+				F5FCA5E82436E54D00DD6C3A /* NoramlStrategy.m */,
+				F5FCA5EA2436E55A00DD6C3A /* SingleStrategy.h */,
+				F5FCA5EB2436E55A00DD6C3A /* SingleStrategy.m */,
 			);
 			name = Strategy;
 			sourceTree = "<group>";
@@ -761,15 +785,18 @@
 				F5FCA5DF2435F11400DD6C3A /* Target.m in Sources */,
 				F5E297E0243586D000F7120F /* OperationSub.m in Sources */,
 				F5237DF624358D4200746D81 /* AddFactory.m in Sources */,
+				F5FCA5E92436E54D00DD6C3A /* NoramlStrategy.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
 				F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
 				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
 				F5237E252435D6D400746D81 /* BuilderDirector.m in Sources */,
+				F5FCA5EC2436E55A00DD6C3A /* SingleStrategy.m in Sources */,
 				F578AEEA24335109001DA356 /* StateVC.m in Sources */,
 				F5237E0F2435B69E00746D81 /* SqlserverDepartment.m in Sources */,
 				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
+				F5FCA5E32436E4EE00DD6C3A /* StrategyContext.m in Sources */,
 				F5237E122435B6AA00746D81 /* AccessUser.m in Sources */,
 				F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */,
 				F5FCA5DC2435F10B00DD6C3A /* Adapter.m in Sources */,
@@ -779,6 +806,7 @@
 				F55F138723D43C1E00779C94 /* main.m in Sources */,
 				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
 				F5237E182435B97F00746D81 /* User.m in Sources */,
+				F5FCA5E62436E53F00DD6C3A /* RandomStrategy.m in Sources */,
 				F5237E062435B62300746D81 /* SqlserverFactory.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,
 				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
