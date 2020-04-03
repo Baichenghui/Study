@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     
     //玩家
-    GamePlayer *player = [GamePlayer new];
+    id<IGamePlayerProtocol> player = [GamePlayer new];
     
     //代练
     GamePlayerProxy *proxy = [GamePlayerProxy new];

@@ -72,6 +72,9 @@
 		F5FCA5EC2436E55A00DD6C3A /* SingleStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5EB2436E55A00DD6C3A /* SingleStrategy.m */; };
 		F5FCA5F12437110100DD6C3A /* GamePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F02437110100DD6C3A /* GamePlayer.m */; };
 		F5FCA5F42437110D00DD6C3A /* GamePlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F32437110D00DD6C3A /* GamePlayerProxy.m */; };
+		F5FCA5F7243724F100DD6C3A /* GameRole.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F6243724F100DD6C3A /* GameRole.m */; };
+		F5FCA5FA2437250300DD6C3A /* GameCaretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F92437250300DD6C3A /* GameCaretaker.m */; };
+		F5FCA5FD2437252900DD6C3A /* GameMemeno.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5FC2437252900DD6C3A /* GameMemeno.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +234,12 @@
 		F5FCA5F02437110100DD6C3A /* GamePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlayer.m; sourceTree = "<group>"; };
 		F5FCA5F22437110D00DD6C3A /* GamePlayerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePlayerProxy.h; sourceTree = "<group>"; };
 		F5FCA5F32437110D00DD6C3A /* GamePlayerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlayerProxy.m; sourceTree = "<group>"; };
+		F5FCA5F5243724F100DD6C3A /* GameRole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameRole.h; sourceTree = "<group>"; };
+		F5FCA5F6243724F100DD6C3A /* GameRole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameRole.m; sourceTree = "<group>"; };
+		F5FCA5F82437250300DD6C3A /* GameCaretaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameCaretaker.h; sourceTree = "<group>"; };
+		F5FCA5F92437250300DD6C3A /* GameCaretaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCaretaker.m; sourceTree = "<group>"; };
+		F5FCA5FB2437252900DD6C3A /* GameMemeno.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameMemeno.h; sourceTree = "<group>"; };
+		F5FCA5FC2437252900DD6C3A /* GameMemeno.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameMemeno.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -619,6 +628,12 @@
 			children = (
 				F578AEE5243350FE001DA356 /* MementoVC.h */,
 				F578AEE6243350FE001DA356 /* MementoVC.m */,
+				F5FCA5F5243724F100DD6C3A /* GameRole.h */,
+				F5FCA5F6243724F100DD6C3A /* GameRole.m */,
+				F5FCA5F82437250300DD6C3A /* GameCaretaker.h */,
+				F5FCA5F92437250300DD6C3A /* GameCaretaker.m */,
+				F5FCA5FB2437252900DD6C3A /* GameMemeno.h */,
+				F5FCA5FC2437252900DD6C3A /* GameMemeno.m */,
 			);
 			name = Memento;
 			sourceTree = "<group>";
@@ -811,11 +826,13 @@
 				F5FCA5E32436E4EE00DD6C3A /* StrategyContext.m in Sources */,
 				F5237E122435B6AA00746D81 /* AccessUser.m in Sources */,
 				F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */,
+				F5FCA5F7243724F100DD6C3A /* GameRole.m in Sources */,
 				F5FCA5DC2435F10B00DD6C3A /* Adapter.m in Sources */,
 				F578AED224335099001DA356 /* FlyweightVC.m in Sources */,
 				F55F137623D43C1900779C94 /* AppDelegate.m in Sources */,
 				F578AEAE24334F93001DA356 /* FactoryVC.m in Sources */,
 				F55F138723D43C1E00779C94 /* main.m in Sources */,
+				F5FCA5FA2437250300DD6C3A /* GameCaretaker.m in Sources */,
 				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
 				F5237E182435B97F00746D81 /* User.m in Sources */,
 				F5FCA5E62436E53F00DD6C3A /* RandomStrategy.m in Sources */,
@@ -828,6 +845,7 @@
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
+				F5FCA5FD2437252900DD6C3A /* GameMemeno.m in Sources */,
 				F5FCA5F42437110D00DD6C3A /* GamePlayerProxy.m in Sources */,
 				F5237DFD2435918000746D81 /* MulFactory.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
