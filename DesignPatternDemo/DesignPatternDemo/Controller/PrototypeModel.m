@@ -19,7 +19,11 @@
 }
 
 - (nonnull id)copyWithZone:(nullable NSZone *)zone {
-    return [[self class] allocWithZone:zone];
+    PrototypeModel *model = [[self class] allocWithZone:zone];
+    model.age = self.age;
+    model.name = self.name;
+    model.hobby = self.hobby;
+    return model;
 }
 
 @end
