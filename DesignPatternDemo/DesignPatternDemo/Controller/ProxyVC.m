@@ -7,6 +7,9 @@
 //
 
 #import "ProxyVC.h"
+#import "IGamePlayerProtocol.h"
+#import "GamePlayerProxy.h"
+#import "GamePlayer.h"
 
 @interface ProxyVC ()
 
@@ -17,6 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //玩家
+    GamePlayer *player = [GamePlayer new];
+    
+    //代练
+    GamePlayerProxy *proxy = [GamePlayerProxy new];
+    proxy.delegate = player;
+    [proxy playGame];
+    
+    /**
+     2020-04-03 14:52:40.678178+0800 DesignPatternDemo[47337:1495850] 玩游戏
+        最终也只是：玩游戏
+        但是现在玩游戏已经是通过调用代理的playGame方法完成的
+     */
+    
 }
 
 /*

@@ -70,6 +70,8 @@
 		F5FCA5E62436E53F00DD6C3A /* RandomStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5E52436E53F00DD6C3A /* RandomStrategy.m */; };
 		F5FCA5E92436E54D00DD6C3A /* NoramlStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5E82436E54D00DD6C3A /* NoramlStrategy.m */; };
 		F5FCA5EC2436E55A00DD6C3A /* SingleStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5EB2436E55A00DD6C3A /* SingleStrategy.m */; };
+		F5FCA5F12437110100DD6C3A /* GamePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F02437110100DD6C3A /* GamePlayer.m */; };
+		F5FCA5F42437110D00DD6C3A /* GamePlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F32437110D00DD6C3A /* GamePlayerProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +226,11 @@
 		F5FCA5EA2436E55A00DD6C3A /* SingleStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleStrategy.h; sourceTree = "<group>"; };
 		F5FCA5EB2436E55A00DD6C3A /* SingleStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleStrategy.m; sourceTree = "<group>"; };
 		F5FCA5ED2436E94C00DD6C3A /* IMediaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMediaProtocol.h; sourceTree = "<group>"; };
+		F5FCA5EE243710DD00DD6C3A /* IGamePlayerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGamePlayerProtocol.h; sourceTree = "<group>"; };
+		F5FCA5EF2437110000DD6C3A /* GamePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePlayer.h; sourceTree = "<group>"; };
+		F5FCA5F02437110100DD6C3A /* GamePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlayer.m; sourceTree = "<group>"; };
+		F5FCA5F22437110D00DD6C3A /* GamePlayerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePlayerProxy.h; sourceTree = "<group>"; };
+		F5FCA5F32437110D00DD6C3A /* GamePlayerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePlayerProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -498,6 +505,11 @@
 			children = (
 				F578AEC42433503F001DA356 /* ProxyVC.h */,
 				F578AEC52433503F001DA356 /* ProxyVC.m */,
+				F5FCA5EE243710DD00DD6C3A /* IGamePlayerProtocol.h */,
+				F5FCA5EF2437110000DD6C3A /* GamePlayer.h */,
+				F5FCA5F02437110100DD6C3A /* GamePlayer.m */,
+				F5FCA5F22437110D00DD6C3A /* GamePlayerProxy.h */,
+				F5FCA5F32437110D00DD6C3A /* GamePlayerProxy.m */,
 			);
 			name = Proxy;
 			sourceTree = "<group>";
@@ -816,12 +828,14 @@
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
+				F5FCA5F42437110D00DD6C3A /* GamePlayerProxy.m in Sources */,
 				F5237DFD2435918000746D81 /* MulFactory.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
 				F5237E092435B63A00746D81 /* AccessFactory.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
 				F5E297E3243586E800F7120F /* OperationMul.m in Sources */,
+				F5FCA5F12437110100DD6C3A /* GamePlayer.m in Sources */,
 				F578AEC024335029001DA356 /* AdapterVC.m in Sources */,
 				F5237DFA2435917A00746D81 /* SubFactory.m in Sources */,
 				F578AF0E243582DD001DA356 /* CalculateSimpleFactory.m in Sources */,
