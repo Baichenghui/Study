@@ -75,6 +75,9 @@
 		F5FCA5F7243724F100DD6C3A /* GameRole.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F6243724F100DD6C3A /* GameRole.m */; };
 		F5FCA5FA2437250300DD6C3A /* GameCaretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5F92437250300DD6C3A /* GameCaretaker.m */; };
 		F5FCA5FD2437252900DD6C3A /* GameMemeno.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5FC2437252900DD6C3A /* GameMemeno.m */; };
+		F5FCA60024372B8F00DD6C3A /* AbstructSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA5FF24372B8F00DD6C3A /* AbstructSubject.m */; };
+		F5FCA60324372BE700DD6C3A /* ConcreteSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA60224372BE700DD6C3A /* ConcreteSubject.m */; };
+		F5FCA60724372C9A00DD6C3A /* ConcreteObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FCA60624372C9A00DD6C3A /* ConcreteObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +243,13 @@
 		F5FCA5F92437250300DD6C3A /* GameCaretaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCaretaker.m; sourceTree = "<group>"; };
 		F5FCA5FB2437252900DD6C3A /* GameMemeno.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameMemeno.h; sourceTree = "<group>"; };
 		F5FCA5FC2437252900DD6C3A /* GameMemeno.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameMemeno.m; sourceTree = "<group>"; };
+		F5FCA5FE24372B8F00DD6C3A /* AbstructSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstructSubject.h; sourceTree = "<group>"; };
+		F5FCA5FF24372B8F00DD6C3A /* AbstructSubject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructSubject.m; sourceTree = "<group>"; };
+		F5FCA60124372BE700DD6C3A /* ConcreteSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteSubject.h; sourceTree = "<group>"; };
+		F5FCA60224372BE700DD6C3A /* ConcreteSubject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteSubject.m; sourceTree = "<group>"; };
+		F5FCA60424372C6000DD6C3A /* IObserverProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IObserverProtocol.h; sourceTree = "<group>"; };
+		F5FCA60524372C9A00DD6C3A /* ConcreteObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteObserver.h; sourceTree = "<group>"; };
+		F5FCA60624372C9A00DD6C3A /* ConcreteObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +602,13 @@
 			children = (
 				F578AED9243350D5001DA356 /* ObserverVC.h */,
 				F578AEDA243350D5001DA356 /* ObserverVC.m */,
+				F5FCA5FE24372B8F00DD6C3A /* AbstructSubject.h */,
+				F5FCA5FF24372B8F00DD6C3A /* AbstructSubject.m */,
+				F5FCA60124372BE700DD6C3A /* ConcreteSubject.h */,
+				F5FCA60224372BE700DD6C3A /* ConcreteSubject.m */,
+				F5FCA60424372C6000DD6C3A /* IObserverProtocol.h */,
+				F5FCA60524372C9A00DD6C3A /* ConcreteObserver.h */,
+				F5FCA60624372C9A00DD6C3A /* ConcreteObserver.m */,
 			);
 			name = Observer;
 			sourceTree = "<group>";
@@ -852,16 +869,19 @@
 				F5237E092435B63A00746D81 /* AccessFactory.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
+				F5FCA60324372BE700DD6C3A /* ConcreteSubject.m in Sources */,
 				F5E297E3243586E800F7120F /* OperationMul.m in Sources */,
 				F5FCA5F12437110100DD6C3A /* GamePlayer.m in Sources */,
 				F578AEC024335029001DA356 /* AdapterVC.m in Sources */,
 				F5237DFA2435917A00746D81 /* SubFactory.m in Sources */,
+				F5FCA60024372B8F00DD6C3A /* AbstructSubject.m in Sources */,
 				F578AF0E243582DD001DA356 /* CalculateSimpleFactory.m in Sources */,
 				F578AEE1243350EA001DA356 /* ChainOfResponsibilityVC.m in Sources */,
 				F5FCA5D92435F10300DD6C3A /* Adaptee.m in Sources */,
 				F5237E1B2435B98900746D81 /* Department.m in Sources */,
 				F578AECF24335066001DA356 /* CompositeVC.m in Sources */,
 				F5E297E62435870300F7120F /* OperationDiv.m in Sources */,
+				F5FCA60724372C9A00DD6C3A /* ConcreteObserver.m in Sources */,
 				F5237E0C2435B68900746D81 /* SqlserverUser.m in Sources */,
 				F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */,
 				F5237E212435D64300746D81 /* DateBuilder.m in Sources */,
