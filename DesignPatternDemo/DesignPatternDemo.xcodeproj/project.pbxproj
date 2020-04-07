@@ -27,6 +27,10 @@
 		F55184F5243C6FCC0078B4B0 /* HouseDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F4243C6FCC0078B4B0 /* HouseDecorator.m */; };
 		F55184F9243C750E0078B4B0 /* AbstructTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F8243C750E0078B4B0 /* AbstructTemplate.m */; };
 		F55184FC243C78060078B4B0 /* ConcreteTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184FB243C78060078B4B0 /* ConcreteTemplate.m */; };
+		F55184FF243C79BD0078B4B0 /* StateA.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184FE243C79BD0078B4B0 /* StateA.m */; };
+		F5518502243C79C60078B4B0 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518501243C79C60078B4B0 /* Work.m */; };
+		F5518506243C7C920078B4B0 /* StateB.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518505243C7C920078B4B0 /* StateB.m */; };
+		F5518509243C7C990078B4B0 /* StateC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518508243C7C990078B4B0 /* StateC.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -149,6 +153,15 @@
 		F55184F8243C750E0078B4B0 /* AbstructTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructTemplate.m; sourceTree = "<group>"; };
 		F55184FA243C78060078B4B0 /* ConcreteTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteTemplate.h; sourceTree = "<group>"; };
 		F55184FB243C78060078B4B0 /* ConcreteTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteTemplate.m; sourceTree = "<group>"; };
+		F55184FD243C79BD0078B4B0 /* StateA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateA.h; sourceTree = "<group>"; };
+		F55184FE243C79BD0078B4B0 /* StateA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateA.m; sourceTree = "<group>"; };
+		F5518500243C79C60078B4B0 /* Work.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
+		F5518501243C79C60078B4B0 /* Work.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
+		F5518503243C7B6E0078B4B0 /* IStateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IStateProtocol.h; sourceTree = "<group>"; };
+		F5518504243C7C920078B4B0 /* StateB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateB.h; sourceTree = "<group>"; };
+		F5518505243C7C920078B4B0 /* StateB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateB.m; sourceTree = "<group>"; };
+		F5518507243C7C990078B4B0 /* StateC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateC.h; sourceTree = "<group>"; };
+		F5518508243C7C990078B4B0 /* StateC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateC.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -687,6 +700,15 @@
 			children = (
 				F578AEE824335109001DA356 /* StateVC.h */,
 				F578AEE924335109001DA356 /* StateVC.m */,
+				F55184FD243C79BD0078B4B0 /* StateA.h */,
+				F55184FE243C79BD0078B4B0 /* StateA.m */,
+				F5518500243C79C60078B4B0 /* Work.h */,
+				F5518501243C79C60078B4B0 /* Work.m */,
+				F5518503243C7B6E0078B4B0 /* IStateProtocol.h */,
+				F5518504243C7C920078B4B0 /* StateB.h */,
+				F5518505243C7C920078B4B0 /* StateB.m */,
+				F5518507243C7C990078B4B0 /* StateC.h */,
+				F5518508243C7C990078B4B0 /* StateC.m */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -859,6 +881,7 @@
 				F5FCA5E92436E54D00DD6C3A /* NoramlStrategy.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
 				F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */,
+				F55184FF243C79BD0078B4B0 /* StateA.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
 				F55184F2243C6F8C0078B4B0 /* SimpleHouse.m in Sources */,
@@ -885,11 +908,13 @@
 				F55184EF243C6E960078B4B0 /* RoughHouse.m in Sources */,
 				F5FCA5E62436E53F00DD6C3A /* RandomStrategy.m in Sources */,
 				F5237E062435B62300746D81 /* SqlserverFactory.m in Sources */,
+				F5518506243C7C920078B4B0 /* StateB.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,
 				F578AEB424334FB0001DA356 /* SingletonVC.m in Sources */,
 				F5237E002435918800746D81 /* DivFactory.m in Sources */,
 				F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */,
 				F5FCA5D62435E7C400DD6C3A /* PrototypeModel.m in Sources */,
+				F5518509243C7C990078B4B0 /* StateC.m in Sources */,
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
@@ -900,6 +925,7 @@
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
 				F5237E092435B63A00746D81 /* AccessFactory.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
+				F5518502243C79C60078B4B0 /* Work.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
 				F5FCA60324372BE700DD6C3A /* ConcreteSubject.m in Sources */,
 				F5E297E3243586E800F7120F /* OperationMul.m in Sources */,
