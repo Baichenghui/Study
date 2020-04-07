@@ -22,6 +22,9 @@
 		F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E1D2435C6D500746D81 /* SingletonManager.m */; };
 		F5237E212435D64300746D81 /* DateBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E202435D64300746D81 /* DateBuilder.m */; };
 		F5237E252435D6D400746D81 /* BuilderDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = F5237E242435D6D400746D81 /* BuilderDirector.m */; };
+		F55184EF243C6E960078B4B0 /* RoughHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184EE243C6E960078B4B0 /* RoughHouse.m */; };
+		F55184F2243C6F8C0078B4B0 /* SimpleHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F1243C6F8C0078B4B0 /* SimpleHouse.m */; };
+		F55184F5243C6FCC0078B4B0 /* HouseDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F4243C6FCC0078B4B0 /* HouseDecorator.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -133,6 +136,13 @@
 		F5237E222435D65600746D81 /* IDateBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDateBuilderProtocol.h; sourceTree = "<group>"; };
 		F5237E232435D6D400746D81 /* BuilderDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderDirector.h; sourceTree = "<group>"; };
 		F5237E242435D6D400746D81 /* BuilderDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderDirector.m; sourceTree = "<group>"; };
+		F55184EC243C6CED0078B4B0 /* IHouseProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHouseProtocol.h; sourceTree = "<group>"; };
+		F55184ED243C6E960078B4B0 /* RoughHouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoughHouse.h; sourceTree = "<group>"; };
+		F55184EE243C6E960078B4B0 /* RoughHouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoughHouse.m; sourceTree = "<group>"; };
+		F55184F0243C6F8C0078B4B0 /* SimpleHouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleHouse.h; sourceTree = "<group>"; };
+		F55184F1243C6F8C0078B4B0 /* SimpleHouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleHouse.m; sourceTree = "<group>"; };
+		F55184F3243C6FCC0078B4B0 /* HouseDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseDecorator.h; sourceTree = "<group>"; };
+		F55184F4243C6FCC0078B4B0 /* HouseDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseDecorator.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -515,6 +525,13 @@
 			children = (
 				F578AEC124335036001DA356 /* DecoratorVC.h */,
 				F578AEC224335036001DA356 /* DecoratorVC.m */,
+				F55184EC243C6CED0078B4B0 /* IHouseProtocol.h */,
+				F55184ED243C6E960078B4B0 /* RoughHouse.h */,
+				F55184EE243C6E960078B4B0 /* RoughHouse.m */,
+				F55184F0243C6F8C0078B4B0 /* SimpleHouse.h */,
+				F55184F1243C6F8C0078B4B0 /* SimpleHouse.m */,
+				F55184F3243C6FCC0078B4B0 /* HouseDecorator.h */,
+				F55184F4243C6FCC0078B4B0 /* HouseDecorator.m */,
 			);
 			name = Decorator;
 			sourceTree = "<group>";
@@ -834,7 +851,9 @@
 				F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
+				F55184F2243C6F8C0078B4B0 /* SimpleHouse.m in Sources */,
 				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
+				F55184F5243C6FCC0078B4B0 /* HouseDecorator.m in Sources */,
 				F5237E252435D6D400746D81 /* BuilderDirector.m in Sources */,
 				F5FCA5EC2436E55A00DD6C3A /* SingleStrategy.m in Sources */,
 				F578AEEA24335109001DA356 /* StateVC.m in Sources */,
@@ -852,6 +871,7 @@
 				F5FCA5FA2437250300DD6C3A /* GameCaretaker.m in Sources */,
 				F578AEE7243350FE001DA356 /* MementoVC.m in Sources */,
 				F5237E182435B97F00746D81 /* User.m in Sources */,
+				F55184EF243C6E960078B4B0 /* RoughHouse.m in Sources */,
 				F5FCA5E62436E53F00DD6C3A /* RandomStrategy.m in Sources */,
 				F5237E062435B62300746D81 /* SqlserverFactory.m in Sources */,
 				F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */,

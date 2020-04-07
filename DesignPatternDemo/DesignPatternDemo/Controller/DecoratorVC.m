@@ -7,6 +7,8 @@
 //
 
 #import "DecoratorVC.h"
+#import "SimpleHouse.h"
+#import "RoughHouse.h"
 
 @interface DecoratorVC ()
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    RoughHouse *rHouse = [RoughHouse new];
+    SimpleHouse *sHouse = [SimpleHouse new];
+    //shouse 装饰了 rhouse,动态的给rhouse增加了功能。
+    //原本rhouse只能用来交易，包装成sHouse之后可以用来居住了
+    [sHouse decorator:rHouse];
+    [sHouse showFuntion];
 }
 
 /*
