@@ -7,6 +7,10 @@
 //
 
 #import "CommandVC.h"
+#import "Bubecurer.h"
+#import "Waiter.h"
+#import "CommandA.h"
+#import "CommandB.h"
 
 @interface CommandVC ()
 
@@ -17,6 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    Waiter *w = [Waiter new];
+    
+    Bubecurer *bb = [Bubecurer new];
+    CommandA *ca = [[CommandA alloc] initWithBubeacur:bb];
+    CommandB *cb = [[CommandB alloc] initWithBubeacur:bb];
+    
+    [w.list addObject:ca];
+    [w.list addObject:cb];
+    
+    [w.list removeObject:ca];
+    
+    [w notify];
 }
 
 /*
