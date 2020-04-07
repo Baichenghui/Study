@@ -7,6 +7,7 @@
 //
 
 #import "TemplateMethodVC.h"
+#import "ConcreteTemplate.h"
 
 @interface TemplateMethodVC ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    ConcreteTemplate *ct = [ConcreteTemplate new];
+    [ct temp];
 }
 
 /*

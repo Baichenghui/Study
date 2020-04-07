@@ -25,6 +25,8 @@
 		F55184EF243C6E960078B4B0 /* RoughHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184EE243C6E960078B4B0 /* RoughHouse.m */; };
 		F55184F2243C6F8C0078B4B0 /* SimpleHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F1243C6F8C0078B4B0 /* SimpleHouse.m */; };
 		F55184F5243C6FCC0078B4B0 /* HouseDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F4243C6FCC0078B4B0 /* HouseDecorator.m */; };
+		F55184F9243C750E0078B4B0 /* AbstructTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184F8243C750E0078B4B0 /* AbstructTemplate.m */; };
+		F55184FC243C78060078B4B0 /* ConcreteTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55184FB243C78060078B4B0 /* ConcreteTemplate.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -143,6 +145,10 @@
 		F55184F1243C6F8C0078B4B0 /* SimpleHouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleHouse.m; sourceTree = "<group>"; };
 		F55184F3243C6FCC0078B4B0 /* HouseDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseDecorator.h; sourceTree = "<group>"; };
 		F55184F4243C6FCC0078B4B0 /* HouseDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseDecorator.m; sourceTree = "<group>"; };
+		F55184F7243C750E0078B4B0 /* AbstructTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstructTemplate.h; sourceTree = "<group>"; };
+		F55184F8243C750E0078B4B0 /* AbstructTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructTemplate.m; sourceTree = "<group>"; };
+		F55184FA243C78060078B4B0 /* ConcreteTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteTemplate.h; sourceTree = "<group>"; };
+		F55184FB243C78060078B4B0 /* ConcreteTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteTemplate.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -610,6 +616,10 @@
 			children = (
 				F578AED6243350C9001DA356 /* TemplateMethodVC.h */,
 				F578AED7243350C9001DA356 /* TemplateMethodVC.m */,
+				F55184F7243C750E0078B4B0 /* AbstructTemplate.h */,
+				F55184F8243C750E0078B4B0 /* AbstructTemplate.m */,
+				F55184FA243C78060078B4B0 /* ConcreteTemplate.h */,
+				F55184FB243C78060078B4B0 /* ConcreteTemplate.m */,
 			);
 			name = TemplateMethod;
 			sourceTree = "<group>";
@@ -856,6 +866,7 @@
 				F55184F5243C6FCC0078B4B0 /* HouseDecorator.m in Sources */,
 				F5237E252435D6D400746D81 /* BuilderDirector.m in Sources */,
 				F5FCA5EC2436E55A00DD6C3A /* SingleStrategy.m in Sources */,
+				F55184F9243C750E0078B4B0 /* AbstructTemplate.m in Sources */,
 				F578AEEA24335109001DA356 /* StateVC.m in Sources */,
 				F5237E0F2435B69E00746D81 /* SqlserverDepartment.m in Sources */,
 				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
@@ -884,6 +895,7 @@
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
 				F5FCA5FD2437252900DD6C3A /* GameMemeno.m in Sources */,
 				F5FCA5F42437110D00DD6C3A /* GamePlayerProxy.m in Sources */,
+				F55184FC243C78060078B4B0 /* ConcreteTemplate.m in Sources */,
 				F5237DFD2435918000746D81 /* MulFactory.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
 				F5237E092435B63A00746D81 /* AccessFactory.m in Sources */,
