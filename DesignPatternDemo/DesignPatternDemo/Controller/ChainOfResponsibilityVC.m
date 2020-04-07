@@ -7,6 +7,10 @@
 //
 
 #import "ChainOfResponsibilityVC.h"
+#import "ChainManagerLevel1.h"
+#import "ChainManagerLevel2.h"
+#import "ChainManagerLevel3.h"
+
 
 @interface ChainOfResponsibilityVC ()
 
@@ -17,6 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    AbstructChainManager *l1 = [ChainManagerLevel1 new];
+    AbstructChainManager *l2 = [ChainManagerLevel2 new];
+    AbstructChainManager *l3 = [ChainManagerLevel3 new];
+    
+    [l1 configChain:l2];
+    [l2 configChain:l3];
+    
+    NSArray *requests = @[@1,@2,@10,@5,@2,@3,@1,@3,@2];
+    for (NSNumber *requestNum in requests) {
+        NSInteger request = [requestNum integerValue];
+        [l1 request:request];
+    }
 }
 
 /*

@@ -31,6 +31,10 @@
 		F5518502243C79C60078B4B0 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518501243C79C60078B4B0 /* Work.m */; };
 		F5518506243C7C920078B4B0 /* StateB.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518505243C7C920078B4B0 /* StateB.m */; };
 		F5518509243C7C990078B4B0 /* StateC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518508243C7C990078B4B0 /* StateC.m */; };
+		F551850D243C80FD0078B4B0 /* AbstructChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F551850C243C80FD0078B4B0 /* AbstructChainManager.m */; };
+		F5518510243C81CC0078B4B0 /* ChainManagerLevel1.m in Sources */ = {isa = PBXBuildFile; fileRef = F551850F243C81CC0078B4B0 /* ChainManagerLevel1.m */; };
+		F5518513243C81D50078B4B0 /* ChainManagerLevel3.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518512243C81D50078B4B0 /* ChainManagerLevel3.m */; };
+		F5518516243C81DD0078B4B0 /* ChainManagerLevel2.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518515243C81DD0078B4B0 /* ChainManagerLevel2.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -162,6 +166,14 @@
 		F5518505243C7C920078B4B0 /* StateB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateB.m; sourceTree = "<group>"; };
 		F5518507243C7C990078B4B0 /* StateC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateC.h; sourceTree = "<group>"; };
 		F5518508243C7C990078B4B0 /* StateC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateC.m; sourceTree = "<group>"; };
+		F551850B243C80FD0078B4B0 /* AbstructChainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstructChainManager.h; sourceTree = "<group>"; };
+		F551850C243C80FD0078B4B0 /* AbstructChainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructChainManager.m; sourceTree = "<group>"; };
+		F551850E243C81CC0078B4B0 /* ChainManagerLevel1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainManagerLevel1.h; sourceTree = "<group>"; };
+		F551850F243C81CC0078B4B0 /* ChainManagerLevel1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainManagerLevel1.m; sourceTree = "<group>"; };
+		F5518511243C81D50078B4B0 /* ChainManagerLevel3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainManagerLevel3.h; sourceTree = "<group>"; };
+		F5518512243C81D50078B4B0 /* ChainManagerLevel3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainManagerLevel3.m; sourceTree = "<group>"; };
+		F5518514243C81DD0078B4B0 /* ChainManagerLevel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainManagerLevel2.h; sourceTree = "<group>"; };
+		F5518515243C81DD0078B4B0 /* ChainManagerLevel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainManagerLevel2.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -667,6 +679,14 @@
 			children = (
 				F578AEDF243350EA001DA356 /* ChainOfResponsibilityVC.h */,
 				F578AEE0243350EA001DA356 /* ChainOfResponsibilityVC.m */,
+				F551850B243C80FD0078B4B0 /* AbstructChainManager.h */,
+				F551850C243C80FD0078B4B0 /* AbstructChainManager.m */,
+				F551850E243C81CC0078B4B0 /* ChainManagerLevel1.h */,
+				F551850F243C81CC0078B4B0 /* ChainManagerLevel1.m */,
+				F5518514243C81DD0078B4B0 /* ChainManagerLevel2.h */,
+				F5518515243C81DD0078B4B0 /* ChainManagerLevel2.m */,
+				F5518511243C81D50078B4B0 /* ChainManagerLevel3.h */,
+				F5518512243C81D50078B4B0 /* ChainManagerLevel3.m */,
 			);
 			name = ChainOfResponsibility;
 			sourceTree = "<group>";
@@ -881,6 +901,7 @@
 				F5FCA5E92436E54D00DD6C3A /* NoramlStrategy.m in Sources */,
 				F578AED5243350BF001DA356 /* StrategyVC.m in Sources */,
 				F5237E1E2435C6D500746D81 /* SingletonManager.m in Sources */,
+				F5518513243C81D50078B4B0 /* ChainManagerLevel3.m in Sources */,
 				F55184FF243C79BD0078B4B0 /* StateA.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
@@ -895,6 +916,7 @@
 				F578AEAB24334F86001DA356 /* SimpleFactoryVC.m in Sources */,
 				F5FCA5E32436E4EE00DD6C3A /* StrategyContext.m in Sources */,
 				F5237E122435B6AA00746D81 /* AccessUser.m in Sources */,
+				F5518516243C81DD0078B4B0 /* ChainManagerLevel2.m in Sources */,
 				F578AEBD24334FEB001DA356 /* BaseVC.m in Sources */,
 				F5FCA5F7243724F100DD6C3A /* GameRole.m in Sources */,
 				F5FCA5DC2435F10B00DD6C3A /* Adapter.m in Sources */,
@@ -915,6 +937,7 @@
 				F5E297DD2435852B00F7120F /* OperationAdd.m in Sources */,
 				F5FCA5D62435E7C400DD6C3A /* PrototypeModel.m in Sources */,
 				F5518509243C7C990078B4B0 /* StateC.m in Sources */,
+				F551850D243C80FD0078B4B0 /* AbstructChainManager.m in Sources */,
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
 				F578AEA424334963001DA356 /* RootViewController.m in Sources */,
@@ -944,6 +967,7 @@
 				F578AEB124334F9E001DA356 /* AbstructFactoryVC.m in Sources */,
 				F5237E212435D64300746D81 /* DateBuilder.m in Sources */,
 				F578AEF324335141001DA356 /* InterpreterVC.m in Sources */,
+				F5518510243C81CC0078B4B0 /* ChainManagerLevel1.m in Sources */,
 				F5237E152435B6B800746D81 /* AccessDepartment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
