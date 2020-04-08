@@ -13,10 +13,10 @@
 
 - (void)declare:(NSString *)msg country:(AbstructCountry *)country {
     if ([country isMemberOfClass:[USA class]]) {
-        [self.c1 getMsg:msg];
+        [self.c2 getMsg:msg];
     }
     else {
-        [self.c2 getMsg:msg];
+        [self.c1 getMsg:msg];
     }
 }
 
