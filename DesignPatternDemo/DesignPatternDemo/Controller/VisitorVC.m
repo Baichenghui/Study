@@ -7,6 +7,11 @@
 //
 
 #import "VisitorVC.h"
+#import "ObjectStruct.h"
+#import "ElementA.h"
+#import "ElementB.h"
+#import "Visitor1.h"
+#import "Visitor2.h"
 
 @interface VisitorVC ()
 
@@ -17,6 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    ObjectStruct *os = [ObjectStruct new];
+    [os.list addObject:[ElementA new]];
+    [os.list addObject:[ElementB new]];
+    
+    Visitor1 *v1 = [Visitor1 new];
+    Visitor2 *v2 = [Visitor2 new];
+    
+    [os accept:v1];
+    [os accept:v2];
 }
 
 /*
