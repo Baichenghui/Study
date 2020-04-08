@@ -45,6 +45,11 @@
 		F5518530243D7ADA0078B4B0 /* Visitor1.m in Sources */ = {isa = PBXBuildFile; fileRef = F551852F243D7ADA0078B4B0 /* Visitor1.m */; };
 		F5518533243D7AE40078B4B0 /* Visitor2.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518532243D7AE40078B4B0 /* Visitor2.m */; };
 		F5518536243D7D410078B4B0 /* ObjectStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518535243D7D410078B4B0 /* ObjectStruct.m */; };
+		F551853A243D86EC0078B4B0 /* AbstructCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518539243D86EC0078B4B0 /* AbstructCountry.m */; };
+		F551853E243D87AA0078B4B0 /* USA.m in Sources */ = {isa = PBXBuildFile; fileRef = F551853D243D87AA0078B4B0 /* USA.m */; };
+		F5518541243D88850078B4B0 /* Irag.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518540243D88850078B4B0 /* Irag.m */; };
+		F5518544243D88AC0078B4B0 /* ConcreteUnitedNations.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518543243D88AC0078B4B0 /* ConcreteUnitedNations.m */; };
+		F5518547243D89170078B4B0 /* AbstructUnitedNations.m in Sources */ = {isa = PBXBuildFile; fileRef = F5518546243D89170078B4B0 /* AbstructUnitedNations.m */; };
 		F55F137623D43C1900779C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137523D43C1900779C94 /* AppDelegate.m */; };
 		F55F137923D43C1900779C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F137823D43C1900779C94 /* SceneDelegate.m */; };
 		F55F137F23D43C1900779C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55F137D23D43C1900779C94 /* Main.storyboard */; };
@@ -206,6 +211,16 @@
 		F5518532243D7AE40078B4B0 /* Visitor2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visitor2.m; sourceTree = "<group>"; };
 		F5518534243D7D410078B4B0 /* ObjectStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectStruct.h; sourceTree = "<group>"; };
 		F5518535243D7D410078B4B0 /* ObjectStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectStruct.m; sourceTree = "<group>"; };
+		F5518538243D86EC0078B4B0 /* AbstructCountry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstructCountry.h; sourceTree = "<group>"; };
+		F5518539243D86EC0078B4B0 /* AbstructCountry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructCountry.m; sourceTree = "<group>"; };
+		F551853C243D87AA0078B4B0 /* USA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USA.h; sourceTree = "<group>"; };
+		F551853D243D87AA0078B4B0 /* USA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USA.m; sourceTree = "<group>"; };
+		F551853F243D88850078B4B0 /* Irag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Irag.h; sourceTree = "<group>"; };
+		F5518540243D88850078B4B0 /* Irag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Irag.m; sourceTree = "<group>"; };
+		F5518542243D88AC0078B4B0 /* ConcreteUnitedNations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteUnitedNations.h; sourceTree = "<group>"; };
+		F5518543243D88AC0078B4B0 /* ConcreteUnitedNations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteUnitedNations.m; sourceTree = "<group>"; };
+		F5518545243D89170078B4B0 /* AbstructUnitedNations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstructUnitedNations.h; sourceTree = "<group>"; };
+		F5518546243D89170078B4B0 /* AbstructUnitedNations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstructUnitedNations.m; sourceTree = "<group>"; };
 		F55F137123D43C1900779C94 /* DesignPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F137423D43C1900779C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F55F137523D43C1900779C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -801,6 +816,16 @@
 			children = (
 				F578AEEE24335137001DA356 /* MediatorVC.h */,
 				F578AEEF24335137001DA356 /* MediatorVC.m */,
+				F5518538243D86EC0078B4B0 /* AbstructCountry.h */,
+				F5518539243D86EC0078B4B0 /* AbstructCountry.m */,
+				F5518545243D89170078B4B0 /* AbstructUnitedNations.h */,
+				F5518546243D89170078B4B0 /* AbstructUnitedNations.m */,
+				F551853C243D87AA0078B4B0 /* USA.h */,
+				F551853D243D87AA0078B4B0 /* USA.m */,
+				F551853F243D88850078B4B0 /* Irag.h */,
+				F5518540243D88850078B4B0 /* Irag.m */,
+				F5518542243D88AC0078B4B0 /* ConcreteUnitedNations.h */,
+				F5518543243D88AC0078B4B0 /* ConcreteUnitedNations.m */,
 			);
 			name = Mediator;
 			sourceTree = "<group>";
@@ -958,8 +983,10 @@
 				F5518513243C81D50078B4B0 /* ChainManagerLevel3.m in Sources */,
 				F55184FF243C79BD0078B4B0 /* StateA.m in Sources */,
 				F578AEC324335036001DA356 /* DecoratorVC.m in Sources */,
+				F5518541243D88850078B4B0 /* Irag.m in Sources */,
 				F5518522243C8A310078B4B0 /* CommandA.m in Sources */,
 				F578AEC62433503F001DA356 /* ProxyVC.m in Sources */,
+				F551853E243D87AA0078B4B0 /* USA.m in Sources */,
 				F55184F2243C6F8C0078B4B0 /* SimpleHouse.m in Sources */,
 				F578AED8243350C9001DA356 /* TemplateMethodVC.m in Sources */,
 				F55184F5243C6FCC0078B4B0 /* HouseDecorator.m in Sources */,
@@ -996,6 +1023,7 @@
 				F5FCA5D62435E7C400DD6C3A /* PrototypeModel.m in Sources */,
 				F5518509243C7C990078B4B0 /* StateC.m in Sources */,
 				F551850D243C80FD0078B4B0 /* AbstructChainManager.m in Sources */,
+				F5518547243D89170078B4B0 /* AbstructUnitedNations.m in Sources */,
 				F578AEDE243350DF001DA356 /* IteratorVC.m in Sources */,
 				F551852D243D7AA30078B4B0 /* ElementB.m in Sources */,
 				F578AEED2433512C001DA356 /* VisitorVC.m in Sources */,
@@ -1005,10 +1033,12 @@
 				F5518533243D7AE40078B4B0 /* Visitor2.m in Sources */,
 				F55184FC243C78060078B4B0 /* ConcreteTemplate.m in Sources */,
 				F5237DFD2435918000746D81 /* MulFactory.m in Sources */,
+				F5518544243D88AC0078B4B0 /* ConcreteUnitedNations.m in Sources */,
 				F578AECC24335052001DA356 /* BridgeVC.m in Sources */,
 				F5518536243D7D410078B4B0 /* ObjectStruct.m in Sources */,
 				F5237E092435B63A00746D81 /* AccessFactory.m in Sources */,
 				F578AEB724334FC5001DA356 /* BuilderVC.m in Sources */,
+				F551853A243D86EC0078B4B0 /* AbstructCountry.m in Sources */,
 				F5518502243C79C60078B4B0 /* Work.m in Sources */,
 				F578AEDB243350D5001DA356 /* ObserverVC.m in Sources */,
 				F5FCA60324372BE700DD6C3A /* ConcreteSubject.m in Sources */,
